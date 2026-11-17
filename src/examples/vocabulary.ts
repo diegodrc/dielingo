@@ -41,6 +41,8 @@ export const vocabulary: Example[] = [
     config: {
       type: 'matchPairs',
       instruction: 'Match each character to its pinyin',
+      // Hearing the character would give its pinyin away.
+      tapToSpeak: false,
       pairs: [
         { id: 'ni', left: { kind: 'hanzi', hanzi: '你' }, right: { kind: 'text', text: 'nǐ' } },
         { id: 'hao', left: { kind: 'hanzi', hanzi: '好' }, right: { kind: 'text', text: 'hǎo' } },

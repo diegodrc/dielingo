@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { cx } from '../../lib/cx';
-import { plainText, speakableText } from '../../lib/content';
+import { plainText, speakableText, tapText, tapToSpeakEnabled } from '../../lib/content';
 import { gradeChoice } from '../../lib/grading';
-import { useSettings, useShuffled } from '../../lib/settings';
+import { TapToSpeakContext, useSettings, useShuffled } from '../../lib/settings';
 import { speak } from '../../lib/speech';
 import type {
   ChoiceOption,
@@ -25,6 +25,7 @@ export function MultipleChoice({ config, onResult, onContinue }: ExerciseProps<M
   const options = useShuffled(config.options, config.shuffle);
   const [selected, setSelected] = useState<string | null>(null);
   const [status, setStatus] = useState<ExerciseStatus>('idle');
+  const tapToSpeak = tapToSpeakEnabled(config);
 
   const layout =
     config.layout ?? (options.every((o) => o.content.kind === 'image') ? 'grid' : 'list');
@@ -32,7 +33,9 @@ export function MultipleChoice({ config, onResult, onContinue }: ExerciseProps<M
   const select = (option: ChoiceOption) => {
     if (status !== 'idle') return;
     setSelected(option.id);
-    const audio = speakableText(option.content);
+    // Audio options always play; Chinese text plays unless the sound is the answer.
+    const audio =
+      speakableText(option.content) ?? (tapToSpeak ? tapText(option.content) : undefined);
     if (audio) speak(audio, { rate: settings.speechRate });
   };
 
@@ -80,7 +83,9 @@ export function MultipleChoice({ config, onResult, onContinue }: ExerciseProps<M
     >
       {config.prompt && (
         <div className={styles.prompt}>
-          <ContentView content={config.prompt} fill={fill} />
+          <TapToSpeakContext.Provider value={tapToSpeak}>
+            <ContentView content={config.prompt} fill={fill} />
+          </TapToSpeakContext.Provider>
         </div>
       )}
       <div

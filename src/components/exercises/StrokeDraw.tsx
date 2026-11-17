@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { cx } from '../../lib/cx';
 import type { ExerciseProps, ExerciseStatus, StrokeDrawConfig } from '../../lib/types';
 import { AudioButton } from '../primitives/AudioButton';
-import { HanziText } from '../primitives/HanziText';
+import { SpeakableHanzi } from '../primitives/HanziText';
 import { ExerciseFrame } from '../shell/ExerciseFrame';
 import shell from '../shell/shell.module.css';
 import styles from './exercises.module.css';
@@ -102,7 +102,7 @@ export function StrokeDraw({ config, onResult, onContinue }: ExerciseProps<Strok
     >
       <div className={styles.strokeHeader}>
         <AudioButton text={config.character} autoPlay />
-        <HanziText hanzi={config.character} pinyin={config.pinyin} />
+        <SpeakableHanzi hanzi={config.character} pinyin={config.pinyin} />
         {config.meaning && <span className={styles.meaning}>{config.meaning}</span>}
       </div>
 

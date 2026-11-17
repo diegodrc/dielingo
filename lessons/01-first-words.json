@@ -157,6 +157,7 @@
     {
       "type": "matchPairs",
       "instruction": "Match each character to its pinyin",
+      "tapToSpeak": false,
       "pairs": [
         {
           "id": "ni",

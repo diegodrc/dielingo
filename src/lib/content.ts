@@ -1,4 +1,4 @@
-import type { Content, SentenceContent } from './types';
+import type { Content, ExerciseConfig, SentenceContent } from './types';
 
 const CJK = /[㐀-鿿]/;
 
@@ -35,6 +35,41 @@ export function speakableText(content: Content): string | undefined {
       return content.speak ? sentenceText(content) : undefined;
     default:
       return undefined;
+  }
+}
+
+/** Chinese text to read aloud when the learner taps this content. */
+export function tapText(content: Content): string | undefined {
+  switch (content.kind) {
+    case 'hanzi':
+      return content.hanzi;
+    case 'audio':
+      return content.speak;
+    case 'sentence':
+      return sentenceText(content) || undefined;
+    default:
+      return undefined;
+  }
+}
+
+const isAudio = (content: Content | undefined) => content?.kind === 'audio';
+
+/**
+ * Whether tapping Chinese text should play its sound in this exercise.
+ * Listening exercises (anything with audio-only content) keep the text silent,
+ * because the sound is the answer. `tapToSpeak` on the config overrides this.
+ */
+export function tapToSpeakEnabled(config: ExerciseConfig): boolean {
+  if (config.tapToSpeak !== undefined) return config.tapToSpeak;
+  switch (config.type) {
+    case 'multipleChoice':
+      return !isAudio(config.prompt) && !config.options.some((o) => isAudio(o.content));
+    case 'matchPairs':
+      return !config.pairs.some((p) => isAudio(p.left) || isAudio(p.right));
+    case 'wordBank':
+      return !isAudio(config.prompt);
+    default:
+      return true;
   }
 }
 

@@ -1,15 +1,17 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { cx } from '../../lib/cx';
-import { sentenceText } from '../../lib/content';
+import { isChinese, sentenceText } from '../../lib/content';
+import { TapToSpeakContext, useSettings } from '../../lib/settings';
+import { speak } from '../../lib/speech';
 import type { ChatContent, Content, SentenceContent } from '../../lib/types';
 import { AudioButton, SpeakerIcon } from './AudioButton';
-import { HanziText } from './HanziText';
+import { HanziText, SpeakableHanzi } from './HanziText';
 import styles from './primitives.module.css';
 
 interface ContentViewProps {
   content: Content;
   /**
-   * prompt: interactive (audio buttons, tappable word hints).
+   * prompt: interactive (audio buttons, tappable words that speak and show hints).
    * option: static, for use inside a card that is itself a button.
    */
   mode?: 'prompt' | 'option';
@@ -33,7 +35,11 @@ export function ContentView({ content, mode = 'prompt', fill, audioSize = 'md' }
           {interactive && content.speak && (
             <AudioButton text={content.hanzi} size={audioSize} autoPlay />
           )}
-          <HanziText hanzi={content.hanzi} pinyin={content.pinyin} />
+          {interactive ? (
+            <SpeakableHanzi hanzi={content.hanzi} pinyin={content.pinyin} />
+          ) : (
+            <HanziText hanzi={content.hanzi} pinyin={content.pinyin} />
+          )}
         </span>
       );
 
@@ -89,6 +95,8 @@ function SentenceView({
   audioSize: 'sm' | 'md';
 }) {
   const [openHint, setOpenHint] = useState<number | null>(null);
+  const { settings } = useSettings();
+  const tapToSpeak = useContext(TapToSpeakContext);
 
   return (
     <span className={styles.row}>
@@ -104,16 +112,21 @@ function SentenceView({
               </span>
             );
           }
-          if (!interactive || !token.hint) {
+          // A word is tappable when it has a meaning to show or a sound to play.
+          const speakable = tapToSpeak && isChinese(token.hanzi);
+          if (!interactive || (!token.hint && !speakable)) {
             return <HanziText key={i} hanzi={token.hanzi} pinyin={token.pinyin} />;
           }
           return (
             <span key={i} className={styles.tokenWrap}>
               <button
                 type="button"
-                className={styles.token}
-                aria-expanded={openHint === i}
-                onClick={() => setOpenHint(openHint === i ? null : i)}
+                className={token.hint ? styles.token : styles.speakable}
+                aria-expanded={token.hint ? openHint === i : undefined}
+                onClick={() => {
+                  if (speakable) speak(token.hanzi, { rate: settings.speechRate });
+                  if (token.hint) setOpenHint(openHint === i ? null : i);
+                }}
                 onBlur={() => setOpenHint((open) => (open === i ? null : open))}
               >
                 <HanziText hanzi={token.hanzi} pinyin={token.pinyin} />

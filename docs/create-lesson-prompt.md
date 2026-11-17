@@ -154,6 +154,11 @@ or `sentence` object) or `"blank": true` for the missing line. Use exactly one b
 Every exercise has a `type` and an optional `instruction` (the English heading, such as
 "What does this mean?"). There are five types.
 
+When the learner taps Chinese text, the app reads it aloud. It turns this off by itself in
+exercises that contain `audio` content, where the sound is the answer. Any exercise can also
+set `"tapToSpeak": false` to keep its text silent; use it when hearing the word would give the
+answer away, as in "Match character ↔ pinyin".
+
 #### `multipleChoice` — one prompt, several options, one correct
 
 - `prompt` (optional): any content object.
@@ -325,7 +330,7 @@ with a particular combination of content.
 |---|---|---|---|---|
 | 1 | New word with pictures | `multipleChoice` | `hanzi` with `pinyin` and `speak` | 4 × `image` |
 | 2 | Match English ↔ Chinese | `matchPairs` | — | `text` ↔ `hanzi` with `pinyin` |
-| 3 | Match character ↔ pinyin | `matchPairs` | — | `hanzi` (no `pinyin` field) ↔ `text` holding the pinyin |
+| 3 | Match character ↔ pinyin | `matchPairs` | — | `hanzi` (no `pinyin` field) ↔ `text` holding the pinyin; add `"tapToSpeak": false` |
 | 4 | Choose the meaning | `multipleChoice` | `hanzi` | 3–4 × `text` |
 | 5 | Draw the character | `strokeDraw` | — | — |
 

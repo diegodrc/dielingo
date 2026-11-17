@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
 import { cx } from '../../lib/cx';
-import { isChinese } from '../../lib/content';
+import { isChinese, tapToSpeakEnabled } from '../../lib/content';
 import { gradeWordBank, joinTiles } from '../../lib/grading';
-import { useSettings, useShuffled } from '../../lib/settings';
+import { TapToSpeakContext, useSettings, useShuffled } from '../../lib/settings';
 import { speak } from '../../lib/speech';
 import type { ExerciseProps, ExerciseStatus, WordBankConfig } from '../../lib/types';
 import { ContentView } from '../primitives/ContentView';
@@ -30,11 +30,12 @@ export function WordBank({ config, onResult, onContinue }: ExerciseProps<WordBan
   const [placed, setPlaced] = useState<Tile[]>([]);
   const [status, setStatus] = useState<ExerciseStatus>('idle');
   const open = status === 'idle';
+  const tapToSpeak = tapToSpeakEnabled(config);
 
   const place = (tile: Tile) => {
     if (!open) return;
     setPlaced((tiles) => [...tiles, tile]);
-    if (isChinese(tile.text)) speak(tile.text, { rate: settings.speechRate });
+    if (tapToSpeak && isChinese(tile.text)) speak(tile.text, { rate: settings.speechRate });
   };
 
   const remove = (tile: Tile) => {
@@ -68,7 +69,9 @@ export function WordBank({ config, onResult, onContinue }: ExerciseProps<WordBan
       correctAnswer={joinTiles(config.answer)}
     >
       <div className={styles.prompt}>
-        <ContentView content={config.prompt} />
+        <TapToSpeakContext.Provider value={tapToSpeak}>
+          <ContentView content={config.prompt} />
+        </TapToSpeakContext.Provider>
       </div>
 
       <div className={styles.answerArea} aria-label="Your answer" role="group">

@@ -85,6 +85,11 @@ interface BaseConfig {
   instruction?: string;
   /** Set to false to keep options/tiles in the order they were written. */
   shuffle?: boolean;
+  /**
+   * Read Chinese aloud when the learner taps it. Default: on, except in
+   * exercises with audio-only content, where hearing it would give the answer away.
+   */
+  tapToSpeak?: boolean;
 }
 
 export interface ChoiceOption {

@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
-import { speakableText } from '../../lib/content';
+import { speakableText, tapText, tapToSpeakEnabled } from '../../lib/content';
 import { useSettings, useShuffled } from '../../lib/settings';
 import { speak } from '../../lib/speech';
 import type { Content, ExerciseProps, ExerciseStatus, MatchPairsConfig } from '../../lib/types';
@@ -24,6 +24,7 @@ export function MatchPairs({ config, onResult, onContinue }: ExerciseProps<Match
   const [matched, setMatched] = useState<string[]>([]);
   const [wrong, setWrong] = useState<{ left: string; right: string } | null>(null);
   const [status, setStatus] = useState<ExerciseStatus>('idle');
+  const tapToSpeak = tapToSpeakEnabled(config);
   const mistakes = useRef(0);
   const timer = useRef<number | undefined>(undefined);
 
@@ -31,7 +32,7 @@ export function MatchPairs({ config, onResult, onContinue }: ExerciseProps<Match
 
   const pick = (side: Side, id: string, content: Content) => {
     if (wrong || matched.includes(id)) return;
-    const audio = speakableText(content);
+    const audio = speakableText(content) ?? (tapToSpeak ? tapText(content) : undefined);
     if (audio) speak(audio, { rate: settings.speechRate });
 
     const next = { ...picked, [side]: picked[side] === id ? undefined : id };

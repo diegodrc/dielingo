@@ -163,6 +163,26 @@ button:hover:not(:disabled) .emoji {
   display: inline-block;
 }
 
+/* Chinese text that plays its sound when tapped. */
+.speakable {
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  padding: 0 2px;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.speakable:hover {
+  background: var(--blue-bg);
+}
+
+.speakable:active {
+  background: var(--blue-border);
+}
+
 .token {
   border: 0;
   background: none;

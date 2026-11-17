@@ -128,6 +128,10 @@ The examples in `src/examples/` show a config for every exercise type; copy the 
   characters (`speak: '麻'`), because the voice reads characters, not pinyin. If the system
   has no Chinese voice the site shows a warning (on Windows: Settings → Time & language →
   Speech → add Chinese (Simplified)).
+- **Tap to hear**: tapping Chinese text (a prompt character, a word in a sentence, a match
+  card, an option, a word tile) reads it aloud. This is switched off automatically in
+  exercises with audio-only content, where the sound is the answer. Set `tapToSpeak: false`
+  (or `true`) on an exercise to override, as the character ↔ pinyin match does.
 - **`wordBank` grading** is an exact match against `answer` or one of `acceptedAnswers`.
   List every translation you want to accept, and make sure its tiles exist in
   `answer` + `distractors`.

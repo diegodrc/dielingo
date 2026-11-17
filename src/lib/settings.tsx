@@ -50,6 +50,12 @@ export function useSettings(): SettingsContextValue {
 }
 
 /**
+ * Whether Chinese text plays its sound when tapped. Each exercise provides
+ * the value for its own content (see `tapToSpeakEnabled`).
+ */
+export const TapToSpeakContext = createContext(true);
+
+/**
  * Shuffles once, when the component mounts. Remount the exercise (change its
  * `key`) to get a new order. `salt` keeps two lists in the same exercise from
  * getting the same permutation when a seed is set.
