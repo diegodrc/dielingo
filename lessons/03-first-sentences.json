@@ -1,0 +1,709 @@
+{
+  "title": "First sentences",
+  "description": "Build and understand simple sentences, then follow a short story at a café.",
+  "exercises": [
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "I am a student"
+      },
+      "answer": [
+        "我",
+        "是",
+        "学生"
+      ],
+      "distractors": [
+        "老师",
+        "你",
+        "不"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "是": "shì",
+        "学生": "xuésheng",
+        "老师": "lǎoshī",
+        "你": "nǐ",
+        "不": "bù"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I"
+          },
+          {
+            "hanzi": "不",
+            "pinyin": "bù",
+            "hint": "not, don't"
+          },
+          {
+            "hanzi": "吃",
+            "pinyin": "chī",
+            "hint": "eat"
+          },
+          {
+            "hanzi": "米饭",
+            "pinyin": "mǐfàn",
+            "hint": "rice"
+          }
+        ]
+      },
+      "answer": [
+        "I",
+        "don't",
+        "eat",
+        "rice"
+      ],
+      "acceptedAnswers": [
+        [
+          "I",
+          "do",
+          "not",
+          "eat",
+          "rice"
+        ]
+      ],
+      "distractors": [
+        "do",
+        "not",
+        "drink",
+        "tea"
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct translation",
+      "prompt": {
+        "kind": "text",
+        "text": "Do you drink water?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē"
+              },
+              {
+                "hanzi": "水",
+                "pinyin": "shuǐ"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē"
+              },
+              {
+                "hanzi": "茶",
+                "pinyin": "chá"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma"
+              }
+            ]
+          }
+        },
+        {
+          "id": "c",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē"
+              },
+              {
+                "hanzi": "水。",
+                "pinyin": "shuǐ"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "a"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "喝",
+            "pinyin": "hē",
+            "hint": "drink"
+          },
+          {
+            "hanzi": "茶",
+            "pinyin": "chá",
+            "hint": "tea"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "？"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "ma",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "吗",
+            "pinyin": "ma"
+          }
+        },
+        {
+          "id": "bu",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "不",
+            "pinyin": "bù"
+          }
+        },
+        {
+          "id": "shi",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "是",
+            "pinyin": "shì"
+          }
+        }
+      ],
+      "answer": "ma"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the best reply",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "好",
+            "pinyin": "hǎo",
+            "hint": "good, well"
+          },
+          {
+            "hanzi": "吗？",
+            "pinyin": "ma",
+            "hint": "(question)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "fine",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn"
+              },
+              {
+                "hanzi": "好，",
+                "pinyin": "hǎo"
+              },
+              {
+                "hanzi": "谢谢。",
+                "pinyin": "xièxie"
+              }
+            ]
+          }
+        },
+        {
+          "id": "student",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì"
+              },
+              {
+                "hanzi": "学生。",
+                "pinyin": "xuésheng"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "fine"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Li",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "你",
+                  "pinyin": "nǐ",
+                  "hint": "you"
+                },
+                {
+                  "hanzi": "好！",
+                  "pinyin": "hǎo",
+                  "hint": "good"
+                },
+                {
+                  "hanzi": "你",
+                  "pinyin": "nǐ",
+                  "hint": "you"
+                },
+                {
+                  "hanzi": "是",
+                  "pinyin": "shì",
+                  "hint": "are"
+                },
+                {
+                  "hanzi": "老师",
+                  "pinyin": "lǎoshī",
+                  "hint": "teacher"
+                },
+                {
+                  "hanzi": "吗？",
+                  "pinyin": "ma",
+                  "hint": "(question)"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Anna",
+            "avatar": "👩",
+            "side": "right",
+            "blank": true
+          },
+          {
+            "speaker": "Li",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "我",
+                  "pinyin": "wǒ",
+                  "hint": "I"
+                },
+                {
+                  "hanzi": "是",
+                  "pinyin": "shì",
+                  "hint": "am"
+                },
+                {
+                  "hanzi": "老师。",
+                  "pinyin": "lǎoshī",
+                  "hint": "teacher"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "student",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "不",
+                "pinyin": "bú"
+              },
+              {
+                "hanzi": "是，",
+                "pinyin": "shì"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì"
+              },
+              {
+                "hanzi": "学生。",
+                "pinyin": "xuésheng"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bye",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "谢谢，",
+                "pinyin": "xièxie"
+              },
+              {
+                "hanzi": "再见。",
+                "pinyin": "zàijiàn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "tea",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē"
+              },
+              {
+                "hanzi": "茶。",
+                "pinyin": "chá"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "student"
+    },
+    {
+      "type": "story",
+      "instruction": "Listen to the story",
+      "title": "At the café",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Waiter",
+          "avatar": "🧑‍🍳",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good"
+              }
+            ]
+          },
+          "translation": "Hello!"
+        },
+        {
+          "kind": "line",
+          "speaker": "Anna",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Waiter",
+          "avatar": "🧑‍🍳",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "hint": "drink"
+              },
+              {
+                "hanzi": "茶",
+                "pinyin": "chá",
+                "hint": "tea"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(question)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Anna",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bù",
+                "hint": "not, don't"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "hint": "drink"
+              },
+              {
+                "hanzi": "茶。",
+                "pinyin": "chá",
+                "hint": "tea"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I"
+              },
+              {
+                "hanzi": "喝",
+                "pinyin": "hē",
+                "hint": "drink"
+              },
+              {
+                "hanzi": "水。",
+                "pinyin": "shuǐ",
+                "hint": "water"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "What does Anna want to drink?",
+          "options": [
+            {
+              "id": "tea",
+              "text": "Tea"
+            },
+            {
+              "id": "water",
+              "text": "Water"
+            },
+            {
+              "id": "nothing",
+              "text": "Nothing"
+            }
+          ],
+          "answer": "water"
+        },
+        {
+          "kind": "line",
+          "speaker": "Waiter",
+          "avatar": "🧑‍🍳",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "eat"
+              },
+              {
+                "hanzi": "米饭",
+                "pinyin": "mǐfàn",
+                "hint": "rice"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(question)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Anna",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "eat"
+              },
+              {
+                "hanzi": "米饭。",
+                "pinyin": "mǐfàn",
+                "hint": "rice"
+              },
+              {
+                "hanzi": "谢谢！",
+                "pinyin": "xièxie",
+                "hint": "thank you"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "What will Anna eat?",
+          "options": [
+            {
+              "id": "apple",
+              "text": "An apple"
+            },
+            {
+              "id": "rice",
+              "text": "Rice"
+            }
+          ],
+          "answer": "rice"
+        },
+        {
+          "kind": "line",
+          "speaker": "Waiter",
+          "avatar": "🧑‍🍳",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "客气。",
+                "pinyin": "kèqi",
+                "hint": "polite (you're welcome)"
+              },
+              {
+                "hanzi": "再见！",
+                "pinyin": "zàijiàn",
+                "hint": "goodbye"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Anna",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "再见！",
+                "pinyin": "zàijiàn",
+                "hint": "goodbye"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "How does the conversation end?",
+          "options": [
+            {
+              "id": "tea",
+              "text": "Anna orders tea"
+            },
+            {
+              "id": "bye",
+              "text": "They say goodbye"
+            }
+          ],
+          "answer": "bye"
+        }
+      ]
+    }
+  ]
+}

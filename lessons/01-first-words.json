@@ -1,0 +1,267 @@
+{
+  "title": "First words",
+  "description": "Tea, water, cat, dog: meet your first characters and draw one.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "tea",
+          "content": {
+            "kind": "image",
+            "emoji": "🍵",
+            "label": "tea"
+          }
+        },
+        {
+          "id": "water",
+          "content": {
+            "kind": "image",
+            "emoji": "💧",
+            "label": "water"
+          }
+        },
+        {
+          "id": "rice",
+          "content": {
+            "kind": "image",
+            "emoji": "🍚",
+            "label": "rice"
+          }
+        },
+        {
+          "id": "apple",
+          "content": {
+            "kind": "image",
+            "emoji": "🍎",
+            "label": "apple"
+          }
+        }
+      ],
+      "answer": "tea"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "猫",
+        "pinyin": "māo",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "cat",
+          "content": {
+            "kind": "text",
+            "text": "cat"
+          }
+        },
+        {
+          "id": "dog",
+          "content": {
+            "kind": "text",
+            "text": "dog"
+          }
+        },
+        {
+          "id": "person",
+          "content": {
+            "kind": "text",
+            "text": "person"
+          }
+        },
+        {
+          "id": "water",
+          "content": {
+            "kind": "text",
+            "text": "water"
+          }
+        }
+      ],
+      "answer": "cat"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "water",
+          "left": {
+            "kind": "text",
+            "text": "water"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "水",
+            "pinyin": "shuǐ"
+          }
+        },
+        {
+          "id": "tea",
+          "left": {
+            "kind": "text",
+            "text": "tea"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "茶",
+            "pinyin": "chá"
+          }
+        },
+        {
+          "id": "cat",
+          "left": {
+            "kind": "text",
+            "text": "cat"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "猫",
+            "pinyin": "māo"
+          }
+        },
+        {
+          "id": "dog",
+          "left": {
+            "kind": "text",
+            "text": "dog"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "狗",
+            "pinyin": "gǒu"
+          }
+        },
+        {
+          "id": "person",
+          "left": {
+            "kind": "text",
+            "text": "person"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "人",
+            "pinyin": "rén"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each character to its pinyin",
+      "pairs": [
+        {
+          "id": "ni",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "你"
+          },
+          "right": {
+            "kind": "text",
+            "text": "nǐ"
+          }
+        },
+        {
+          "id": "hao",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "好"
+          },
+          "right": {
+            "kind": "text",
+            "text": "hǎo"
+          }
+        },
+        {
+          "id": "wo",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "我"
+          },
+          "right": {
+            "kind": "text",
+            "text": "wǒ"
+          }
+        },
+        {
+          "id": "shi",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "是"
+          },
+          "right": {
+            "kind": "text",
+            "text": "shì"
+          }
+        },
+        {
+          "id": "bu",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "不"
+          },
+          "right": {
+            "kind": "text",
+            "text": "bù"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What do you hear?",
+      "prompt": {
+        "kind": "audio",
+        "speak": "狗"
+      },
+      "options": [
+        {
+          "id": "cat",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "猫"
+          }
+        },
+        {
+          "id": "dog",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "狗"
+          }
+        },
+        {
+          "id": "person",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "人"
+          }
+        },
+        {
+          "id": "water",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "水"
+          }
+        }
+      ],
+      "answer": "dog",
+      "layout": "grid"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Trace the character",
+      "character": "人",
+      "pinyin": "rén",
+      "meaning": "person",
+      "guide": "full"
+    }
+  ]
+}

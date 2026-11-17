@@ -219,6 +219,13 @@
   background: var(--surface);
 }
 
+.summaryActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
 .stat b {
   display: block;
   color: var(--primary-dark);

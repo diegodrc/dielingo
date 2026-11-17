@@ -16,13 +16,15 @@ export interface LessonResult {
 interface LessonProps {
   exercises: ExerciseConfig[];
   onComplete?: (result: LessonResult) => void;
+  /** Adds a "Back to lessons" button to the summary screen. */
+  onExit?: () => void;
 }
 
 /**
  * Runs a list of exercises in order with a progress bar. Exercises answered
  * wrong come back at the end until they are answered right.
  */
-export function Lesson({ exercises, onComplete }: LessonProps) {
+export function Lesson({ exercises, onComplete, onExit }: LessonProps) {
   const [queue, setQueue] = useState(exercises);
   const [position, setPosition] = useState(0);
   const [completed, setCompleted] = useState(0);
@@ -97,9 +99,20 @@ export function Lesson({ exercises, onComplete }: LessonProps) {
               <span>exercises</span>
             </div>
           </div>
-          <button type="button" className={cx(styles.button, styles.primary)} onClick={restart}>
-            Practice again
-          </button>
+          <div className={styles.summaryActions}>
+            {onExit && (
+              <button type="button" className={cx(styles.button, styles.primary)} onClick={onExit}>
+                Back to lessons
+              </button>
+            )}
+            <button
+              type="button"
+              className={cx(styles.button, onExit ? styles.secondary : styles.primary)}
+              onClick={restart}
+            >
+              Practice again
+            </button>
+          </div>
         </div>
       ) : (
         <Exercise

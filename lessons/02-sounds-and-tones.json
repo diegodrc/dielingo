@@ -1,0 +1,140 @@
+{
+  "title": "Sounds and tones",
+  "description": "Train your ear: tell mā, má, mǎ and mà apart and catch short sentences.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "instruction": "How do you say this?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "马"
+      },
+      "options": [
+        {
+          "id": "ma1",
+          "content": {
+            "kind": "audio",
+            "speak": "妈"
+          }
+        },
+        {
+          "id": "ma2",
+          "content": {
+            "kind": "audio",
+            "speak": "麻"
+          }
+        },
+        {
+          "id": "ma3",
+          "content": {
+            "kind": "audio",
+            "speak": "马"
+          }
+        },
+        {
+          "id": "ma4",
+          "content": {
+            "kind": "audio",
+            "speak": "骂"
+          }
+        }
+      ],
+      "answer": "ma3"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each sound to its character",
+      "pairs": [
+        {
+          "id": "ma1",
+          "left": {
+            "kind": "audio",
+            "speak": "妈"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "妈"
+          }
+        },
+        {
+          "id": "ma3",
+          "left": {
+            "kind": "audio",
+            "speak": "马"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "马"
+          }
+        },
+        {
+          "id": "mao",
+          "left": {
+            "kind": "audio",
+            "speak": "猫"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "猫"
+          }
+        },
+        {
+          "id": "cha",
+          "left": {
+            "kind": "audio",
+            "speak": "茶"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "茶"
+          }
+        }
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Tap what you hear",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我喝茶",
+        "slow": true
+      },
+      "answer": [
+        "我",
+        "喝",
+        "茶"
+      ],
+      "distractors": [
+        "你",
+        "水"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "喝": "hē",
+        "茶": "chá",
+        "你": "nǐ",
+        "水": "shuǐ"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write what you hear in English",
+      "prompt": {
+        "kind": "audio",
+        "speak": "她是老师",
+        "slow": true
+      },
+      "answer": [
+        "She",
+        "is",
+        "a",
+        "teacher"
+      ],
+      "distractors": [
+        "student",
+        "He",
+        "not"
+      ]
+    }
+  ]
+}

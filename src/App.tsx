@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import { cx } from './lib/cx';
 import { useSettings } from './lib/settings';
 import { useVoiceStatus } from './lib/speech';
-import { Lesson } from './components/shell/Lesson';
-import { demoLesson } from './examples';
+import { useLessonLibrary } from './lib/useLessonLibrary';
 import { Gallery } from './pages/Gallery';
+import { LessonPlayer } from './pages/LessonPlayer';
+import { Lessons } from './pages/Lessons';
 import styles from './pages/pages.module.css';
 
 function useHash(): string {
@@ -21,8 +22,15 @@ export function App() {
   const hash = useHash();
   const { settings, update } = useSettings();
   const voice = useVoiceStatus();
-  const onLesson = hash.startsWith('#/lesson');
-  const exampleCode = hash.startsWith('#/ex/') ? hash.slice('#/ex/'.length) : undefined;
+  const library = useLessonLibrary();
+
+  // Routes: #/ (lessons) · #/lesson/<id> (play) · #/types[/<code>] (exercise catalogue)
+  const lessonId = hash.startsWith('#/lesson/')
+    ? decodeURIComponent(hash.slice('#/lesson/'.length))
+    : undefined;
+  const onLesson = lessonId !== undefined;
+  const onTypes = hash.startsWith('#/types');
+  const exampleCode = hash.startsWith('#/types/') ? hash.slice('#/types/'.length) : undefined;
 
   // In a lesson the prompt audio plays by itself; in the catalogue it waits for a tap.
   useEffect(() => {
@@ -36,11 +44,11 @@ export function App() {
           <span lang="zh-CN">学</span> Dielingo
         </a>
         <nav className={styles.nav}>
-          <a href="#/" className={cx(styles.navLink, !onLesson && styles.navActive)}>
-            Exercises
+          <a href="#/" className={cx(styles.navLink, !onTypes && styles.navActive)}>
+            Lessons
           </a>
-          <a href="#/lesson" className={cx(styles.navLink, onLesson && styles.navActive)}>
-            Demo lesson
+          <a href="#/types" className={cx(styles.navLink, onTypes && styles.navActive)}>
+            Exercise types
           </a>
         </nav>
         <label className={styles.toggle}>
@@ -63,11 +71,14 @@ export function App() {
 
       <main className={styles.main}>
         {onLesson ? (
-          <div className={styles.card}>
-            <Lesson exercises={demoLesson} />
-          </div>
-        ) : (
+          <LessonPlayer
+            lesson={library.lessons.find((l) => l.id === lessonId)}
+            onComplete={library.recordCompletion}
+          />
+        ) : onTypes ? (
           <Gallery selectedCode={exampleCode} />
+        ) : (
+          <Lessons library={library} />
         )}
       </main>
     </div>

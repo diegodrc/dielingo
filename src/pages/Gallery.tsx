@@ -26,7 +26,7 @@ export function Gallery({ selectedCode }: { selectedCode?: string }) {
               {section.examples.map((e) => (
                 <li key={e.code}>
                   <a
-                    href={`#/ex/${e.code}`}
+                    href={`#/types/${e.code}`}
                     className={cx(styles.item, e.code === example.code && styles.itemActive)}
                     aria-current={e.code === example.code ? 'page' : undefined}
                   >

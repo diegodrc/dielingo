@@ -10,8 +10,46 @@ npm test
 npm run build
 ```
 
-- **Exercises** (`#/`): catalogue of the 17 examples, each with its config object.
-- **Demo lesson** (`#/lesson`): a lesson mixing the types, with progress and retries.
+- **Lessons** (`#/`): every lesson, with upload, download, and your completion history.
+- **Exercise types** (`#/types`): catalogue of the 17 examples, each with its config object.
+
+## Lessons
+
+A lesson is one `.json` file:
+
+```json
+{
+  "title": "First words",
+  "description": "Optional one-line summary.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": { "kind": "hanzi", "hanzi": "狗", "pinyin": "gǒu", "speak": true },
+      "options": [
+        { "id": "dog", "content": { "kind": "text", "text": "dog" } },
+        { "id": "cat", "content": { "kind": "text", "text": "cat" } }
+      ],
+      "answer": "dog"
+    }
+  ]
+}
+```
+
+`exercises` takes the same objects described below. There are two ways to add a lesson:
+
+- **Put the file in `lessons/`.** It ships with the site for everyone. Lessons are listed in
+  file-name order, so prefix them (`01-…`, `02-…`). The dev server picks up new files by
+  itself; a deployed site needs a rebuild.
+- **Upload it on the Lessons page** (button or drag and drop). It is saved in that browser's
+  localStorage only. Uploading a file with the same name replaces the earlier one. Uploaded
+  lessons can be deleted from the page.
+
+Files are validated when loaded; an invalid one is rejected with a list of what is wrong
+(for example `Exercise 3: "answer" must be the id of one of the options`). The quickest way
+to write a new lesson is to download an existing one from the page (⬇) and edit it.
+
+Completion (times finished and best accuracy) is also stored in the browser.
 
 ## How it works
 
@@ -89,13 +127,15 @@ The examples in `src/examples/` show a config for every exercise type; copy the 
 ## Layout
 
 ```
+lessons/        one .json file per lesson
 src/
-  lib/          types, content helpers (zh), grading, shuffle, speech, settings
+  lib/          types, content helpers (zh), grading, shuffle, speech, settings,
+                lessons (file format, validation, storage)
   components/
     primitives/ ContentView, AudioButton, HanziText, OptionCard
     exercises/  MultipleChoice, MatchPairs, WordBank, StrokeDraw, Story
     shell/      Exercise (dispatch by type), ExerciseFrame, Lesson
-  examples/     one config per exercise type + the demo lesson
-  pages/        Gallery
+  examples/     one config per exercise type
+  pages/        Lessons, LessonPlayer, Gallery
   index.ts      public exports
 ```

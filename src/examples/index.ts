@@ -1,4 +1,3 @@
-import type { ExerciseConfig } from '../lib/types';
 import { dialogue } from './dialogue';
 import { extras } from './extras';
 import { listening } from './listening';
@@ -17,19 +16,3 @@ export const sections: ExampleSection[] = [
 ];
 
 export const allExamples: Example[] = sections.flatMap((s) => s.examples);
-
-const pick = (code: string): ExerciseConfig => allExamples.find((e) => e.code === code)!.config;
-
-/** A short lesson mixing the exercise types, as a learner would see them. */
-export const demoLesson: ExerciseConfig[] = [
-  '1.1',
-  '1.4',
-  '1.2',
-  '2.2',
-  '1.5',
-  '3.1',
-  '4.1',
-  '2.4',
-  '3.2',
-  '4.3',
-].map(pick);
