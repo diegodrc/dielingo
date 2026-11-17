@@ -84,6 +84,11 @@ export function tapToSpeakEnabled(config: ExerciseConfig): boolean {
       return !config.pairs.some((p) => isAudio(p.left) || isAudio(p.right));
     case 'wordBank':
       return !isAudio(config.prompt) && !isPinyinPrompt(config.prompt);
+    // Hearing the word would give its pinyin or its parts away.
+    case 'typePinyin':
+    case 'buildCharacter':
+    case 'wordSearch':
+      return false;
     default:
       return true;
   }

@@ -33,6 +33,7 @@ export function WordBank({ config, onResult, onContinue }: ExerciseProps<WordBan
   const tapToSpeak = tapToSpeakEnabled(config);
   // When the prompt is the pinyin, pinyin on the tiles would be the answer.
   const tilePinyin = isPinyinPrompt(config.prompt) ? undefined : config.pinyin;
+  const lines = config.layout === 'lines';
 
   const place = (tile: Tile) => {
     if (!open) return;
@@ -68,7 +69,7 @@ export function WordBank({ config, onResult, onContinue }: ExerciseProps<WordBan
       canCheck={placed.length > 0}
       onCheck={check}
       onContinue={onContinue}
-      correctAnswer={joinTiles(config.answer)}
+      correctAnswer={lines ? config.answer.join(' / ') : joinTiles(config.answer)}
     >
       <div className={styles.prompt}>
         <TapToSpeakContext.Provider value={tapToSpeak}>
@@ -76,7 +77,7 @@ export function WordBank({ config, onResult, onContinue }: ExerciseProps<WordBan
         </TapToSpeakContext.Provider>
       </div>
 
-      <div className={styles.answerArea} aria-label="Your answer" role="group">
+      <div className={cx(styles.answerArea, lines && styles.answerLines)} aria-label="Your answer" role="group">
         {placed.map((tile) => (
           <button
             key={tile.id}
@@ -90,7 +91,7 @@ export function WordBank({ config, onResult, onContinue }: ExerciseProps<WordBan
         ))}
       </div>
 
-      <div className={styles.bank} aria-label="Word bank" role="group">
+      <div className={cx(styles.bank, lines && styles.bankLines)} aria-label="Word bank" role="group">
         {bank.map((tile) => {
           const used = placed.some((t) => t.id === tile.id);
           return (

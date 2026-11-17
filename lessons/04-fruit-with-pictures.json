@@ -5,35 +5,133 @@
     {
       "type": "multipleChoice",
       "instruction": "Select the correct image",
-      "prompt": { "kind": "hanzi", "hanzi": "苹果", "pinyin": "píngguǒ", "speak": true },
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "苹果",
+        "pinyin": "píngguǒ",
+        "speak": true
+      },
       "options": [
-        { "id": "apple", "content": { "kind": "image", "src": "images/fruits/apple.svg", "label": "apple" } },
-        { "id": "banana", "content": { "kind": "image", "src": "images/fruits/banana.svg", "label": "banana" } },
-        { "id": "orange", "content": { "kind": "image", "src": "images/fruits/orange.svg", "label": "orange" } },
-        { "id": "grapes", "content": { "kind": "image", "src": "images/fruits/grapes.svg", "label": "grapes" } }
+        {
+          "id": "apple",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/apple.svg",
+            "label": "apple"
+          }
+        },
+        {
+          "id": "banana",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/banana.svg",
+            "label": "banana"
+          }
+        },
+        {
+          "id": "orange",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/orange.svg",
+            "label": "orange"
+          }
+        },
+        {
+          "id": "grapes",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/grapes.svg",
+            "label": "grapes"
+          }
+        }
       ],
       "answer": "apple"
     },
     {
       "type": "multipleChoice",
       "instruction": "Select the correct image",
-      "prompt": { "kind": "hanzi", "hanzi": "西瓜", "pinyin": "xīguā", "speak": true },
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "西瓜",
+        "pinyin": "xīguā",
+        "speak": true
+      },
       "options": [
-        { "id": "watermelon", "content": { "kind": "image", "src": "images/fruits/watermelon.svg", "label": "watermelon" } },
-        { "id": "orange", "content": { "kind": "image", "src": "images/fruits/orange.svg", "label": "orange" } },
-        { "id": "apple", "content": { "kind": "image", "src": "images/fruits/apple.svg", "label": "apple" } },
-        { "id": "banana", "content": { "kind": "image", "src": "images/fruits/banana.svg", "label": "banana" } }
+        {
+          "id": "watermelon",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/watermelon.svg",
+            "label": "watermelon"
+          }
+        },
+        {
+          "id": "orange",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/orange.svg",
+            "label": "orange"
+          }
+        },
+        {
+          "id": "apple",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/apple.svg",
+            "label": "apple"
+          }
+        },
+        {
+          "id": "banana",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/banana.svg",
+            "label": "banana"
+          }
+        }
       ],
       "answer": "watermelon"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "苹果",
+      "pinyin": "píng guǒ",
+      "meaning": "apple"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "What is this?",
-      "prompt": { "kind": "image", "src": "images/fruits/banana.svg", "label": "banana" },
+      "prompt": {
+        "kind": "image",
+        "src": "images/fruits/banana.svg",
+        "label": "banana"
+      },
       "options": [
-        { "id": "banana", "content": { "kind": "hanzi", "hanzi": "香蕉", "pinyin": "xiāngjiāo" } },
-        { "id": "apple", "content": { "kind": "hanzi", "hanzi": "苹果", "pinyin": "píngguǒ" } },
-        { "id": "grapes", "content": { "kind": "hanzi", "hanzi": "葡萄", "pinyin": "pútao" } }
+        {
+          "id": "banana",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "香蕉",
+            "pinyin": "xiāngjiāo"
+          }
+        },
+        {
+          "id": "apple",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "苹果",
+            "pinyin": "píngguǒ"
+          }
+        },
+        {
+          "id": "grapes",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "葡萄",
+            "pinyin": "pútao"
+          }
+        }
       ],
       "answer": "banana"
     },
@@ -43,45 +141,135 @@
       "pairs": [
         {
           "id": "orange",
-          "left": { "kind": "image", "src": "images/fruits/orange.svg", "label": "orange" },
-          "right": { "kind": "hanzi", "hanzi": "橙子", "pinyin": "chéngzi" }
+          "left": {
+            "kind": "image",
+            "src": "images/fruits/orange.svg",
+            "label": "orange"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "橙子",
+            "pinyin": "chéngzi"
+          }
         },
         {
           "id": "grapes",
-          "left": { "kind": "image", "src": "images/fruits/grapes.svg", "label": "grapes" },
-          "right": { "kind": "hanzi", "hanzi": "葡萄", "pinyin": "pútao" }
+          "left": {
+            "kind": "image",
+            "src": "images/fruits/grapes.svg",
+            "label": "grapes"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "葡萄",
+            "pinyin": "pútao"
+          }
         },
         {
           "id": "watermelon",
-          "left": { "kind": "image", "src": "images/fruits/watermelon.svg", "label": "watermelon" },
-          "right": { "kind": "hanzi", "hanzi": "西瓜", "pinyin": "xīguā" }
+          "left": {
+            "kind": "image",
+            "src": "images/fruits/watermelon.svg",
+            "label": "watermelon"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "西瓜",
+            "pinyin": "xīguā"
+          }
         },
         {
           "id": "apple",
-          "left": { "kind": "image", "src": "images/fruits/apple.svg", "label": "apple" },
-          "right": { "kind": "hanzi", "hanzi": "苹果", "pinyin": "píngguǒ" }
+          "left": {
+            "kind": "image",
+            "src": "images/fruits/apple.svg",
+            "label": "apple"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "苹果",
+            "pinyin": "píngguǒ"
+          }
         }
       ]
     },
     {
       "type": "multipleChoice",
       "instruction": "Listen and select the image",
-      "prompt": { "kind": "audio", "speak": "葡萄" },
+      "prompt": {
+        "kind": "audio",
+        "speak": "葡萄"
+      },
       "options": [
-        { "id": "grapes", "content": { "kind": "image", "src": "images/fruits/grapes.svg", "label": "grapes" } },
-        { "id": "orange", "content": { "kind": "image", "src": "images/fruits/orange.svg", "label": "orange" } },
-        { "id": "banana", "content": { "kind": "image", "src": "images/fruits/banana.svg", "label": "banana" } },
-        { "id": "watermelon", "content": { "kind": "image", "src": "images/fruits/watermelon.svg", "label": "watermelon" } }
+        {
+          "id": "grapes",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/grapes.svg",
+            "label": "grapes"
+          }
+        },
+        {
+          "id": "orange",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/orange.svg",
+            "label": "orange"
+          }
+        },
+        {
+          "id": "banana",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/banana.svg",
+            "label": "banana"
+          }
+        },
+        {
+          "id": "watermelon",
+          "content": {
+            "kind": "image",
+            "src": "images/fruits/watermelon.svg",
+            "label": "watermelon"
+          }
+        }
       ],
       "answer": "grapes"
     },
     {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "西瓜"
+      },
+      "answer": "xīguā"
+    },
+    {
       "type": "wordBank",
       "instruction": "Write this in Chinese",
-      "prompt": { "kind": "text", "text": "I eat apples" },
-      "answer": ["我", "吃", "苹果"],
-      "distractors": ["香蕉", "喝", "你"],
-      "pinyin": { "我": "wǒ", "吃": "chī", "苹果": "píngguǒ", "香蕉": "xiāngjiāo", "喝": "hē", "你": "nǐ" }
+      "prompt": {
+        "kind": "text",
+        "text": "I eat apples"
+      },
+      "answer": [
+        "我",
+        "吃",
+        "苹果"
+      ],
+      "distractors": [
+        "香蕉",
+        "喝",
+        "你"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "吃": "chī",
+        "苹果": "píngguǒ",
+        "香蕉": "xiāngjiāo",
+        "喝": "hē",
+        "你": "nǐ"
+      }
     }
   ]
 }

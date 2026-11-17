@@ -155,6 +155,15 @@
       ]
     },
     {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "猫"
+      },
+      "answer": "māo"
+    },
+    {
       "type": "matchPairs",
       "instruction": "Match each character to its pinyin",
       "tapToSpeak": false,
@@ -215,6 +224,13 @@
           }
         }
       ]
+    },
+    {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "你好",
+      "pinyin": "nǐ hǎo",
+      "meaning": "hello"
     },
     {
       "type": "multipleChoice",

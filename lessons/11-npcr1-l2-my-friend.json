@@ -417,6 +417,13 @@
       "answer": "o1"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "爸爸",
+      "pinyin": "bà ba",
+      "meaning": "dad"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. Which pinyin has the right tones?",
       "prompt": {
@@ -572,6 +579,13 @@
       }
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "朋友",
+      "pinyin": "péng you",
+      "meaning": "friend"
+    },
+    {
       "type": "wordBank",
       "instruction": "Write this in Chinese",
       "prompt": {
@@ -678,6 +692,15 @@
         "都": "dōu",
         "是": "shì"
       }
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "朋友"
+      },
+      "answer": "péngyou"
     },
     {
       "type": "wordBank",
@@ -835,6 +858,71 @@
         "They",
         "also"
       ]
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "This is my dad, that is my mum."
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "这",
+            "pinyin": "zhè",
+            "hint": "this"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "爸爸，",
+            "pinyin": "bàba",
+            "hint": "dad"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "妈妈。",
+            "pinyin": "māma",
+            "hint": "mum"
+          }
+        ]
+      },
+      "answers": [
+        "是",
+        "那"
+      ],
+      "distractors": [
+        "哪",
+        "也"
+      ],
+      "pinyin": {
+        "是": "shì",
+        "那": "nà",
+        "哪": "nǎ",
+        "也": "yě"
+      }
     },
     {
       "type": "wordBank",
@@ -1289,6 +1377,21 @@
       "shuffle": false
     },
     {
+      "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Lin Na introduces her dad to Libo."
+      },
+      "layout": "lines",
+      "answer": [
+        "力波，这是我爸爸。",
+        "您好！认识您很高兴。",
+        "你好！你也学习汉语吗？",
+        "我学习汉语。"
+      ]
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. True or false: “The speaker’s mother is from Shanghai.”",
       "prompt": {
@@ -1643,6 +1746,21 @@
           ],
           "answer": "o1"
         }
+      ]
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Build the character",
+      "character": "妈",
+      "pinyin": "mā",
+      "meaning": "mum",
+      "parts": [
+        "女",
+        "马"
+      ],
+      "distractors": [
+        "口",
+        "子"
       ]
     },
     {

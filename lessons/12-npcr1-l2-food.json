@@ -371,6 +371,13 @@
       ]
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "饺子",
+      "pinyin": "jiǎo zi",
+      "meaning": "dumplings"
+    },
+    {
       "type": "matchPairs",
       "instruction": "Tap the matching pairs",
       "pairs": [
@@ -543,6 +550,15 @@
       "answer": "o1"
     },
     {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "吃"
+      },
+      "answer": "chī"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. Which pinyin has the right tones?",
       "prompt": {
@@ -643,6 +659,13 @@
         "好吃": "hǎochī",
         "和": "hé"
       }
+    },
+    {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "喜欢",
+      "pinyin": "xǐ huan",
+      "meaning": "to like"
     },
     {
       "type": "wordBank",
@@ -803,6 +826,64 @@
       }
     },
     {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "I like to eat noodles and dumplings."
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "喜欢",
+            "pinyin": "xǐhuan",
+            "hint": "to like"
+          },
+          {
+            "hanzi": "吃",
+            "pinyin": "chī",
+            "hint": "to eat"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "和",
+            "pinyin": "hé",
+            "hint": "and"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "。"
+          }
+        ]
+      },
+      "answers": [
+        "面条",
+        "饺子"
+      ],
+      "distractors": [
+        "包子",
+        "米饭"
+      ],
+      "pinyin": {
+        "面条": "miàntiáo",
+        "饺子": "jiǎozi",
+        "包子": "bāozi",
+        "米饭": "mǐfàn"
+      }
+    },
+    {
       "type": "wordBank",
       "instruction": "Write this in Chinese",
       "prompt": {
@@ -957,6 +1038,16 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type what you hear in pinyin",
+      "prompt": {
+        "kind": "audio",
+        "speak": "好吃",
+        "slow": true
+      },
+      "answer": "hǎochī"
     },
     {
       "type": "multipleChoice",
@@ -1440,6 +1531,21 @@
     },
     {
       "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Libo asks about lunch."
+      },
+      "layout": "lines",
+      "answer": [
+        "这是什么？",
+        "这是包子。",
+        "包子好吃吗？",
+        "很好吃！"
+      ]
+    },
+    {
+      "type": "wordBank",
       "instruction": "Write this in English",
       "prompt": {
         "kind": "sentence",
@@ -1513,6 +1619,21 @@
       ],
       "answer": "true",
       "shuffle": false
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Build the character",
+      "character": "吃",
+      "pinyin": "chī",
+      "meaning": "to eat",
+      "parts": [
+        "口",
+        "乞"
+      ],
+      "distractors": [
+        "女",
+        "气"
+      ]
     },
     {
       "type": "multipleChoice",
@@ -1636,6 +1757,22 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Which parts make up this character?",
+      "character": "饺",
+      "pinyin": "jiǎo",
+      "meaning": "(as in 饺子, dumplings)",
+      "parts": [
+        "饣",
+        "交"
+      ],
+      "distractors": [
+        "讠",
+        "文"
+      ],
+      "showCharacter": true
     },
     {
       "type": "wordBank",

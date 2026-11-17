@@ -2,6 +2,7 @@
 
 export * from './lib/types';
 export { zh, plainText, speakableText } from './lib/content';
+export { applyTone, numberedToMarks, normalizePinyin } from './lib/pinyin';
 export { SettingsProvider, useSettings, defaultSettings, type Settings } from './lib/settings';
 export { speak, useVoiceStatus } from './lib/speech';
 
@@ -14,6 +15,11 @@ export { MatchPairs } from './components/exercises/MatchPairs';
 export { WordBank } from './components/exercises/WordBank';
 export { StrokeDraw } from './components/exercises/StrokeDraw';
 export { Story } from './components/exercises/Story';
+export { TypePinyin } from './components/exercises/TypePinyin';
+export { Tones } from './components/exercises/Tones';
+export { FillBlanks } from './components/exercises/FillBlanks';
+export { BuildCharacter } from './components/exercises/BuildCharacter';
+export { WordSearch } from './components/exercises/WordSearch';
 
 export { ContentView } from './components/primitives/ContentView';
 export { AudioButton } from './components/primitives/AudioButton';

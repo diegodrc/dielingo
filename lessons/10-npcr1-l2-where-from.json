@@ -371,6 +371,13 @@
       "answer": "o1"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "中国",
+      "pinyin": "Zhōng guó",
+      "meaning": "China"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. Which pinyin has the right tones?",
       "prompt": {
@@ -449,6 +456,15 @@
       ],
       "answer": "o1",
       "layout": "grid"
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "美国"
+      },
+      "answer": "Měiguó"
     },
     {
       "type": "multipleChoice",
@@ -617,6 +633,13 @@
         "吗": "ma",
         "英国人": "Yīngguórén"
       }
+    },
+    {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "再见",
+      "pinyin": "zài jiàn",
+      "meaning": "goodbye"
     },
     {
       "type": "wordBank",
@@ -863,6 +886,71 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "Which country are you from? I’m American."
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "国",
+            "pinyin": "guó",
+            "hint": "country"
+          },
+          {
+            "hanzi": "人？",
+            "pinyin": "rén",
+            "hint": "person"
+          },
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "美国人。",
+            "pinyin": "Měiguórén",
+            "hint": "American"
+          }
+        ]
+      },
+      "answers": [
+        "哪",
+        "是"
+      ],
+      "distractors": [
+        "那",
+        "叫"
+      ],
+      "pinyin": {
+        "哪": "nǎ",
+        "是": "shì",
+        "那": "nà",
+        "叫": "jiào"
+      }
     },
     {
       "type": "multipleChoice",
@@ -1255,6 +1343,21 @@
       "shuffle": false
     },
     {
+      "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Dawei greets his teacher."
+      },
+      "layout": "lines",
+      "answer": [
+        "早上好！",
+        "早上好，陈老师！",
+        "你是哪国人？",
+        "我是美国人。"
+      ]
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. True or false: “She is from Beijing.”",
       "prompt": {
@@ -1307,6 +1410,21 @@
       "pinyin": "rén",
       "meaning": "person",
       "guide": "full"
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Build the character",
+      "character": "您",
+      "pinyin": "nín",
+      "meaning": "you (polite)",
+      "parts": [
+        "你",
+        "心"
+      ],
+      "distractors": [
+        "他",
+        "口"
+      ]
     },
     {
       "type": "strokeDraw",

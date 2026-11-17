@@ -1,5 +1,16 @@
 import { isChinese } from './content';
-import type { MultipleChoiceConfig, WordBankConfig } from './types';
+import { normalizePinyin } from './pinyin';
+import type { MultipleChoiceConfig, TypePinyinConfig, WordBankConfig } from './types';
+
+/** Typed pinyin: tone numbers or marks, spaces, capitals and punctuation don't matter. */
+export function gradePinyin(config: TypePinyinConfig, typed: string): boolean {
+  const keepTones = config.requireTones !== false;
+  const given = normalizePinyin(typed, keepTones);
+  return (
+    given.length > 0 &&
+    [config.answer, ...(config.acceptedAnswers ?? [])].some((a) => normalizePinyin(a, keepTones) === given)
+  );
+}
 
 export function gradeChoice(config: MultipleChoiceConfig, selectedId: string | null): boolean {
   return selectedId !== null && selectedId === config.answer;

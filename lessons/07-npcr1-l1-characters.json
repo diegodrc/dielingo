@@ -53,6 +53,22 @@
       "answer": "o1"
     },
     {
+      "type": "buildCharacter",
+      "instruction": "Which parts make up this character?",
+      "character": "请",
+      "pinyin": "qǐng",
+      "meaning": "please",
+      "parts": [
+        "讠",
+        "青"
+      ],
+      "distractors": [
+        "亻",
+        "月"
+      ],
+      "showCharacter": true
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Which two parts make up this character?",
       "prompt": {
@@ -189,6 +205,21 @@
       "answer": "o1"
     },
     {
+      "type": "buildCharacter",
+      "instruction": "Build the character",
+      "character": "呢",
+      "pinyin": "ne",
+      "meaning": "(and …?)",
+      "parts": [
+        "口",
+        "尼"
+      ],
+      "distractors": [
+        "女",
+        "门"
+      ]
+    },
+    {
       "type": "matchPairs",
       "instruction": "Match each pair of characters to the part they share",
       "pairs": [
@@ -248,6 +279,22 @@
           }
         }
       ]
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Which parts make up this character?",
+      "character": "很",
+      "pinyin": "hěn",
+      "meaning": "very",
+      "parts": [
+        "彳",
+        "艮"
+      ],
+      "distractors": [
+        "亻",
+        "良"
+      ],
+      "showCharacter": true
     },
     {
       "type": "multipleChoice",
@@ -387,6 +434,42 @@
         }
       ],
       "tapToSpeak": false
+    },
+    {
+      "type": "wordSearch",
+      "instruction": "Find the words",
+      "grid": [
+        "他我们忙都",
+        "吗很不你好",
+        "你呢好忙们"
+      ],
+      "words": [
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning": "we"
+        },
+        {
+          "word": "你好",
+          "pinyin": "nǐ hǎo",
+          "meaning": "hello"
+        },
+        {
+          "word": "你呢",
+          "pinyin": "nǐ ne",
+          "meaning": "and you?"
+        },
+        {
+          "word": "很好",
+          "pinyin": "hěn hǎo",
+          "meaning": "very good"
+        },
+        {
+          "word": "我不忙",
+          "pinyin": "wǒ bù máng",
+          "meaning": "I’m not busy"
+        }
+      ]
     },
     {
       "type": "multipleChoice",
@@ -677,6 +760,13 @@
       "answer": "o1"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "谢谢",
+      "pinyin": "xiè xie",
+      "meaning": "thank you"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. Which pinyin has the right tones?",
       "prompt": {
@@ -715,6 +805,15 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "谢谢"
+      },
+      "answer": "xièxie"
     },
     {
       "type": "multipleChoice",
@@ -767,12 +866,28 @@
       "answer": "o1"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "认识",
+      "pinyin": "rèn shi",
+      "meaning": "to meet"
+    },
+    {
       "type": "strokeDraw",
       "instruction": "Write the character",
       "character": "我",
       "pinyin": "wǒ",
       "meaning": "I, me",
       "guide": "faint"
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "高兴"
+      },
+      "answer": "gāoxìng"
     },
     {
       "type": "strokeDraw",

@@ -82,4 +82,34 @@ export const vocabulary: Example[] = [
       guide: 'full',
     },
   },
+  {
+    code: '1.6',
+    title: 'Build the character',
+    goal: 'Learn the parts characters are built from, and how they combine.',
+    config: {
+      type: 'buildCharacter',
+      instruction: 'Build the character',
+      character: '妈',
+      pinyin: 'mā',
+      meaning: 'mum',
+      parts: ['女', '马'],
+      distractors: ['口', '子', '门'],
+    },
+  },
+  {
+    code: '1.7',
+    title: 'Find the words',
+    goal: 'Recognise words among similar characters, in any direction.',
+    config: {
+      type: 'wordSearch',
+      instruction: 'Find the words',
+      grid: ['他我们忙', '吗很不你', '你呢好忙'],
+      words: [
+        { word: '我们', pinyin: 'wǒmen', meaning: 'we' },
+        { word: '你呢', pinyin: 'nǐ ne', meaning: 'and you?' },
+        { word: '很好', pinyin: 'hěn hǎo', meaning: 'very good' },
+        { word: '我不忙', pinyin: 'wǒ bù máng', meaning: 'I’m not busy' },
+      ],
+    },
+  },
 ];

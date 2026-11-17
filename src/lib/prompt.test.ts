@@ -24,7 +24,18 @@ describe('create-lesson prompt', () => {
     const types = blocks.filter((b) => b.type).map((b) => b.type);
     expect(new Set(kinds)).toEqual(new Set(['text', 'hanzi', 'audio', 'image', 'sentence', 'chat']));
     expect(new Set(types)).toEqual(
-      new Set(['multipleChoice', 'matchPairs', 'wordBank', 'strokeDraw', 'story']),
+      new Set([
+        'multipleChoice',
+        'matchPairs',
+        'wordBank',
+        'strokeDraw',
+        'story',
+        'typePinyin',
+        'tones',
+        'fillBlanks',
+        'buildCharacter',
+        'wordSearch',
+      ]),
     );
   });
 

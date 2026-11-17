@@ -80,6 +80,16 @@
       ]
     },
     {
+      "type": "typePinyin",
+      "instruction": "Type what you hear in pinyin",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我喝茶",
+        "slow": true
+      },
+      "answer": "wǒ hē chá"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Select the correct translation",
       "prompt": {
@@ -215,6 +225,77 @@
         }
       ],
       "answer": "ma"
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "I drink tea. Do you drink tea too?"
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "茶。",
+            "pinyin": "chá",
+            "hint": "tea"
+          },
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "喝",
+            "pinyin": "hē",
+            "hint": "to drink"
+          },
+          {
+            "hanzi": "茶",
+            "pinyin": "chá",
+            "hint": "tea"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "？"
+          }
+        ]
+      },
+      "answers": [
+        "喝",
+        "也",
+        "吗"
+      ],
+      "distractors": [
+        "吃",
+        "不",
+        "呢"
+      ],
+      "pinyin": {
+        "喝": "hē",
+        "也": "yě",
+        "吗": "ma",
+        "吃": "chī",
+        "不": "bù",
+        "呢": "ne"
+      }
     },
     {
       "type": "multipleChoice",
@@ -432,6 +513,20 @@
         }
       ],
       "answer": "student"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Li meets Anna and asks if she is a teacher."
+      },
+      "layout": "lines",
+      "answer": [
+        "你好！你是老师吗？",
+        "不是，我是学生。你呢？",
+        "我是老师。"
+      ]
     },
     {
       "type": "story",

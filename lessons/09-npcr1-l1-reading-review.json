@@ -592,6 +592,13 @@
       ]
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "最近",
+      "pinyin": "zuì jìn",
+      "meaning": "recently"
+    },
+    {
       "type": "wordBank",
       "instruction": "Write this in Chinese",
       "prompt": {
@@ -674,6 +681,16 @@
       }
     },
     {
+      "type": "typePinyin",
+      "instruction": "Type what you hear in pinyin",
+      "prompt": {
+        "kind": "audio",
+        "speak": "你叫什么名字",
+        "slow": true
+      },
+      "answer": "nǐ jiào shénme míngzi"
+    },
+    {
       "type": "wordBank",
       "instruction": "Build the sentence from the pinyin",
       "prompt": {
@@ -738,6 +755,82 @@
         "高兴": "gāoxìng",
         "不": "bù",
         "他": "tā"
+      }
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "My surname is Wang, I’m called Wang Xiaoyun. I’ve been busy lately."
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "姓",
+            "pinyin": "xìng",
+            "hint": "to have the surname"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "，"
+          },
+          {
+            "hanzi": "叫",
+            "pinyin": "jiào",
+            "hint": "to be called"
+          },
+          {
+            "hanzi": "王小云。",
+            "pinyin": "Wáng Xiǎoyún",
+            "hint": "(name) Wang Xiaoyun"
+          },
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "最近",
+            "pinyin": "zuìjìn",
+            "hint": "recently"
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "。"
+          }
+        ]
+      },
+      "answers": [
+        "王",
+        "忙"
+      ],
+      "distractors": [
+        "林",
+        "叫"
+      ],
+      "pinyin": {
+        "王": "Wáng",
+        "忙": "máng",
+        "林": "Lín",
+        "叫": "jiào"
       }
     },
     {
@@ -1088,6 +1181,21 @@
             "pinyin": "xièxie"
           }
         }
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Dawei meets a new classmate."
+      },
+      "layout": "lines",
+      "answer": [
+        "你好！请问你叫什么名字？",
+        "我姓王，叫王小云。你呢？",
+        "我叫马大为。认识你很高兴。",
+        "认识你我也很高兴。"
       ]
     },
     {

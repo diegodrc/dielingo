@@ -42,6 +42,13 @@
       "answer": "ma3"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "马",
+      "pinyin": "mǎ",
+      "meaning": "horse"
+    },
+    {
       "type": "matchPairs",
       "instruction": "Match each sound to its character",
       "pairs": [
@@ -90,6 +97,16 @@
           }
         }
       ]
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type what you hear in pinyin",
+      "prompt": {
+        "kind": "audio",
+        "speak": "麻",
+        "slow": true
+      },
+      "answer": "má"
     },
     {
       "type": "wordBank",

@@ -310,6 +310,13 @@
       "layout": "grid"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "请进",
+      "pinyin": "qǐng jìn",
+      "meaning": "please come in"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "How do you say this?",
       "prompt": {
@@ -397,6 +404,63 @@
         "坐": "zuò",
         "谢谢": "xièxie",
         "在": "zài"
+      }
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "Is Lin Na in? Yes. Please come in!"
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "林娜",
+            "pinyin": "Lín Nà",
+            "hint": "(name) Lin Na"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "吗？",
+            "pinyin": "ma",
+            "hint": "(question)"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "。"
+          },
+          {
+            "hanzi": "请",
+            "pinyin": "qǐng",
+            "hint": "please"
+          },
+          {
+            "hanzi": "进！",
+            "pinyin": "jìn",
+            "hint": "to come in"
+          }
+        ]
+      },
+      "answers": [
+        "在",
+        "在"
+      ],
+      "distractors": [
+        "坐",
+        "呢"
+      ],
+      "pinyin": {
+        "在": "zài",
+        "坐": "zuò",
+        "呢": "ne"
       }
     },
     {
@@ -499,6 +563,71 @@
         "很",
         "也"
       ]
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "We are all busy, and they are busy too."
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我们",
+            "pinyin": "wǒmen",
+            "hint": "we"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "忙，",
+            "pinyin": "máng",
+            "hint": "busy"
+          },
+          {
+            "hanzi": "他们",
+            "pinyin": "tāmen",
+            "hint": "they"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "忙。",
+            "pinyin": "máng",
+            "hint": "busy"
+          }
+        ]
+      },
+      "answers": [
+        "都",
+        "也"
+      ],
+      "distractors": [
+        "吗",
+        "不"
+      ],
+      "pinyin": {
+        "都": "dōu",
+        "也": "yě",
+        "吗": "ma",
+        "不": "bù"
+      }
     },
     {
       "type": "wordBank",
@@ -620,6 +749,16 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type what you hear in pinyin",
+      "prompt": {
+        "kind": "audio",
+        "speak": "请坐",
+        "slow": true
+      },
+      "answer": "qǐng zuò"
     },
     {
       "type": "multipleChoice",
@@ -1115,6 +1254,21 @@
       ]
     },
     {
+      "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Libo visits Song Hua."
+      },
+      "layout": "lines",
+      "answer": [
+        "请问，宋华在吗？",
+        "在。力波，请进！",
+        "谢谢！",
+        "请坐。"
+      ]
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. True or false: “Lin Na is in.”",
       "prompt": {
@@ -1167,6 +1321,21 @@
       ],
       "answer": "true",
       "shuffle": false
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Build the character",
+      "character": "进",
+      "pinyin": "jìn",
+      "meaning": "to come in",
+      "parts": [
+        "辶",
+        "井"
+      ],
+      "distractors": [
+        "讠",
+        "斤"
+      ]
     },
     {
       "type": "strokeDraw",

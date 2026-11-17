@@ -78,4 +78,27 @@ export const listening: Example[] = [
       distractors: ['student', 'He', 'not'],
     },
   },
+  {
+    code: '2.6',
+    title: 'Mark the tones',
+    goal: 'Hear each syllable’s tone and know how to write it.',
+    config: {
+      type: 'tones',
+      instruction: 'Choose the tone of each syllable',
+      word: '你好',
+      pinyin: 'nǐ hǎo',
+      meaning: 'hello',
+    },
+  },
+  {
+    code: '2.7',
+    title: 'Type the pinyin',
+    goal: 'Recall the pronunciation and spelling of a word, tones included.',
+    config: {
+      type: 'typePinyin',
+      instruction: 'Type the pinyin',
+      prompt: { kind: 'hanzi', hanzi: '谢谢' },
+      answer: 'xièxie',
+    },
+  },
 ];

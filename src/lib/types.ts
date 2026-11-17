@@ -135,6 +135,86 @@ export interface WordBankConfig extends BaseConfig {
    * is pinyin: the app hides it there anyway, since it would show the answer.
    */
   pinyin?: Record<string, string>;
+  /**
+   * inline: tiles flow like words in a sentence (default).
+   * lines: one tile per line, for putting whole sentences (a dialogue) in order.
+   */
+  layout?: 'inline' | 'lines';
+}
+
+/** Type the pinyin of a word or sentence. Covers 2.7. */
+export interface TypePinyinConfig extends BaseConfig {
+  type: 'typePinyin';
+  /** What to transcribe: Chinese without pinyin (hanzi or sentence), or audio. */
+  prompt: Content;
+  /** The pinyin, with tone marks: "nǐ hǎo". Spaces and capitals don't matter. */
+  answer: string;
+  /** Other spellings that are also correct. */
+  acceptedAnswers?: string[];
+  /** Set to false to accept answers without tones. Default: true. */
+  requireTones?: boolean;
+}
+
+/** Pick the tone of each syllable of a word. Covers 2.6. */
+export interface TonesConfig extends BaseConfig {
+  type: 'tones';
+  /** The word in characters: "你好". */
+  word: string;
+  /** Its pinyin with tone marks, one syllable per character, separated by spaces: "nǐ hǎo". */
+  pinyin: string;
+  meaning?: string;
+  /** Play the word (and show a speaker button). Default: true. */
+  speak?: boolean;
+}
+
+/** A sentence or short text with several gaps, filled from one word bank. Covers 4.4. */
+export interface FillBlanksConfig extends BaseConfig {
+  type: 'fillBlanks';
+  /** Optional context shown above, such as the English meaning. */
+  prompt?: Content;
+  /** The text, with one `"blank": true` token per gap. */
+  sentence: SentenceContent;
+  /** The word for each gap, in order. */
+  answers: string[];
+  /** Extra wrong words added to the bank. */
+  distractors?: string[];
+  /** Pinyin for Chinese bank words, keyed by word. */
+  pinyin?: Record<string, string>;
+}
+
+/** Build a character from its parts. Covers 1.6. */
+export interface BuildCharacterConfig extends BaseConfig {
+  type: 'buildCharacter';
+  /** One character: "妈". */
+  character: string;
+  pinyin?: string;
+  meaning?: string;
+  /** Its parts in reading order (left to right, top to bottom): ["女", "马"]. */
+  parts: string[];
+  /** Extra wrong parts added to the pieces. */
+  distractors?: string[];
+  /**
+   * false (default): show the sound and meaning, the learner builds the character.
+   * true: show the character, the learner picks the parts it is made of.
+   */
+  showCharacter?: boolean;
+}
+
+export interface SearchWord {
+  /** The word as it appears in the grid: "我们". */
+  word: string;
+  pinyin?: string;
+  /** Clue shown in the list. When given, the learner finds the word from its meaning. */
+  meaning?: string;
+}
+
+/** Find words hidden in a grid of characters. Covers 1.7. */
+export interface WordSearchConfig extends BaseConfig {
+  type: 'wordSearch';
+  /** Rows of the grid, all the same length: ["他我们忙都", "吗很不你好"]. */
+  grid: string[];
+  /** Words to find, each in a straight line (across, down or diagonal, either way). */
+  words: SearchWord[];
 }
 
 /** Trace a character stroke by stroke. Covers 1.5. */
@@ -181,7 +261,14 @@ export type ExerciseConfig =
   | MatchPairsConfig
   | WordBankConfig
   | StrokeDrawConfig
-  | StoryConfig;
+  | StoryConfig
+  | TypePinyinConfig
+  | TonesConfig
+  | FillBlanksConfig
+  | BuildCharacterConfig
+  | WordSearchConfig;
+
+export type ExerciseType = ExerciseConfig['type'];
 
 // ---------------------------------------------------------------------------
 // Component contract

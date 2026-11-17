@@ -287,6 +287,13 @@
       "answer": "o1"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "怎么样",
+      "pinyin": "zěn me yàng",
+      "meaning": "how is it going?"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. Which pinyin has the right tones?",
       "prompt": {
@@ -367,6 +374,15 @@
       "answer": "o1"
     },
     {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "忙"
+      },
+      "answer": "máng"
+    },
+    {
       "type": "wordBank",
       "instruction": "Write this in Chinese",
       "prompt": {
@@ -413,6 +429,13 @@
         "也": "yě",
         "吗": "ma"
       }
+    },
+    {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "不太忙",
+      "pinyin": "bú tài máng",
+      "meaning": "not very busy"
     },
     {
       "type": "wordBank",
@@ -466,6 +489,64 @@
         "什么": "shénme",
         "忙": "máng",
         "吗": "ma"
+      }
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "I’m very well too. And you?"
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "好。",
+            "pinyin": "hǎo",
+            "hint": "good, well"
+          },
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "？"
+          }
+        ]
+      },
+      "answers": [
+        "也",
+        "呢"
+      ],
+      "distractors": [
+        "吗",
+        "不"
+      ],
+      "pinyin": {
+        "也": "yě",
+        "呢": "ne",
+        "吗": "ma",
+        "不": "bù"
       }
     },
     {
@@ -593,6 +674,69 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "How have you been lately? I haven’t been very busy."
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "最近",
+            "pinyin": "zuìjìn",
+            "hint": "recently"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "？"
+          },
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "太",
+            "pinyin": "tài",
+            "hint": "too, very"
+          },
+          {
+            "hanzi": "忙。",
+            "pinyin": "máng",
+            "hint": "busy"
+          }
+        ]
+      },
+      "answers": [
+        "怎么样",
+        "不"
+      ],
+      "distractors": [
+        "什么",
+        "很"
+      ],
+      "pinyin": {
+        "怎么样": "zěnmeyàng",
+        "不": "bù",
+        "什么": "shénme",
+        "很": "hěn"
+      }
     },
     {
       "type": "multipleChoice",
@@ -865,6 +1009,16 @@
       "answer": "o1"
     },
     {
+      "type": "typePinyin",
+      "instruction": "Type what you hear in pinyin",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我很累",
+        "slow": true
+      },
+      "answer": "wǒ hěn lèi"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. True or false: “The speaker has been busy lately.”",
       "prompt": {
@@ -917,6 +1071,20 @@
       ],
       "answer": "false",
       "shuffle": false
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Two friends catch up."
+      },
+      "layout": "lines",
+      "answer": [
+        "你最近怎么样？",
+        "我很忙。你呢？",
+        "我不太忙。"
+      ]
     },
     {
       "type": "wordBank",
@@ -976,6 +1144,21 @@
       "pinyin": "bù",
       "meaning": "not",
       "guide": "full"
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Build the character",
+      "character": "忙",
+      "pinyin": "máng",
+      "meaning": "busy",
+      "parts": [
+        "忄",
+        "亡"
+      ],
+      "distractors": [
+        "彳",
+        "口"
+      ]
     },
     {
       "type": "strokeDraw",

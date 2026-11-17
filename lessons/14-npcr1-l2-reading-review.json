@@ -814,6 +814,13 @@
       }
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "面包",
+      "pinyin": "miàn bāo",
+      "meaning": "bread"
+    },
+    {
       "type": "wordBank",
       "instruction": "Write this in Chinese",
       "prompt": {
@@ -1187,6 +1194,16 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type what you hear in pinyin",
+      "prompt": {
+        "kind": "audio",
+        "speak": "他喜欢吃面条",
+        "slow": true
+      },
+      "answer": "tā xǐhuan chī miàntiáo"
     },
     {
       "type": "multipleChoice",
@@ -1635,6 +1652,89 @@
       "answer": "o1"
     },
     {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "This is Dawei. He is my friend, he is American."
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "这",
+            "pinyin": "zhè",
+            "hint": "this"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "大为，",
+            "pinyin": "Dàwéi",
+            "hint": "(name) Dawei"
+          },
+          {
+            "hanzi": "他",
+            "pinyin": "tā",
+            "hint": "he"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "，"
+          },
+          {
+            "hanzi": "他",
+            "pinyin": "tā",
+            "hint": "he"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "人。",
+            "pinyin": "rén",
+            "hint": "person"
+          }
+        ]
+      },
+      "answers": [
+        "朋友",
+        "美国"
+      ],
+      "distractors": [
+        "老师",
+        "英国"
+      ],
+      "pinyin": {
+        "朋友": "péngyou",
+        "美国": "Měiguó",
+        "老师": "lǎoshī",
+        "英国": "Yīngguó"
+      }
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen and choose the best answer",
       "prompt": {
@@ -1903,6 +2003,21 @@
         "Yīngyǔ",
         "xǐhuan",
         "shì"
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Dawei meets Teacher Wang."
+      },
+      "layout": "lines",
+      "answer": [
+        "您贵姓？",
+        "我姓王。",
+        "王老师，认识您很高兴！",
+        "认识你我也很高兴。"
       ]
     },
     {

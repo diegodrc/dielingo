@@ -255,3 +255,374 @@
     animation: none;
   }
 }
+
+/* ---- WordBank: one sentence per line (dialogue order) ---- */
+
+.answerLines,
+.bankLines {
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.answerLines {
+  background: none;
+  gap: 8px;
+}
+
+/* A used sentence leaves the bank instead of leaving an empty box behind. */
+.bankLines .tileUsed {
+  display: none;
+}
+
+.answerLines .tile,
+.bankLines .tile {
+  text-align: left;
+  padding: 10px 14px;
+}
+
+/* ---- TypePinyin ---- */
+
+.typeArea {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.typeInput {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface-2);
+  color: inherit;
+  font: inherit;
+  font-family: var(--font-pinyin);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.typeInput:focus {
+  outline: none;
+  border-color: var(--blue);
+  background: var(--surface);
+}
+
+.typePreview {
+  margin: 0;
+  color: var(--blue-dark);
+  font-family: var(--font-pinyin);
+  font-size: 1.2rem;
+}
+
+/* ---- Tones ---- */
+
+.toneWord {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-zh);
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.toneWord .meaning {
+  font-family: var(--font-ui);
+}
+
+.toneRows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toneRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toneIndex {
+  flex: none;
+  width: 36px;
+  font-family: var(--font-zh);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.toneChip {
+  flex: 1;
+  min-width: 0;
+  min-height: 48px;
+  padding: 6px 4px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: 0 3px 0 var(--border);
+  color: inherit;
+  font-family: var(--font-pinyin);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.toneChip:hover:not(:disabled) {
+  background: var(--surface-2);
+}
+
+.toneChip:disabled {
+  cursor: default;
+}
+
+.toneChosen {
+  background: var(--blue-bg);
+  border-color: var(--blue-border);
+  box-shadow: 0 3px 0 var(--blue-border);
+  color: var(--blue-dark);
+}
+
+.toneRight {
+  background: var(--ok-bg);
+  border-color: var(--ok-border);
+  box-shadow: 0 3px 0 var(--ok-border);
+  color: var(--ok-dark);
+}
+
+.toneWrong {
+  background: var(--bad-bg);
+  border-color: var(--bad-border);
+  box-shadow: 0 3px 0 var(--bad-border);
+  color: var(--bad-dark);
+}
+
+/* ---- FillBlanks ---- */
+
+.fillContext {
+  color: var(--muted);
+  text-align: center;
+}
+
+.fillSentence {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 16px;
+  line-height: 2.2;
+}
+
+.gap {
+  display: inline-grid;
+  place-items: center;
+  min-width: 3.2em;
+  min-height: 2.6rem;
+  margin: 0 2px;
+  padding: 2px 8px;
+  border: 0;
+  border-bottom: 3px solid var(--border-strong);
+  border-radius: 6px 6px 0 0;
+  background: var(--surface-2);
+  color: inherit;
+  font: inherit;
+  vertical-align: bottom;
+}
+
+.gapFilled {
+  border-bottom-color: var(--blue);
+  background: var(--blue-bg);
+  color: var(--blue-dark);
+  cursor: pointer;
+}
+
+.gap:disabled {
+  cursor: default;
+}
+
+.gapRight {
+  border-bottom-color: var(--ok-border);
+  background: var(--ok-bg);
+  color: var(--ok-dark);
+}
+
+.gapWrong {
+  border-bottom-color: var(--bad-border);
+  background: var(--bad-bg);
+  color: var(--bad-dark);
+}
+
+/* ---- BuildCharacter ---- */
+
+.buildHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.buildShown ruby,
+.buildShown > span[lang] {
+  font-size: 3.2rem;
+}
+
+.buildPinyin {
+  font-family: var(--font-pinyin);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.buildEquation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.buildTerm {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buildOperator {
+  color: var(--muted);
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.buildSlot,
+.buildResult {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border: 2px dashed var(--border-strong);
+  border-radius: 16px;
+  background: var(--surface-2);
+  color: inherit;
+  font-family: var(--font-zh);
+  font-size: 2.6rem;
+}
+
+.buildSlotFilled {
+  border-style: solid;
+  border-color: var(--blue-border);
+  background: var(--blue-bg);
+  color: var(--blue-dark);
+  cursor: pointer;
+}
+
+.buildSlot:disabled {
+  cursor: default;
+}
+
+.buildResult {
+  color: var(--muted);
+}
+
+.buildResultShown {
+  border-style: solid;
+  border-color: var(--ok-border);
+  background: var(--ok-bg);
+  color: var(--text);
+}
+
+.pieceTile {
+  min-width: 60px;
+  min-height: 60px;
+  font-family: var(--font-zh);
+  font-size: 1.8rem;
+}
+
+/* ---- WordSearch ---- */
+
+.searchGrid {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.searchCell {
+  aspect-ratio: 1;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: 0 3px 0 var(--border);
+  color: inherit;
+  font-family: var(--font-zh);
+  font-size: clamp(1.2rem, 6vw, 1.9rem);
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+
+.searchCell:hover {
+  background: var(--surface-2);
+}
+
+.searchFound {
+  background: var(--ok-bg);
+  border-color: var(--ok-border);
+  box-shadow: 0 3px 0 var(--ok-border);
+  color: var(--ok-dark);
+}
+
+.searchStart {
+  background: var(--blue-bg);
+  border-color: var(--blue);
+  box-shadow: 0 3px 0 var(--blue-border);
+  color: var(--blue-dark);
+}
+
+.searchWrong {
+  background: var(--bad-bg);
+  border-color: var(--bad-border);
+  animation: shake 0.35s;
+}
+
+.searchList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.searchItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+.searchItemDone {
+  border-color: var(--ok-border);
+  background: var(--ok-bg);
+  color: var(--ok-dark);
+}
+
+.searchWord {
+  font-family: var(--font-zh);
+  font-size: 1.15rem;
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .searchWrong {
+    animation: none;
+  }
+}

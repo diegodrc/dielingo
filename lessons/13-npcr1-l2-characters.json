@@ -87,6 +87,22 @@
       "answer": "o1"
     },
     {
+      "type": "buildCharacter",
+      "instruction": "Which parts make up this character?",
+      "character": "朋",
+      "pinyin": "péng",
+      "meaning": "(as in 朋友, friend)",
+      "parts": [
+        "月",
+        "月"
+      ],
+      "distractors": [
+        "日",
+        "目"
+      ],
+      "showCharacter": true
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Which two parts make up this character?",
       "prompt": {
@@ -247,6 +263,21 @@
             "text": "氵 water"
           }
         }
+      ]
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Build the character",
+      "character": "汉",
+      "pinyin": "hàn",
+      "meaning": "(as in 汉语, Chinese)",
+      "parts": [
+        "氵",
+        "又"
+      ],
+      "distractors": [
+        "讠",
+        "文"
       ]
     },
     {
@@ -471,6 +502,48 @@
       "answer": "o1",
       "tapToSpeak": false,
       "layout": "grid"
+    },
+    {
+      "type": "wordSearch",
+      "instruction": "Find the words",
+      "grid": [
+        "他您国喜子",
+        "汉不贵饺欢",
+        "语好是姓好",
+        "我这要吃人"
+      ],
+      "words": [
+        {
+          "word": "汉语",
+          "pinyin": "Hànyǔ",
+          "meaning": "Chinese (language)"
+        },
+        {
+          "word": "您贵姓",
+          "pinyin": "nín guìxìng",
+          "meaning": "what is your surname?"
+        },
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning": "to like"
+        },
+        {
+          "word": "饺子",
+          "pinyin": "jiǎozi",
+          "meaning": "dumplings"
+        },
+        {
+          "word": "他不是",
+          "pinyin": "tā bú shì",
+          "meaning": "he is not"
+        },
+        {
+          "word": "这是",
+          "pinyin": "zhè shì",
+          "meaning": "this is"
+        }
+      ]
     },
     {
       "type": "multipleChoice",
@@ -788,6 +861,13 @@
       "answer": "o1"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "老师",
+      "pinyin": "lǎo shī",
+      "meaning": "teacher"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. Which pinyin has the right tones?",
       "prompt": {
@@ -826,6 +906,15 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "汉语"
+      },
+      "answer": "Hànyǔ"
     },
     {
       "type": "multipleChoice",
@@ -868,6 +957,13 @@
       "answer": "o1"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "汉语",
+      "pinyin": "Hàn yǔ",
+      "meaning": "Chinese (language)"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. Which pinyin has the right tones?",
       "prompt": {
@@ -906,6 +1002,15 @@
         }
       ],
       "answer": "o1"
+    },
+    {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "点心"
+      },
+      "answer": "diǎnxin"
     },
     {
       "type": "strokeDraw",

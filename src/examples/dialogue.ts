@@ -68,4 +68,30 @@ export const dialogue: Example[] = [
       answer: 'student',
     },
   },
+  {
+    code: '4.4',
+    title: 'Fill several blanks',
+    goal: 'Use grammar words in context, several at a time.',
+    config: {
+      type: 'fillBlanks',
+      instruction: 'Fill in the blanks',
+      prompt: { kind: 'text', text: 'I drink tea. Do you drink tea too?' },
+      sentence: zh('我 ___ 茶。 你 ___ 喝 茶 ___ ？', 'wǒ _ chá nǐ _ hē chá', 'I | | tea | you | | drink | tea'),
+      answers: ['喝', '也', '吗'],
+      distractors: ['吃', '不', '呢'],
+      pinyin: { 喝: 'hē', 也: 'yě', 吗: 'ma', 吃: 'chī', 不: 'bù', 呢: 'ne' },
+    },
+  },
+  {
+    code: '4.5',
+    title: 'Put the dialogue in order',
+    goal: 'Follow how a conversation flows.',
+    config: {
+      type: 'wordBank',
+      instruction: 'Put the conversation in order',
+      prompt: { kind: 'text', text: 'Two people meet for the first time.' },
+      layout: 'lines',
+      answer: ['你好！你叫什么名字？', '我叫林娜。你呢？', '我叫马大为。', '认识你很高兴！'],
+    },
+  },
 ];

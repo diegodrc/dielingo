@@ -1,3 +1,6 @@
+import { isChinese } from './content';
+import { findWord, toCells } from './grid';
+import { stripTones, syllables, toneOf } from './pinyin';
 import type { ExerciseConfig } from './types';
 
 // ---------------------------------------------------------------------------
@@ -142,6 +145,9 @@ function checkExercise(exercise: unknown, at: string, problems: string[]): void 
         problems.push(`${at}: "distractors" must be a list of tiles`);
         return;
       }
+      if (exercise.layout !== undefined && !['inline', 'lines'].includes(exercise.layout as string)) {
+        problems.push(`${at}: "layout" must be inline or lines`);
+      }
       const accepted = exercise.acceptedAnswers;
       if (accepted === undefined) return;
       if (!Array.isArray(accepted) || !accepted.every(isTextList)) {
@@ -202,9 +208,106 @@ function checkExercise(exercise: unknown, at: string, problems: string[]): void 
       return;
     }
 
+    case 'typePinyin': {
+      checkContent(exercise.prompt, `${at}, prompt`, problems);
+      if (!isText(exercise.answer) || !/\p{L}/u.test(exercise.answer) || isChinese(exercise.answer)) {
+        problems.push(`${at}: "answer" must be the pinyin, with tone marks`);
+      }
+      if (exercise.acceptedAnswers !== undefined && !isTextList(exercise.acceptedAnswers)) {
+        problems.push(`${at}: "acceptedAnswers" must be a list of texts`);
+      }
+      // The prompt must not show what the learner has to type.
+      const prompt = exercise.prompt;
+      const showsPinyin =
+        isObject(prompt) &&
+        ((prompt.kind === 'hanzi' && prompt.pinyin) ||
+          (prompt.kind === 'sentence' && Array.isArray(prompt.tokens) && prompt.tokens.some((t) => isObject(t) && t.pinyin)));
+      if (showsPinyin) problems.push(`${at}: the prompt shows pinyin, which is the answer; leave "pinyin" out`);
+      return;
+    }
+
+    case 'tones': {
+      if (!isText(exercise.word) || !isChinese(exercise.word)) problems.push(`${at}: "word" must be in characters`);
+      if (!isText(exercise.pinyin)) {
+        problems.push(`${at}: needs the "pinyin" with tone marks`);
+        return;
+      }
+      const parts = syllables(exercise.pinyin);
+      if (parts.length === 0 || parts.some((p) => !/^\p{L}+$/u.test(p) || !/^[a-zü]+$/i.test(stripTones(p)))) {
+        problems.push(`${at}: "pinyin" must be letters only, one syllable per word, separated by spaces`);
+      }
+      if (parts.some((p) => [...p].filter((c) => toneOf(c) > 0).length > 1)) {
+        problems.push(`${at}: each syllable in "pinyin" can have only one tone mark`);
+      }
+      if (isText(exercise.word) && [...exercise.word].filter(isChinese).length !== parts.length) {
+        problems.push(`${at}: "pinyin" needs one syllable per character, separated by spaces ("nǐ hǎo")`);
+      }
+      return;
+    }
+
+    case 'fillBlanks': {
+      if (exercise.prompt !== undefined) checkContent(exercise.prompt, `${at}, prompt`, problems);
+      const sentence = exercise.sentence;
+      if (!isObject(sentence) || sentence.kind !== 'sentence') {
+        problems.push(`${at}: "sentence" must be a sentence object`);
+        return;
+      }
+      checkContent(sentence, `${at}, sentence`, problems);
+      const gaps = Array.isArray(sentence.tokens) ? sentence.tokens.filter((t) => isObject(t) && t.blank === true).length : 0;
+      if (gaps === 0) problems.push(`${at}: the sentence needs at least one "blank": true token`);
+      if (!isTextList(exercise.answers) || exercise.answers.length !== gaps) {
+        problems.push(`${at}: "answers" needs one word per blank (${gaps})`);
+      }
+      if (exercise.distractors !== undefined && !isTextList(exercise.distractors)) {
+        problems.push(`${at}: "distractors" must be a list of words`);
+      }
+      return;
+    }
+
+    case 'buildCharacter': {
+      const single = (v: unknown) => isText(v) && [...v].length === 1;
+      if (!single(exercise.character)) problems.push(`${at}: "character" must be exactly one character`);
+      if (!Array.isArray(exercise.parts) || exercise.parts.length < 2 || exercise.parts.length > 4 || !exercise.parts.every(single)) {
+        problems.push(`${at}: "parts" must be 2 to 4 single characters, in reading order`);
+      }
+      if (exercise.distractors !== undefined && (!Array.isArray(exercise.distractors) || !exercise.distractors.every(single))) {
+        problems.push(`${at}: "distractors" must be single characters`);
+      }
+      return;
+    }
+
+    case 'wordSearch': {
+      if (!isTextList(exercise.grid) || exercise.grid.length < 2) {
+        problems.push(`${at}: "grid" must be at least 2 rows of characters`);
+        return;
+      }
+      const grid = toCells(exercise.grid);
+      if (grid.some((row) => row.length !== grid[0].length) || grid[0].length < 2) {
+        problems.push(`${at}: every row of "grid" must have the same number of characters (at least 2)`);
+        return;
+      }
+      if (!Array.isArray(exercise.words) || exercise.words.length === 0) {
+        problems.push(`${at}: needs a non-empty "words" list`);
+        return;
+      }
+      const seen = new Set<string>();
+      exercise.words.forEach((w, i) => {
+        if (!isObject(w) || !isText(w.word) || [...w.word].length < 2) {
+          problems.push(`${at}, word ${i + 1}: needs a "word" of at least 2 characters`);
+          return;
+        }
+        if (seen.has(w.word)) problems.push(`${at}: "${w.word}" is listed twice`);
+        seen.add(w.word);
+        if (!findWord(grid, w.word)) {
+          problems.push(`${at}: "${w.word}" is not in the grid in a straight line`);
+        }
+      });
+      return;
+    }
+
     default:
       problems.push(
-        `${at}: unknown type ${JSON.stringify(exercise.type)} (use multipleChoice, matchPairs, wordBank, strokeDraw or story)`,
+        `${at}: unknown type ${JSON.stringify(exercise.type)} (use multipleChoice, matchPairs, wordBank, typePinyin, tones, fillBlanks, buildCharacter, wordSearch, strokeDraw or story)`,
       );
   }
 }

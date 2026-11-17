@@ -205,6 +205,13 @@
       "answer": "o1"
     },
     {
+      "type": "tones",
+      "instruction": "Choose the tone of each syllable",
+      "word": "名字",
+      "pinyin": "míng zi",
+      "meaning": "name"
+    },
+    {
       "type": "multipleChoice",
       "instruction": "Listen. Which pinyin has the right tones?",
       "prompt": {
@@ -318,6 +325,15 @@
       "layout": "grid"
     },
     {
+      "type": "typePinyin",
+      "instruction": "Type the pinyin",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "你好"
+      },
+      "answer": "nǐ hǎo"
+    },
+    {
       "type": "wordBank",
       "instruction": "Write this in Chinese",
       "prompt": {
@@ -395,6 +411,56 @@
         "姓": "xìng",
         "她": "tā",
         "名字": "míngzi"
+      }
+    },
+    {
+      "type": "fillBlanks",
+      "instruction": "Fill in the blanks",
+      "prompt": {
+        "kind": "text",
+        "text": "My surname is Lin, my name is Lin Na."
+      },
+      "sentence": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "林，",
+            "pinyin": "Lín",
+            "hint": "(surname Lin)"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "林娜。",
+            "pinyin": "Lín Nà",
+            "hint": "(name) Lin Na"
+          }
+        ]
+      },
+      "answers": [
+        "姓",
+        "叫"
+      ],
+      "distractors": [
+        "好",
+        "你"
+      ],
+      "pinyin": {
+        "姓": "xìng",
+        "叫": "jiào",
+        "好": "hǎo",
+        "你": "nǐ"
       }
     },
     {
@@ -835,6 +901,21 @@
     },
     {
       "type": "wordBank",
+      "instruction": "Put the conversation in order",
+      "prompt": {
+        "kind": "text",
+        "text": "Two classmates meet for the first time."
+      },
+      "layout": "lines",
+      "answer": [
+        "你好！",
+        "你好！请问你叫什么名字？",
+        "我叫林娜。你呢？",
+        "我叫马大为。认识你很高兴。"
+      ]
+    },
+    {
+      "type": "wordBank",
       "instruction": "Write the pinyin you hear",
       "prompt": {
         "kind": "audio",
@@ -879,6 +960,21 @@
       ],
       "answer": "true",
       "shuffle": false
+    },
+    {
+      "type": "buildCharacter",
+      "instruction": "Build the character",
+      "character": "好",
+      "pinyin": "hǎo",
+      "meaning": "good",
+      "parts": [
+        "女",
+        "子"
+      ],
+      "distractors": [
+        "口",
+        "马"
+      ]
     },
     {
       "type": "strokeDraw",

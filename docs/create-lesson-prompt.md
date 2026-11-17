@@ -19,14 +19,14 @@ use the default.
 2. **Level** — Absolute beginner, HSK 1, HSK 2, …? *Default: absolute beginner.*
 3. **Number of questions** — How many exercises? *Default: 10.*
 4. **Exercise types** — Do I want specific types (for example only listening, or only
-   matching and drawing), or a mix that explores all of them? Show me the list of 18 types
+   matching and drawing), or a mix that explores all of them? Show me the list of 24 types
    from "Exercise catalogue" below, by name only, so I can choose. *Default: a varied mix.*
 5. **Words I already know** — Any vocabulary you can rely on without teaching it?
    *Default: none; only use words the lesson itself introduces.*
 6. **Title** — A name for the lesson. *Default: you propose one.*
 
 If one of my answers is unclear or contradicts another (for example "5 questions exploring
-all 18 types"), ask a follow-up question before going on.
+all 24 types"), ask a follow-up question before going on.
 
 ### Step 2 — Show me a plan and wait for my OK
 
@@ -161,7 +161,7 @@ or `sentence` object) or `"blank": true` for the missing line. Use exactly one b
 ### Exercise objects
 
 Every exercise has a `type` and an optional `instruction` (the English heading, such as
-"What does this mean?"). There are five types.
+"What does this mean?"). There are ten types.
 
 When the learner taps Chinese text, the app reads it aloud. It turns this off by itself in
 exercises that contain `audio` content, where the sound is the answer. Any exercise can also
@@ -220,6 +220,9 @@ Options are shuffled by the app, so the position of the correct one does not mat
   out when the prompt is pinyin** ("Pinyin → characters" below): pinyin on the tiles would
   be the answer. The app hides it there anyway, and also turns off the tiles' sound.
 
+- `layout` (optional): `"inline"` (the default, tiles flow like words) or `"lines"` (one
+  tile per line). Use `"lines"` with whole sentences as tiles to put a dialogue in order.
+
 Grading is an exact match, so list every correct answer. English tiles are case-sensitive:
 capitalise only the first word and proper nouns, and leave out the final full stop.
 
@@ -251,6 +254,16 @@ capitalise only the first word and proper nouns, and leave out the final full st
   "answer": ["我", "是", "学生"],
   "distractors": ["老师", "你", "不"],
   "pinyin": { "我": "wǒ", "是": "shì", "学生": "xuésheng", "老师": "lǎoshī", "你": "nǐ", "不": "bù" }
+}
+```
+
+```json
+{
+  "type": "wordBank",
+  "instruction": "Put the conversation in order",
+  "prompt": { "kind": "text", "text": "Two people meet for the first time." },
+  "layout": "lines",
+  "answer": ["你好！你叫什么名字？", "我叫林娜。你呢？", "我叫马大为。", "认识你很高兴！"]
 }
 ```
 
@@ -330,57 +343,202 @@ Use 6 to 12 lines and 2 or 3 questions. Put each question right after the lines 
 }
 ```
 
+#### `typePinyin` — type the pinyin
+
+The learner types the pinyin of what they see or hear. They can type tones as numbers
+(`ni3 hao3`), which the app shows as marks. Spaces, capitals and punctuation don't matter.
+
+- `prompt`: what to transcribe: a `hanzi` or `sentence` **without** `pinyin`, or `audio`.
+  A prompt that shows pinyin is rejected, because it is the answer.
+- `answer`: the pinyin with tone marks, such as `"nǐ hǎo"`.
+- `acceptedAnswers` (optional): other spellings that are also correct.
+- `requireTones` (optional): `false` to accept answers without tones. Default `true`.
+
+Keep answers short: one word, or a sentence of up to five syllables.
+
+```json
+{
+  "type": "typePinyin",
+  "instruction": "Type the pinyin",
+  "prompt": { "kind": "hanzi", "hanzi": "谢谢" },
+  "answer": "xièxie"
+}
+```
+
+```json
+{
+  "type": "typePinyin",
+  "instruction": "Type what you hear in pinyin",
+  "prompt": { "kind": "audio", "speak": "我很忙", "slow": true },
+  "answer": "wǒ hěn máng"
+}
+```
+
+#### `tones` — choose the tone of each syllable
+
+The app plays the word, and for each syllable the learner picks one of five spellings
+(first to fourth tone, and the neutral tone).
+
+- `word`: the word in characters.
+- `pinyin`: its pinyin with tone marks, **one syllable per character, separated by spaces**:
+  `"Zhōng guó"`, not `"Zhōngguó"`. A syllable with no mark is the neutral tone (`"xiè xie"`).
+  Write the tones a dictionary gives, except 不 before a fourth tone, which is `bú`.
+- `meaning` (optional): shown next to the word.
+- `speak` (optional): `false` to test reading instead of listening. Default `true`.
+
+```json
+{
+  "type": "tones",
+  "instruction": "Choose the tone of each syllable",
+  "word": "你好",
+  "pinyin": "nǐ hǎo",
+  "meaning": "hello"
+}
+```
+
+#### `fillBlanks` — a sentence with several gaps
+
+The learner fills every gap from one word bank, in order.
+
+- `prompt` (optional): context shown above, usually the English meaning. Add it whenever
+  more than one word could fit a gap.
+- `sentence`: a `sentence` object with one `"blank": true` token (and `"hanzi": ""`) per gap.
+- `answers`: the word for each gap, in order. A word needed twice is listed twice.
+- `distractors` (optional): 2 or 3 wrong words. None of them may also fit its gap.
+- `pinyin` (optional): pinyin for Chinese bank words, as in `wordBank`.
+
+```json
+{
+  "type": "fillBlanks",
+  "instruction": "Fill in the blanks",
+  "prompt": { "kind": "text", "text": "I drink tea. Do you drink tea too?" },
+  "sentence": {
+    "kind": "sentence",
+    "tokens": [
+      { "hanzi": "我", "pinyin": "wǒ", "hint": "I" },
+      { "hanzi": "", "blank": true },
+      { "hanzi": "茶。", "pinyin": "chá", "hint": "tea" },
+      { "hanzi": "你", "pinyin": "nǐ", "hint": "you" },
+      { "hanzi": "", "blank": true },
+      { "hanzi": "喝", "pinyin": "hē", "hint": "drink" },
+      { "hanzi": "茶", "pinyin": "chá", "hint": "tea" },
+      { "hanzi": "", "blank": true },
+      { "hanzi": "？" }
+    ]
+  },
+  "answers": ["喝", "也", "吗"],
+  "distractors": ["吃", "不", "呢"],
+  "pinyin": { "喝": "hē", "也": "yě", "吗": "ma", "吃": "chī", "不": "bù", "呢": "ne" }
+}
+```
+
+#### `buildCharacter` — put a character together from its parts
+
+- `character`: one character.
+- `pinyin`, `meaning` (optional but recommended).
+- `parts`: 2 to 4 single characters or components, **in reading order** (left to right, top to
+  bottom): 妈 is `["女", "马"]`, 您 is `["你", "心"]`. Use the standard decomposition; when
+  unsure about a character, leave it out rather than guess.
+- `distractors` (optional): 2 or 3 wrong parts, ideally ones that look related.
+- `showCharacter` (optional): `true` shows the character and asks for its parts. The default,
+  `false`, shows only the sound and meaning, so the learner builds it.
+
+```json
+{
+  "type": "buildCharacter",
+  "instruction": "Build the character",
+  "character": "妈",
+  "pinyin": "mā",
+  "meaning": "mum",
+  "parts": ["女", "马"],
+  "distractors": ["口", "子", "门"]
+}
+```
+
+#### `wordSearch` — find words in a grid of characters
+
+The learner taps the first and last character of each word.
+
+- `grid`: the rows, each a string with **the same number of characters** (3 to 6 rows of 3 to
+  6). Fill the empty cells with other characters from the lesson.
+- `words`: 3 to 6 items of `{ "word", "pinyin"?, "meaning"? }`. Each word is 2 to 4 characters
+  and must lie in **a straight line**: across, down or diagonally, forwards or backwards.
+  With a `meaning`, the learner has to find the word from its meaning.
+
+Draw the grid on paper first and check every word letter by letter: the app rejects a file in
+which a word is not in the grid.
+
+```json
+{
+  "type": "wordSearch",
+  "instruction": "Find the words",
+  "grid": ["他我们忙", "吗很不你", "你呢好忙"],
+  "words": [
+    { "word": "我们", "pinyin": "wǒmen", "meaning": "we" },
+    { "word": "你呢", "pinyin": "nǐ ne", "meaning": "and you?" },
+    { "word": "很好", "pinyin": "hěn hǎo", "meaning": "very good" },
+    { "word": "我不忙", "pinyin": "wǒ bù máng", "meaning": "I’m not busy" }
+  ]
+}
+```
+
 ## Exercise catalogue
 
-These are the 18 exercise types learners know. Each one is one of the five `type`s above
-with a particular combination of content.
+These are the 24 exercise types learners know, numbered as on the app's "Exercise types"
+page. Each one is one of the ten `type`s above with a particular combination of content.
 
 **Vocabulary and characters**
 
 | # | Name | `type` | Prompt | Options / sides |
 |---|---|---|---|---|
-| 1 | New word with pictures | `multipleChoice` | `hanzi` with `pinyin` and `speak` | 4 × `image` |
-| 2 | Match English ↔ Chinese | `matchPairs` | — | `text` ↔ `hanzi` with `pinyin` |
-| 3 | Match character ↔ pinyin | `matchPairs` | — | `hanzi` (no `pinyin` field) ↔ `text` holding the pinyin; add `"tapToSpeak": false` |
-| 4 | Choose the meaning | `multipleChoice` | `hanzi` | 3–4 × `text` |
-| 5 | Draw the character | `strokeDraw` | — | — |
+| 1.1 | New word with pictures | `multipleChoice` | `hanzi` with `pinyin` and `speak` | 4 × `image` |
+| 1.2 | Match English ↔ Chinese | `matchPairs` | — | `text` ↔ `hanzi` with `pinyin` |
+| 1.3 | Match character ↔ pinyin | `matchPairs` | — | `hanzi` (no `pinyin` field) ↔ `text` holding the pinyin; add `"tapToSpeak": false` |
+| 1.4 | Choose the meaning | `multipleChoice` | `hanzi` | 3–4 × `text` |
+| 1.5 | Draw the character | `strokeDraw` | — | — |
+| 1.6 | Build the character | `buildCharacter` | — | parts + distractors |
+| 1.7 | Find the words | `wordSearch` | — | grid + words with meanings |
 
 **Pronunciation and listening**
 
 | # | Name | `type` | Prompt | Options / sides |
 |---|---|---|---|---|
-| 6 | Choose the right sound | `multipleChoice` | `hanzi` **without** `pinyin` or `speak` | 3–4 × `audio` |
-| 7 | Listen and choose the character | `multipleChoice` | `audio` | 4 × `hanzi` **without** `pinyin`, `"layout": "grid"` |
-| 8 | Match audio ↔ character | `matchPairs` | — | `audio` ↔ `hanzi` without `pinyin` |
-| 9 | Listen and build the sentence in Chinese | `wordBank` | `audio` with `"slow": true` | Chinese tiles |
-| 10 | Listen and translate into English | `wordBank` | `audio` with `"slow": true` | English tiles |
+| 2.1 | Choose the right sound | `multipleChoice` | `hanzi` **without** `pinyin` or `speak` | 3–4 × `audio` |
+| 2.2 | Listen and choose the character | `multipleChoice` | `audio` | 4 × `hanzi` **without** `pinyin`, `"layout": "grid"` |
+| 2.3 | Match audio ↔ character | `matchPairs` | — | `audio` ↔ `hanzi` without `pinyin` |
+| 2.4 | Listen and build the sentence in Chinese | `wordBank` | `audio` with `"slow": true` | Chinese tiles |
+| 2.5 | Listen and translate into English | `wordBank` | `audio` with `"slow": true` | English tiles |
+| 2.6 | Mark the tones | `tones` | — | — |
+| 2.7 | Type the pinyin | `typePinyin` | `hanzi` without `pinyin`, or `audio` | typed answer |
 
 **Translation**
 
 | # | Name | `type` | Prompt | Options / sides |
 |---|---|---|---|---|
-| 11 | English → Chinese | `wordBank` | `text` | Chinese tiles + distractors, with a `pinyin` map |
-| 12 | Chinese → English | `wordBank` | `sentence` with hints and `speak` | English tiles + distractors |
-| 13 | Choose the right translation | `multipleChoice` | `text` (or `sentence`) | 2–3 full sentences differing in one detail |
-| 14 | Pinyin → characters | `wordBank` | `text` holding the pinyin, e.g. `"Wǒ hē chá."` | Chinese tiles + distractors, **no** `pinyin` map |
+| 3.1 | English → Chinese | `wordBank` | `text` | Chinese tiles + distractors, with a `pinyin` map |
+| 3.2 | Chinese → English | `wordBank` | `sentence` with hints and `speak` | English tiles + distractors |
+| 3.3 | Choose the right translation | `multipleChoice` | `text` (or `sentence`) | 2–3 full sentences differing in one detail |
+| 3.4 | Pinyin → characters | `wordBank` | `text` holding the pinyin, e.g. `"Wǒ hē chá."` | Chinese tiles + distractors, **no** `pinyin` map |
 
 **Sentences and dialogue**
 
 | # | Name | `type` | Prompt | Options / sides |
 |---|---|---|---|---|
-| 15 | Fill in the blank | `multipleChoice` | `sentence` with one blank token | 3 × `hanzi` |
-| 16 | Choose the reply | `multipleChoice` | `sentence` (a question or remark) | 2 × `sentence` replies |
-| 17 | Complete the dialogue | `multipleChoice` | `chat` with one blank line | 2–3 × `sentence` |
+| 4.1 | Fill in the blank | `multipleChoice` | `sentence` with one blank token | 3 × `hanzi` |
+| 4.2 | Choose the reply | `multipleChoice` | `sentence` (a question or remark) | 2 × `sentence` replies |
+| 4.3 | Complete the dialogue | `multipleChoice` | `chat` with one blank line | 2–3 × `sentence` |
+| 4.4 | Fill several blanks | `fillBlanks` | optional English `text` | bank of words |
+| 4.5 | Put the dialogue in order | `wordBank` with `"layout": "lines"` | `text` describing the situation | 3–5 whole lines as tiles |
 
 **Extra**
 
 | # | Name | `type` | Prompt | Options / sides |
 |---|---|---|---|---|
-| 18 | Story | `story` | — | — |
+| 6.1 | Story | `story` | — | — |
 
 Notes for the listening types:
 
-- In types 6–10 the point is to hear the answer, so never show the answer's characters or
+- In types 2.1–2.5 the point is to hear the answer, so never show the answer's characters or
   pinyin in the prompt, and leave `pinyin` off character options that would give it away.
 - For "Choose the right sound", each audio option is a **different character** with the sound
   you want. For tones, use characters that differ only by tone, for example 妈 (mā), 麻 (má),
@@ -464,16 +622,21 @@ Check every point before you send the file. The app rejects files that break the
 
 1. The output is valid JSON: double quotes, no comments, no trailing commas.
 2. The top level has `title` and a non-empty `exercises` list.
-3. Every exercise `type` is one of `multipleChoice`, `matchPairs`, `wordBank`, `strokeDraw`,
-   `story`, and every content `kind` is one of `text`, `hanzi`, `audio`, `image`, `sentence`,
+3. Every exercise `type` is one of `multipleChoice`, `matchPairs`, `wordBank`, `typePinyin`,
+   `tones`, `fillBlanks`, `buildCharacter`, `wordSearch`, `strokeDraw`, `story`, and every content `kind` is one of `text`, `hanzi`, `audio`, `image`, `sentence`,
    `chat`.
 4. In every `multipleChoice` and every story question, `answer` equals the `id` of exactly
    one option, and ids are unique.
 5. In every `wordBank`, each tile used in `acceptedAnswers` is available in `answer` +
    `distractors` (a tile needed twice must be listed twice).
-6. Every `strokeDraw` has a single character.
-7. Exactly one option is correct, and no distractor is also a valid answer.
+6. Every `strokeDraw` and `buildCharacter` has a single character; every `tones` has one
+   pinyin syllable per character, separated by spaces; every `fillBlanks` has one answer per
+   blank; every `wordSearch` word lies in a straight line in a grid whose rows are all the
+   same length; no `typePinyin` prompt shows pinyin.
+7. Exactly one option is correct, and no distractor is also a valid answer (in
+   `fillBlanks`, no distractor may also fit its gap).
 8. Pinyin has tone marks and matches the characters; characters are simplified.
+   `buildCharacter` parts are the character's real components, in reading order.
 9. Listening exercises do not reveal the answer in text, and "Pinyin → characters"
    exercises have no `pinyin` map.
 10. The number of exercises and the types match what I asked for.

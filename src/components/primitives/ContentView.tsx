@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, type ReactNode } from 'react';
 import { cx } from '../../lib/cx';
 import { isChinese, sentenceText } from '../../lib/content';
 import { TapToSpeakContext, useSettings } from '../../lib/settings';
@@ -19,10 +19,18 @@ interface ContentViewProps {
   fill?: string;
   /** Size of the audio button next to Chinese text. Default: md. */
   audioSize?: 'sm' | 'md';
+  /** Renders each blank of a sentence (0-based blank number), for exercises with several gaps. */
+  renderBlank?: (index: number) => ReactNode;
 }
 
 /** Renders any `Content`. The one place that knows how each kind looks. */
-export function ContentView({ content, mode = 'prompt', fill, audioSize = 'md' }: ContentViewProps) {
+export function ContentView({
+  content,
+  mode = 'prompt',
+  fill,
+  audioSize = 'md',
+  renderBlank,
+}: ContentViewProps) {
   const interactive = mode === 'prompt';
 
   switch (content.kind) {
@@ -75,7 +83,13 @@ export function ContentView({ content, mode = 'prompt', fill, audioSize = 'md' }
 
     case 'sentence':
       return (
-        <SentenceView content={content} interactive={interactive} fill={fill} audioSize={audioSize} />
+        <SentenceView
+          content={content}
+          interactive={interactive}
+          fill={fill}
+          audioSize={audioSize}
+          renderBlank={renderBlank}
+        />
       );
 
     case 'chat':
@@ -88,15 +102,18 @@ function SentenceView({
   interactive,
   fill,
   audioSize,
+  renderBlank,
 }: {
   content: SentenceContent;
   interactive: boolean;
   fill?: string;
   audioSize: 'sm' | 'md';
+  renderBlank?: (index: number) => ReactNode;
 }) {
   const [openHint, setOpenHint] = useState<number | null>(null);
   const { settings } = useSettings();
   const tapToSpeak = useContext(TapToSpeakContext);
+  let blanks = 0;
 
   return (
     <span className={styles.row}>
@@ -106,6 +123,8 @@ function SentenceView({
       <span className={styles.sentence}>
         {content.tokens.map((token, i) => {
           if (token.blank) {
+            const index = blanks++;
+            if (renderBlank) return <span key={i}>{renderBlank(index)}</span>;
             return (
               <span key={i} className={cx(styles.blank, fill && styles.blankFilled)} lang="zh-CN">
                 {fill ?? ' '}
