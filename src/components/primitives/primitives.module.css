@@ -1,0 +1,356 @@
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.text {
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+/* ---- Chinese text ---- */
+
+.hanzi {
+  font-family: var(--font-zh);
+  font-size: 1.5rem;
+  line-height: 1.3;
+  ruby-position: over;
+}
+
+.pinyin {
+  font-family: var(--font-ui);
+  font-size: 0.55em;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  padding-bottom: 2px;
+}
+
+.promptHanzi .hanzi {
+  font-size: 3rem;
+}
+
+.promptHanzi .pinyin {
+  font-size: 0.4em;
+}
+
+/* ---- Audio ---- */
+
+.audioButton {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  border: 0;
+  border-radius: 14px;
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 4px 0 var(--blue-dark);
+  cursor: pointer;
+  transition: transform 0.05s, box-shadow 0.05s;
+}
+
+.audioButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--blue-dark);
+}
+
+.audio-sm {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.audio-md {
+  width: 48px;
+  height: 48px;
+  font-size: 26px;
+}
+
+.audio-lg {
+  width: 96px;
+  height: 96px;
+  font-size: 52px;
+  border-radius: 24px;
+}
+
+.audioSlow {
+  font-size: 22px;
+}
+
+.audioGlyph {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue);
+  font-size: 26px;
+}
+
+.wave {
+  width: 46px;
+  height: 18px;
+  background: repeating-linear-gradient(90deg, currentColor 0 3px, transparent 3px 7px);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, #000 35%, transparent 75%);
+  opacity: 0.7;
+}
+
+/* ---- Image ---- */
+
+.image {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.image img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+
+.emoji {
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.imageLabel {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* ---- Sentence ---- */
+
+.sentence {
+  display: inline-flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+}
+
+.tokenWrap {
+  position: relative;
+  display: inline-block;
+}
+
+.token {
+  border: 0;
+  background: none;
+  padding: 0 0 2px;
+  color: inherit;
+  cursor: pointer;
+  border-bottom: 2px dotted var(--border-strong);
+}
+
+.token:hover {
+  border-bottom-color: var(--blue);
+}
+
+.hint {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  padding: 8px 12px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.12);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.blank {
+  display: inline-block;
+  min-width: 2.5em;
+  padding: 0 6px;
+  border-bottom: 3px solid var(--border-strong);
+  font-family: var(--font-zh);
+  font-size: 1.5rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.blankFilled {
+  color: var(--blue-dark);
+  border-bottom-color: var(--blue);
+}
+
+/* ---- Chat ---- */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.chatLine {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.chatRight {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  font-size: 26px;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 10px 14px;
+  border: 2px solid var(--border);
+  border-radius: 16px 16px 16px 4px;
+  background: var(--surface);
+  font-family: var(--font-zh);
+  font-size: 1.3rem;
+}
+
+.chatRight .bubble {
+  border-radius: 16px 16px 4px 16px;
+  background: var(--blue-bg);
+  border-color: var(--blue-border);
+}
+
+.bubbleBlank {
+  min-width: 120px;
+  border-style: dashed;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ---- Option card ---- */
+
+.option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 58px;
+  padding: 12px 16px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 3px 0 var(--border);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, opacity 0.3s;
+}
+
+.option:hover:not(:disabled) {
+  background: var(--surface-2);
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.optionBody {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.badge {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.option-selected {
+  background: var(--blue-bg);
+  border-color: var(--blue-border);
+  box-shadow: 0 3px 0 var(--blue-border);
+  color: var(--blue-dark);
+}
+
+.option-selected:hover:not(:disabled) {
+  background: var(--blue-bg);
+}
+
+.option-selected .badge {
+  border-color: var(--blue-border);
+  color: var(--blue-dark);
+}
+
+.option-correct {
+  background: var(--ok-bg);
+  border-color: var(--ok-border);
+  box-shadow: 0 3px 0 var(--ok-border);
+  color: var(--ok-dark);
+}
+
+.option-wrong {
+  background: var(--bad-bg);
+  border-color: var(--bad-border);
+  box-shadow: 0 3px 0 var(--bad-border);
+  color: var(--bad-dark);
+  animation: shake 0.35s;
+}
+
+.option-matched {
+  background: var(--ok-bg);
+  border-color: var(--ok-border);
+  box-shadow: 0 3px 0 var(--ok-border);
+  animation: vanish 0.6s forwards;
+  pointer-events: none;
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+}
+
+@keyframes vanish {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .option-wrong {
+    animation: none;
+  }
+  .option-matched {
+    animation: none;
+    opacity: 0;
+  }
+}
