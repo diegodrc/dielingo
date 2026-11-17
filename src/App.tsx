@@ -6,6 +6,7 @@ import { useLessonLibrary } from './lib/useLessonLibrary';
 import { Gallery } from './pages/Gallery';
 import { LessonPlayer } from './pages/LessonPlayer';
 import { Lessons } from './pages/Lessons';
+import { isFirstVisit, Tutorial } from './pages/Tutorial';
 import styles from './pages/pages.module.css';
 
 function useHash(): string {
@@ -23,6 +24,11 @@ export function App() {
   const { settings, update } = useSettings();
   const voice = useVoiceStatus();
   const library = useLessonLibrary();
+  // Step of the tutorial that is open, or null. It opens by itself on the first
+  // visit, unless the visitor arrived straight into a lesson.
+  const [tutorialStep, setTutorialStep] = useState<number | null>(() =>
+    isFirstVisit() && !window.location.hash.startsWith('#/lesson/') ? 0 : null,
+  );
 
   // Routes: #/ (lessons) · #/lesson/<id> (play) · #/types[/<code>] (exercise catalogue)
   const lessonId = hash.startsWith('#/lesson/')
@@ -51,6 +57,15 @@ export function App() {
             Exercise types
           </a>
         </nav>
+        <button
+          type="button"
+          className={styles.help}
+          onClick={() => setTutorialStep(0)}
+          aria-label="How it works"
+          title="How it works"
+        >
+          ?
+        </button>
         <label className={styles.toggle}>
           <input
             type="checkbox"
@@ -78,9 +93,18 @@ export function App() {
         ) : onTypes ? (
           <Gallery selectedCode={exampleCode} />
         ) : (
-          <Lessons library={library} />
+          <Lessons library={library} onCreateWithAi={() => setTutorialStep(2)} />
         )}
       </main>
+
+      {tutorialStep !== null && (
+        <Tutorial
+          key={tutorialStep}
+          startStep={tutorialStep}
+          firstLessonId={onLesson ? undefined : library.lessons[0]?.id}
+          onClose={() => setTutorialStep(null)}
+        />
+      )}
     </div>
   );
 }

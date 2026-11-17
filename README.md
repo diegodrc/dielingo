@@ -51,6 +51,20 @@ to write a new lesson is to download an existing one from the page (⬇) and edi
 
 Completion (times finished and best accuracy) is also stored in the browser.
 
+### Writing a lesson with an AI assistant
+
+[docs/create-lesson-prompt.md](docs/create-lesson-prompt.md) is a ready-to-paste prompt. Give
+it to an AI assistant and it will ask what the lesson should teach, the level, how many
+questions and which exercise types, show a plan, and then produce the `.json` to upload. The
+same prompt can be copied from the app: **Lessons → Create with AI**. Every JSON example in
+it is checked against the app's validator by the test suite, so keep them valid when editing.
+
+### First-visit tutorial
+
+The first time someone opens the site, a three-step guide explains what Dielingo is, how to
+do a lesson, and how to create one with the prompt above. It is remembered in the browser
+and can be reopened with the **?** button in the header.
+
 ## How it works
 
 Every question is a plain object. Five components cover all 17 exercise types:
@@ -128,6 +142,7 @@ The examples in `src/examples/` show a config for every exercise type; copy the 
 
 ```
 lessons/        one .json file per lesson
+docs/           create-lesson-prompt.md (the prompt for AI assistants)
 src/
   lib/          types, content helpers (zh), grading, shuffle, speech, settings,
                 lessons (file format, validation, storage)
@@ -136,6 +151,6 @@ src/
     exercises/  MultipleChoice, MatchPairs, WordBank, StrokeDraw, Story
     shell/      Exercise (dispatch by type), ExerciseFrame, Lesson
   examples/     one config per exercise type
-  pages/        Lessons, LessonPlayer, Gallery
+  pages/        Lessons, LessonPlayer, Gallery, Tutorial
   index.ts      public exports
 ```

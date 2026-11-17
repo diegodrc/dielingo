@@ -71,6 +71,33 @@
   color: var(--blue-dark);
 }
 
+.help {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--muted);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+
+.help:hover {
+  background: var(--blue-bg);
+  border-color: var(--blue-border);
+  color: var(--blue-dark);
+}
+
+.headerActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 /* Pinyin switch */
 .toggle {
   display: inline-flex;

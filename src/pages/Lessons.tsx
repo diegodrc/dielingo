@@ -8,7 +8,13 @@ import styles from './pages.module.css';
 type Library = ReturnType<typeof useLessonLibrary>;
 
 /** Home page: every lesson from the folder and from this browser, plus upload. */
-export function Lessons({ library }: { library: Library }) {
+interface LessonsProps {
+  library: Library;
+  /** Opens the guide on how to have an AI assistant write a lesson. */
+  onCreateWithAi: () => void;
+}
+
+export function Lessons({ library, onCreateWithAi }: LessonsProps) {
   const { lessons, progress, importFiles, removeLesson } = library;
   const input = useRef<HTMLInputElement>(null);
   const [results, setResults] = useState<ImportResult[]>([]);
@@ -39,13 +45,18 @@ export function Lessons({ library }: { library: Library }) {
           <h1>Lessons</h1>
           <p>Pick a lesson to practise, or add your own from a .json file.</p>
         </div>
-        <button
-          type="button"
-          className={cx(shell.button, shell.primary)}
-          onClick={() => input.current?.click()}
-        >
-          Upload lesson
-        </button>
+        <div className={styles.headerActions}>
+          <button type="button" className={cx(shell.button, shell.secondary)} onClick={onCreateWithAi}>
+            ✨ Create with AI
+          </button>
+          <button
+            type="button"
+            className={cx(shell.button, shell.primary)}
+            onClick={() => input.current?.click()}
+          >
+            Upload lesson
+          </button>
+        </div>
         <input
           ref={input}
           type="file"
@@ -160,7 +171,11 @@ export function Lessons({ library }: { library: Library }) {
             <button type="button" className={styles.linkButton} onClick={() => input.current?.click()}>
               browse
             </button>
-            . Download an existing lesson to use as a template.
+            . No file yet?{' '}
+            <button type="button" className={styles.linkButton} onClick={onCreateWithAi}>
+              Create one with AI
+            </button>
+            .
           </span>
         </div>
       </div>
