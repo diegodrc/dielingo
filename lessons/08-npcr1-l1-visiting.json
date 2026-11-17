@@ -1,0 +1,1524 @@
+{
+  "title": "NPCR 1.1 · Visiting a friend",
+  "description": "Ask if someone is in, invite them in, and talk about “we” and “they”. Based on New Practical Chinese Reader 1, Lesson 1.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "请进",
+        "pinyin": "qǐng jìn",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "🚪",
+            "label": "come in"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🪑",
+            "label": "sit"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🙏",
+            "label": "thank you"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "👋",
+            "label": "hello"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "请坐",
+        "pinyin": "qǐng zuò",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "🪑",
+            "label": "sit"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🚪",
+            "label": "come in"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🙏",
+            "label": "thank you"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "👋",
+            "label": "hello"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "谢谢",
+        "pinyin": "xièxie",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "🙏",
+            "label": "thank you"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🚪",
+            "label": "come in"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🪑",
+            "label": "sit"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "👋",
+            "label": "hello"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "please"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "请",
+            "pinyin": "qǐng"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "to come in"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "进",
+            "pinyin": "jìn"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "to sit"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "坐",
+            "pinyin": "zuò"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "thank you"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "谢谢",
+            "pinyin": "xièxie"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "to be here"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "在",
+            "pinyin": "zài"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "we"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "我们",
+            "pinyin": "wǒmen"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "you (plural)"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "你们",
+            "pinyin": "nǐmen"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "they"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "他们",
+            "pinyin": "tāmen"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "all, both"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "都",
+            "pinyin": "dōu"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "also, too"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "也",
+            "pinyin": "yě"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What do you hear?",
+      "prompt": {
+        "kind": "audio",
+        "speak": "坐"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "坐"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "在"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "进"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "请"
+          }
+        }
+      ],
+      "answer": "o1",
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "How do you say this?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "进"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "audio",
+            "speak": "进"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "audio",
+            "speak": "请"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "audio",
+            "speak": "叫"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "audio",
+            "speak": "坐"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Is Lin Na in?"
+      },
+      "answer": [
+        "林娜",
+        "在",
+        "吗"
+      ],
+      "distractors": [
+        "呢",
+        "请",
+        "忙"
+      ],
+      "pinyin": {
+        "林娜": "Lín Nà",
+        "在": "zài",
+        "吗": "ma",
+        "呢": "ne",
+        "请": "qǐng",
+        "忙": "máng"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Please come in, please sit down."
+      },
+      "answer": [
+        "请",
+        "进",
+        "请",
+        "坐"
+      ],
+      "distractors": [
+        "谢谢",
+        "在"
+      ],
+      "pinyin": {
+        "请": "qǐng",
+        "进": "jìn",
+        "坐": "zuò",
+        "谢谢": "xièxie",
+        "在": "zài"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "We are all very well."
+      },
+      "answer": [
+        "我们",
+        "都",
+        "很",
+        "好"
+      ],
+      "distractors": [
+        "也",
+        "他们",
+        "不"
+      ],
+      "pinyin": {
+        "我们": "wǒmen",
+        "都": "dōu",
+        "很": "hěn",
+        "好": "hǎo",
+        "也": "yě",
+        "他们": "tāmen",
+        "不": "bù"
+      }
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "他们",
+            "pinyin": "tāmen",
+            "hint": "they, them"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "忙。",
+            "pinyin": "máng",
+            "hint": "busy"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "都",
+            "pinyin": "dōu"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "吗",
+            "pinyin": "ma"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "呢",
+            "pinyin": "ne"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Build the sentence from the pinyin",
+      "prompt": {
+        "kind": "text",
+        "text": "Lìbō bú tài lèi."
+      },
+      "answer": [
+        "力波",
+        "不",
+        "太",
+        "累"
+      ],
+      "distractors": [
+        "很",
+        "也"
+      ],
+      "pinyin": {
+        "力波": "Lìbō",
+        "不": "bù",
+        "太": "tài",
+        "累": "lèi",
+        "很": "hěn",
+        "也": "yě"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Build the sentence from the pinyin",
+      "prompt": {
+        "kind": "text",
+        "text": "Rènshi nǐ wǒ yě hěn gāoxìng."
+      },
+      "answer": [
+        "认识",
+        "你",
+        "我",
+        "也",
+        "很",
+        "高兴"
+      ],
+      "distractors": [
+        "不"
+      ],
+      "pinyin": {
+        "认识": "rènshi",
+        "你": "nǐ",
+        "我": "wǒ",
+        "也": "yě",
+        "很": "hěn",
+        "高兴": "gāoxìng",
+        "不": "bù"
+      }
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the best reply",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "请问，",
+            "pinyin": "qǐngwèn",
+            "hint": "excuse me, may I ask"
+          },
+          {
+            "hanzi": "林娜",
+            "pinyin": "Lín Nà",
+            "hint": "(name) Lin Na"
+          },
+          {
+            "hanzi": "在",
+            "pinyin": "zài",
+            "hint": "to be in, to be here"
+          },
+          {
+            "hanzi": "吗？",
+            "pinyin": "ma",
+            "hint": "(yes/no question)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "在。",
+                "pinyin": "zài",
+                "hint": "to be in, to be here"
+              },
+              {
+                "hanzi": "请",
+                "pinyin": "qǐng",
+                "hint": "please"
+              },
+              {
+                "hanzi": "进！",
+                "pinyin": "jìn",
+                "hint": "to come in, to enter"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "忙。",
+                "pinyin": "máng",
+                "hint": "busy"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "hint": "she, her"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "林娜。",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Libo",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "请问，",
+                  "pinyin": "qǐngwèn",
+                  "hint": "excuse me, may I ask"
+                },
+                {
+                  "hanzi": "宋华",
+                  "pinyin": "Sòng Huá",
+                  "hint": "(name) Song Hua"
+                },
+                {
+                  "hanzi": "在",
+                  "pinyin": "zài",
+                  "hint": "to be in, to be here"
+                },
+                {
+                  "hanzi": "吗？",
+                  "pinyin": "ma",
+                  "hint": "(yes/no question)"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Song Hua",
+            "avatar": "👨",
+            "side": "right",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "在。",
+                  "pinyin": "zài",
+                  "hint": "to be in, to be here"
+                },
+                {
+                  "hanzi": "力波，",
+                  "pinyin": "Lìbō",
+                  "hint": "(name) Libo"
+                },
+                {
+                  "hanzi": "请",
+                  "pinyin": "qǐng",
+                  "hint": "please"
+                },
+                {
+                  "hanzi": "进，",
+                  "pinyin": "jìn",
+                  "hint": "to come in, to enter"
+                },
+                {
+                  "hanzi": "请",
+                  "pinyin": "qǐng",
+                  "hint": "please"
+                },
+                {
+                  "hanzi": "坐。",
+                  "pinyin": "zuò",
+                  "hint": "to sit"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Libo",
+            "avatar": "🧑",
+            "blank": true
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "谢谢！",
+                "pinyin": "xièxie",
+                "hint": "thank you"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "力波。",
+                "pinyin": "Lìbō",
+                "hint": "(name) Libo"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "呢？",
+                "pinyin": "ne",
+                "hint": "(and …? follow-up question)"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Song Hua",
+            "avatar": "👨",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "你们",
+                  "pinyin": "nǐmen",
+                  "hint": "you (plural)"
+                },
+                {
+                  "hanzi": "最近",
+                  "pinyin": "zuìjìn",
+                  "hint": "recently, lately"
+                },
+                {
+                  "hanzi": "怎么样？",
+                  "pinyin": "zěnmeyàng",
+                  "hint": "how (is it going)?"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Lin Na",
+            "avatar": "👩",
+            "side": "right",
+            "blank": true
+          },
+          {
+            "speaker": "Song Hua",
+            "avatar": "👨",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "我",
+                  "pinyin": "wǒ",
+                  "hint": "I, me"
+                },
+                {
+                  "hanzi": "也",
+                  "pinyin": "yě",
+                  "hint": "also, too"
+                },
+                {
+                  "hanzi": "很",
+                  "pinyin": "hěn",
+                  "hint": "very"
+                },
+                {
+                  "hanzi": "好。",
+                  "pinyin": "hǎo",
+                  "hint": "good, well"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "hint": "we, us"
+              },
+              {
+                "hanzi": "都",
+                "pinyin": "dōu",
+                "hint": "all, both"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好。",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "呢？",
+                "pinyin": "ne",
+                "hint": "(and …? follow-up question)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "hint": "we, us"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "林娜。",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "请",
+                "pinyin": "qǐng",
+                "hint": "please"
+              },
+              {
+                "hanzi": "坐。",
+                "pinyin": "zuò",
+                "hint": "to sit"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each line to its reply",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "累",
+                "pinyin": "lèi",
+                "hint": "tired"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              }
+            ]
+          },
+          "right": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "太",
+                "pinyin": "tài",
+                "hint": "too, very"
+              },
+              {
+                "hanzi": "累。",
+                "pinyin": "lèi",
+                "hint": "tired"
+              }
+            ]
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "最近",
+                "pinyin": "zuìjìn",
+                "hint": "recently, lately"
+              },
+              {
+                "hanzi": "怎么样？",
+                "pinyin": "zěnmeyàng",
+                "hint": "how (is it going)?"
+              }
+            ]
+          },
+          "right": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "忙。",
+                "pinyin": "máng",
+                "hint": "busy"
+              }
+            ]
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "饿。",
+                "pinyin": "è",
+                "hint": "hungry"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "呢？",
+                "pinyin": "ne",
+                "hint": "(and …? follow-up question)"
+              }
+            ]
+          },
+          "right": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "饿。",
+                "pinyin": "è",
+                "hint": "hungry"
+              }
+            ]
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "什么",
+                "pinyin": "shénme",
+                "hint": "what"
+              },
+              {
+                "hanzi": "名字？",
+                "pinyin": "míngzi",
+                "hint": "name"
+              }
+            ]
+          },
+          "right": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "林娜。",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “Lin Na is in.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "林娜不在。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "false",
+      "shuffle": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “They are all happy.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "他们都很高兴。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "true",
+      "shuffle": false
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Trace the character",
+      "character": "在",
+      "pinyin": "zài",
+      "meaning": "to be in, to be here",
+      "guide": "full"
+    },
+    {
+      "type": "story",
+      "instruction": "Read and listen",
+      "title": "At Song Hua’s door",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              },
+              {
+                "hanzi": "请问，",
+                "pinyin": "qǐngwèn",
+                "hint": "excuse me, may I ask"
+              },
+              {
+                "hanzi": "宋华",
+                "pinyin": "Sòng Huá",
+                "hint": "(name) Song Hua"
+              },
+              {
+                "hanzi": "在",
+                "pinyin": "zài",
+                "hint": "to be in, to be here"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              }
+            ]
+          },
+          "translation": "Hello! Excuse me, is Song Hua in?"
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "在。",
+                "pinyin": "zài",
+                "hint": "to be in, to be here"
+              },
+              {
+                "hanzi": "请",
+                "pinyin": "qǐng",
+                "hint": "please"
+              },
+              {
+                "hanzi": "进！",
+                "pinyin": "jìn",
+                "hint": "to come in, to enter"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "谢谢！",
+                "pinyin": "xièxie",
+                "hint": "thank you"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Is Song Hua at home?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "No"
+            },
+            {
+              "id": "o1",
+              "text": "Yes"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Song Hua",
+          "avatar": "👨",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "力波，",
+                "pinyin": "Lìbō",
+                "hint": "(name) Libo"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              },
+              {
+                "hanzi": "请",
+                "pinyin": "qǐng",
+                "hint": "please"
+              },
+              {
+                "hanzi": "坐。",
+                "pinyin": "zuò",
+                "hint": "to sit"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "谢谢。",
+                "pinyin": "xièxie",
+                "hint": "thank you"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "最近",
+                "pinyin": "zuìjìn",
+                "hint": "recently, lately"
+              },
+              {
+                "hanzi": "怎么样？",
+                "pinyin": "zěnmeyàng",
+                "hint": "how (is it going)?"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Song Hua",
+          "avatar": "👨",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "忙，",
+                "pinyin": "máng",
+                "hint": "busy"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "累。",
+                "pinyin": "lèi",
+                "hint": "tired"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "呢？",
+                "pinyin": "ne",
+                "hint": "(and …? follow-up question)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "How has Song Hua been?",
+          "options": [
+            {
+              "id": "o3",
+              "text": "Not busy"
+            },
+            {
+              "id": "o1",
+              "text": "Busy and tired"
+            },
+            {
+              "id": "o2",
+              "text": "Hungry and thirsty"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "太",
+                "pinyin": "tài",
+                "hint": "too, very"
+              },
+              {
+                "hanzi": "忙。",
+                "pinyin": "máng",
+                "hint": "busy"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "饿！",
+                "pinyin": "è",
+                "hint": "hungry"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Song Hua",
+          "avatar": "👨",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "饿。",
+                "pinyin": "è",
+                "hint": "hungry"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "What do Libo and Song Hua have in common?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "They are both very busy"
+            },
+            {
+              "id": "o1",
+              "text": "They are both hungry"
+            }
+          ],
+          "answer": "o1"
+        }
+      ]
+    }
+  ]
+}

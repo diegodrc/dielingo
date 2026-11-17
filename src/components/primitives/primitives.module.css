@@ -158,6 +158,11 @@ button:hover:not(:disabled) .emoji {
   gap: 4px 6px;
 }
 
+/* Inside a card, a sentence that wraps stays centred. */
+.optionBody .sentence {
+  justify-content: center;
+}
+
 .tokenWrap {
   position: relative;
   display: inline-block;

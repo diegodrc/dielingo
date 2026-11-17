@@ -1,0 +1,892 @@
+{
+  "title": "NPCR 1.1 · Hello, what’s your name?",
+  "description": "Greet someone, ask their name and say yours. Based on New Practical Chinese Reader 1, Lesson 1.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "你好",
+        "pinyin": "nǐ hǎo",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "Hello"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "Thank you"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "Please come in"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "name"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "名字",
+            "pinyin": "míngzi"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "what"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "什么",
+            "pinyin": "shénme"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "to be called"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "叫",
+            "pinyin": "jiào"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "to have the surname"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "姓",
+            "pinyin": "xìng"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "happy, glad"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "高兴",
+            "pinyin": "gāoxìng"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each word to its pinyin",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "姓"
+          },
+          "right": {
+            "kind": "text",
+            "text": "xìng"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "叫"
+          },
+          "right": {
+            "kind": "text",
+            "text": "jiào"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "什么"
+          },
+          "right": {
+            "kind": "text",
+            "text": "shénme"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "名字"
+          },
+          "right": {
+            "kind": "text",
+            "text": "míngzi"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "认识"
+          },
+          "right": {
+            "kind": "text",
+            "text": "rènshi"
+          }
+        }
+      ],
+      "tapToSpeak": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "什么",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "shénme"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "shènme"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "shēnmē"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "shěnmé"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "高兴",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "gāoxìng"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "gǎoxíng"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "gāoxīng"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "gàoxǐng"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What do you hear?",
+      "prompt": {
+        "kind": "audio",
+        "speak": "叫"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "叫"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "姓"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "好"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "我"
+          }
+        }
+      ],
+      "answer": "o1",
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which one means “she”?",
+      "prompt": {
+        "kind": "text",
+        "text": "she"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "她"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "他"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "你"
+          }
+        }
+      ],
+      "answer": "o1",
+      "layout": "grid"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "What is your name?"
+      },
+      "answer": [
+        "你",
+        "叫",
+        "什么",
+        "名字"
+      ],
+      "distractors": [
+        "姓",
+        "我",
+        "好"
+      ],
+      "pinyin": {
+        "你": "nǐ",
+        "叫": "jiào",
+        "什么": "shénme",
+        "名字": "míngzi",
+        "姓": "xìng",
+        "我": "wǒ",
+        "好": "hǎo"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "My surname is Lin."
+      },
+      "answer": [
+        "我",
+        "姓",
+        "林"
+      ],
+      "distractors": [
+        "叫",
+        "你",
+        "他"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "姓": "xìng",
+        "林": "Lín",
+        "叫": "jiào",
+        "你": "nǐ",
+        "他": "tā"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "I am called Lin Na."
+      },
+      "answer": [
+        "我",
+        "叫",
+        "林娜"
+      ],
+      "distractors": [
+        "姓",
+        "她",
+        "名字"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "叫": "jiào",
+        "林娜": "Lín Nà",
+        "姓": "xìng",
+        "她": "tā",
+        "名字": "míngzi"
+      }
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "他",
+            "pinyin": "tā",
+            "hint": "he, him"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "宋，",
+            "pinyin": "Sòng",
+            "hint": "(surname Song)"
+          },
+          {
+            "hanzi": "叫",
+            "pinyin": "jiào",
+            "hint": "to be called"
+          },
+          {
+            "hanzi": "宋华。",
+            "pinyin": "Sòng Huá",
+            "hint": "(name) Song Hua"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "姓",
+            "pinyin": "xìng"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "叫",
+            "pinyin": "jiào"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "好",
+            "pinyin": "hǎo"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "认识",
+            "pinyin": "rènshi",
+            "hint": "to know, to meet (someone)"
+          },
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "高兴。",
+            "pinyin": "gāoxìng",
+            "hint": "happy, glad"
+          }
+        ]
+      },
+      "answer": [
+        "Nice",
+        "to",
+        "meet",
+        "you"
+      ],
+      "distractors": [
+        "Glad",
+        "name",
+        "too"
+      ],
+      "acceptedAnswers": [
+        [
+          "Glad",
+          "to",
+          "meet",
+          "you"
+        ]
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the best reply",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "请问",
+            "pinyin": "qǐngwèn",
+            "hint": "excuse me, may I ask"
+          },
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "叫",
+            "pinyin": "jiào",
+            "hint": "to be called"
+          },
+          {
+            "hanzi": "什么",
+            "pinyin": "shénme",
+            "hint": "what"
+          },
+          {
+            "hanzi": "名字？",
+            "pinyin": "míngzi",
+            "hint": "name"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "王，",
+                "pinyin": "Wáng",
+                "hint": "(surname Wang)"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "王小云。",
+                "pinyin": "Wáng Xiǎoyún",
+                "hint": "(name) Wang Xiaoyun"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "认识",
+                "pinyin": "rènshi",
+                "hint": "to know, to meet (someone)"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "高兴。",
+                "pinyin": "gāoxìng",
+                "hint": "happy, glad"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好。",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Dawei",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "你",
+                  "pinyin": "nǐ",
+                  "hint": "you"
+                },
+                {
+                  "hanzi": "好！",
+                  "pinyin": "hǎo",
+                  "hint": "good, well"
+                },
+                {
+                  "hanzi": "我",
+                  "pinyin": "wǒ",
+                  "hint": "I, me"
+                },
+                {
+                  "hanzi": "叫",
+                  "pinyin": "jiào",
+                  "hint": "to be called"
+                },
+                {
+                  "hanzi": "马大为。",
+                  "pinyin": "Mǎ Dàwéi",
+                  "hint": "(name) Ma Dawei"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Lin Na",
+            "avatar": "👩",
+            "side": "right",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "你",
+                  "pinyin": "nǐ",
+                  "hint": "you"
+                },
+                {
+                  "hanzi": "好！",
+                  "pinyin": "hǎo",
+                  "hint": "good, well"
+                },
+                {
+                  "hanzi": "我",
+                  "pinyin": "wǒ",
+                  "hint": "I, me"
+                },
+                {
+                  "hanzi": "叫",
+                  "pinyin": "jiào",
+                  "hint": "to be called"
+                },
+                {
+                  "hanzi": "林娜。",
+                  "pinyin": "Lín Nà",
+                  "hint": "(name) Lin Na"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Dawei",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "认识",
+                  "pinyin": "rènshi",
+                  "hint": "to know, to meet (someone)"
+                },
+                {
+                  "hanzi": "你",
+                  "pinyin": "nǐ",
+                  "hint": "you"
+                },
+                {
+                  "hanzi": "很",
+                  "pinyin": "hěn",
+                  "hint": "very"
+                },
+                {
+                  "hanzi": "高兴。",
+                  "pinyin": "gāoxìng",
+                  "hint": "happy, glad"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Lin Na",
+            "avatar": "👩",
+            "side": "right",
+            "blank": true
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "认识",
+                "pinyin": "rènshi",
+                "hint": "to know, to meet (someone)"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "高兴。",
+                "pinyin": "gāoxìng",
+                "hint": "happy, glad"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "林娜。",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "什么",
+                "pinyin": "shénme",
+                "hint": "what"
+              },
+              {
+                "hanzi": "名字？",
+                "pinyin": "míngzi",
+                "hint": "name"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write the pinyin you hear",
+      "prompt": {
+        "kind": "audio",
+        "speak": "他叫宋华",
+        "slow": true
+      },
+      "answer": [
+        "Tā",
+        "jiào",
+        "Sòng",
+        "Huá"
+      ],
+      "distractors": [
+        "xìng",
+        "Lín",
+        "Wǒ"
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “The speaker’s surname is Ma.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我姓马，叫马大为。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "true",
+      "shuffle": false
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Trace the character",
+      "character": "我",
+      "pinyin": "wǒ",
+      "meaning": "I, me",
+      "guide": "full"
+    }
+  ]
+}

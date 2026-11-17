@@ -1,0 +1,989 @@
+{
+  "title": "NPCR 1.1 · How have you been?",
+  "description": "Ask how someone is and say you are busy, tired, hungry or thirsty. Based on New Practical Chinese Reader 1, Lesson 1.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "累",
+        "pinyin": "lèi",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "😴",
+            "label": "tired"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🍽️",
+            "label": "hungry"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🥤",
+            "label": "thirsty"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "😄",
+            "label": "happy"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "渴",
+        "pinyin": "kě",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "🥤",
+            "label": "thirsty"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "😴",
+            "label": "tired"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🍽️",
+            "label": "hungry"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "😄",
+            "label": "happy"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "饿",
+        "pinyin": "è",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "🍽️",
+            "label": "hungry"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "😴",
+            "label": "tired"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🥤",
+            "label": "thirsty"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "😄",
+            "label": "happy"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "busy"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "忙",
+            "pinyin": "máng"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "tired"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "累",
+            "pinyin": "lèi"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "hungry"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "饿",
+            "pinyin": "è"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "thirsty"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "渴",
+            "pinyin": "kě"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "recently"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "最近",
+            "pinyin": "zuìjìn"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "怎么样",
+        "pinyin": "zěnmeyàng",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "How is it going?"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "What?"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "Name"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "不",
+            "pinyin": "bú",
+            "hint": "not"
+          },
+          {
+            "hanzi": "太",
+            "pinyin": "tài",
+            "hint": "too, very"
+          },
+          {
+            "hanzi": "忙",
+            "pinyin": "máng",
+            "hint": "busy"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "not very busy"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "very busy"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "too busy"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "最近",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "zuìjìn"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "zuǐjīn"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "zuìjīn"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "zuíjǐn"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "怎么样",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "zěnmeyàng"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "zénmeyáng"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "zěnmeyǎng"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "zènmeyāng"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "very good"
+      },
+      "answer": [
+        "很",
+        "好"
+      ],
+      "distractors": [
+        "也",
+        "不"
+      ],
+      "pinyin": {
+        "很": "hěn",
+        "好": "hǎo",
+        "也": "yě",
+        "不": "bù"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "I am very well."
+      },
+      "answer": [
+        "我",
+        "很",
+        "好"
+      ],
+      "distractors": [
+        "你",
+        "也",
+        "吗"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "很": "hěn",
+        "好": "hǎo",
+        "你": "nǐ",
+        "也": "yě",
+        "吗": "ma"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "I am very well too."
+      },
+      "answer": [
+        "我",
+        "也",
+        "很",
+        "好"
+      ],
+      "distractors": [
+        "不",
+        "你",
+        "呢"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "也": "yě",
+        "很": "hěn",
+        "好": "hǎo",
+        "不": "bù",
+        "你": "nǐ",
+        "呢": "ne"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "How have you been lately?"
+      },
+      "answer": [
+        "你",
+        "最近",
+        "怎么样"
+      ],
+      "distractors": [
+        "什么",
+        "忙",
+        "吗"
+      ],
+      "pinyin": {
+        "你": "nǐ",
+        "最近": "zuìjìn",
+        "怎么样": "zěnmeyàng",
+        "什么": "shénme",
+        "忙": "máng",
+        "吗": "ma"
+      }
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me"
+          },
+          {
+            "hanzi": "不",
+            "pinyin": "bú",
+            "hint": "not"
+          },
+          {
+            "hanzi": "太",
+            "pinyin": "tài",
+            "hint": "too, very"
+          },
+          {
+            "hanzi": "忙。",
+            "pinyin": "máng",
+            "hint": "busy"
+          },
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "？"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "呢",
+            "pinyin": "ne"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "吗",
+            "pinyin": "ma"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "也",
+            "pinyin": "yě"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "最近",
+            "pinyin": "zuìjìn",
+            "hint": "recently, lately"
+          },
+          {
+            "hanzi": "忙",
+            "pinyin": "máng",
+            "hint": "busy"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "？"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "吗",
+            "pinyin": "ma"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "呢",
+            "pinyin": "ne"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "很",
+            "pinyin": "hěn"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which question does this answer?",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me"
+          },
+          {
+            "hanzi": "最近",
+            "pinyin": "zuìjìn",
+            "hint": "recently, lately"
+          },
+          {
+            "hanzi": "不",
+            "pinyin": "bú",
+            "hint": "not"
+          },
+          {
+            "hanzi": "太",
+            "pinyin": "tài",
+            "hint": "too, very"
+          },
+          {
+            "hanzi": "忙。",
+            "pinyin": "máng",
+            "hint": "busy"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "最近",
+                "pinyin": "zuìjìn",
+                "hint": "recently, lately"
+              },
+              {
+                "hanzi": "忙",
+                "pinyin": "máng",
+                "hint": "busy"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "什么",
+                "pinyin": "shénme",
+                "hint": "what"
+              },
+              {
+                "hanzi": "名字？",
+                "pinyin": "míngzi",
+                "hint": "name"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "饿",
+                "pinyin": "è",
+                "hint": "hungry"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write a question that this sentence answers",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "她",
+            "pinyin": "tā",
+            "hint": "she, her"
+          },
+          {
+            "hanzi": "最近",
+            "pinyin": "zuìjìn",
+            "hint": "recently, lately"
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "累。",
+            "pinyin": "lèi",
+            "hint": "tired"
+          }
+        ]
+      },
+      "answer": [
+        "她",
+        "最近",
+        "怎么样"
+      ],
+      "distractors": [
+        "累",
+        "吗",
+        "忙"
+      ],
+      "acceptedAnswers": [
+        [
+          "她",
+          "最近",
+          "累",
+          "吗"
+        ]
+      ],
+      "pinyin": {
+        "她": "tā",
+        "最近": "zuìjìn",
+        "怎么样": "zěnmeyàng",
+        "累": "lèi",
+        "吗": "ma",
+        "忙": "máng"
+      }
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the best reply",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "累",
+            "pinyin": "lèi",
+            "hint": "tired"
+          },
+          {
+            "hanzi": "吗？",
+            "pinyin": "ma",
+            "hint": "(yes/no question)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "太",
+                "pinyin": "tài",
+                "hint": "too, very"
+              },
+              {
+                "hanzi": "累。",
+                "pinyin": "lèi",
+                "hint": "tired"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "林娜。",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "请",
+                "pinyin": "qǐng",
+                "hint": "please"
+              },
+              {
+                "hanzi": "进！",
+                "pinyin": "jìn",
+                "hint": "to come in, to enter"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “The speaker has been busy lately.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我最近很忙。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "true",
+      "shuffle": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “Dawei is very hungry.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "大为不太饿，他很渴。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "false",
+      "shuffle": false
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "他",
+            "pinyin": "tā",
+            "hint": "he, him"
+          },
+          {
+            "hanzi": "也",
+            "pinyin": "yě",
+            "hint": "also, too"
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "忙。",
+            "pinyin": "máng",
+            "hint": "busy"
+          }
+        ]
+      },
+      "answer": [
+        "He",
+        "is",
+        "very",
+        "busy",
+        "too"
+      ],
+      "distractors": [
+        "also",
+        "not",
+        "tired"
+      ],
+      "acceptedAnswers": [
+        [
+          "He",
+          "is",
+          "also",
+          "very",
+          "busy"
+        ]
+      ]
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Trace the character",
+      "character": "不",
+      "pinyin": "bù",
+      "meaning": "not",
+      "guide": "full"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Trace the character",
+      "character": "太",
+      "pinyin": "tài",
+      "meaning": "too, very",
+      "guide": "full"
+    }
+  ]
+}

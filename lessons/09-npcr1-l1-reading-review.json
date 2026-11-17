@@ -1,0 +1,1545 @@
+{
+  "title": "NPCR 1.1 · Reading and review",
+  "description": "Short texts, translation both ways, listening and a final story. Based on New Practical Chinese Reader 1, Lesson 1.",
+  "exercises": [
+    {
+      "type": "story",
+      "instruction": "Read and listen",
+      "title": "Three friends",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "丁，",
+                "pinyin": "Dīng",
+                "hint": "(surname Ding)"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "丁力波。",
+                "pinyin": "Dīng Lìbō",
+                "hint": "(name) Ding Libo"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "hint": "she, her"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "林，",
+                "pinyin": "Lín",
+                "hint": "(surname Lin)"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "林娜。",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "马，",
+                "pinyin": "Mǎ",
+                "hint": "(surname Ma)"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "马大为。",
+                "pinyin": "Mǎ Dàwéi",
+                "hint": "(name) Ma Dawei"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "What is the speaker’s full name?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Ma Dawei"
+            },
+            {
+              "id": "o1",
+              "text": "Ding Libo"
+            },
+            {
+              "id": "o3",
+              "text": "Lin Na"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "question",
+          "prompt": "Is her surname Lin?",
+          "options": [
+            {
+              "id": "o1",
+              "text": "Yes"
+            },
+            {
+              "id": "o2",
+              "text": "No"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "question",
+          "prompt": "What is “he” called?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Ding Libo"
+            },
+            {
+              "id": "o1",
+              "text": "Ma Dawei"
+            }
+          ],
+          "answer": "o1"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "instruction": "Read and listen",
+      "title": "How is everyone?",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "最近",
+                "pinyin": "zuìjìn",
+                "hint": "recently, lately"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好，",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "太",
+                "pinyin": "tài",
+                "hint": "too, very"
+              },
+              {
+                "hanzi": "忙。",
+                "pinyin": "máng",
+                "hint": "busy"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "林娜",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              },
+              {
+                "hanzi": "最近",
+                "pinyin": "zuìjìn",
+                "hint": "recently, lately"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "忙，",
+                "pinyin": "máng",
+                "hint": "busy"
+              },
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "hint": "she, her"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "累。",
+                "pinyin": "lèi",
+                "hint": "tired"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "How has Lin Na been lately?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Not very busy"
+            },
+            {
+              "id": "o1",
+              "text": "Busy and tired"
+            },
+            {
+              "id": "o3",
+              "text": "Hungry"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "大为",
+                "pinyin": "Dàwéi",
+                "hint": "(name) Dawei"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "累，",
+                "pinyin": "lèi",
+                "hint": "tired"
+              },
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "饿。",
+                "pinyin": "è",
+                "hint": "hungry"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "宋华",
+                "pinyin": "Sòng Huá",
+                "hint": "(name) Song Hua"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "饿。",
+                "pinyin": "è",
+                "hint": "hungry"
+              },
+              {
+                "hanzi": "他们",
+                "pinyin": "tāmen",
+                "hint": "they, them"
+              },
+              {
+                "hanzi": "都",
+                "pinyin": "dōu",
+                "hint": "all, both"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "高兴。",
+                "pinyin": "gāoxìng",
+                "hint": "happy, glad"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Is Dawei tired?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Yes, very tired"
+            },
+            {
+              "id": "o1",
+              "text": "No, he is hungry"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "question",
+          "prompt": "Who is hungry?",
+          "options": [
+            {
+              "id": "o3",
+              "text": "Xiaoyun and Lin Na"
+            },
+            {
+              "id": "o1",
+              "text": "Dawei and Song Hua"
+            },
+            {
+              "id": "o2",
+              "text": "Only Lin Na"
+            }
+          ],
+          "answer": "o1"
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Read the ID card. What is her family name?",
+      "prompt": {
+        "kind": "text",
+        "text": "姓名 Name: 李华 · 性别 Sex: 女 F"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "Lǐ (李)"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "Huá (华)"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "Nǚ (女)"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Read the passport. What is his full name, in Chinese order?",
+      "prompt": {
+        "kind": "text",
+        "text": "姓 Surname: 王 · 名 Given name: 大明"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "王大明"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "大明王"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "明大王"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "好",
+            "pinyin": "hǎo",
+            "hint": "good, well"
+          },
+          {
+            "hanzi": "吗？",
+            "pinyin": "ma",
+            "hint": "(yes/no question)"
+          }
+        ]
+      },
+      "answer": [
+        "How",
+        "are",
+        "you"
+      ],
+      "distractors": [
+        "What",
+        "is",
+        "name"
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "力波",
+            "pinyin": "Lìbō",
+            "hint": "(name) Libo"
+          },
+          {
+            "hanzi": "最近",
+            "pinyin": "zuìjìn",
+            "hint": "recently, lately"
+          },
+          {
+            "hanzi": "怎么样？",
+            "pinyin": "zěnmeyàng",
+            "hint": "how (is it going)?"
+          }
+        ]
+      },
+      "answer": [
+        "How",
+        "has",
+        "Libo",
+        "been",
+        "lately"
+      ],
+      "distractors": [
+        "recently",
+        "name",
+        "is"
+      ],
+      "acceptedAnswers": [
+        [
+          "How",
+          "has",
+          "Libo",
+          "been",
+          "recently"
+        ]
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "她",
+            "pinyin": "tā",
+            "hint": "she, her"
+          },
+          {
+            "hanzi": "不",
+            "pinyin": "bù",
+            "hint": "not"
+          },
+          {
+            "hanzi": "渴。",
+            "pinyin": "kě",
+            "hint": "thirsty"
+          }
+        ]
+      },
+      "answer": [
+        "She",
+        "isn't",
+        "thirsty"
+      ],
+      "distractors": [
+        "is",
+        "not",
+        "hungry"
+      ],
+      "acceptedAnswers": [
+        [
+          "She",
+          "is",
+          "not",
+          "thirsty"
+        ]
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Nice to meet you."
+      },
+      "answer": [
+        "认识",
+        "你",
+        "很",
+        "高兴"
+      ],
+      "distractors": [
+        "也",
+        "我"
+      ],
+      "pinyin": {
+        "认识": "rènshi",
+        "你": "nǐ",
+        "很": "hěn",
+        "高兴": "gāoxìng",
+        "也": "yě",
+        "我": "wǒ"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "My name is Ding Libo."
+      },
+      "answer": [
+        "我",
+        "叫",
+        "丁力波"
+      ],
+      "distractors": [
+        "姓",
+        "他",
+        "名字"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "叫": "jiào",
+        "丁力波": "Dīng Lìbō",
+        "姓": "xìng",
+        "他": "tā",
+        "名字": "míngzi"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "I haven’t been very well recently."
+      },
+      "answer": [
+        "我",
+        "最近",
+        "不",
+        "太",
+        "好"
+      ],
+      "distractors": [
+        "很",
+        "忙",
+        "也"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "最近": "zuìjìn",
+        "不": "bù",
+        "太": "tài",
+        "好": "hǎo",
+        "很": "hěn",
+        "忙": "máng",
+        "也": "yě"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Build the sentence from the pinyin",
+      "prompt": {
+        "kind": "text",
+        "text": "Tā xìng Sòng, jiào Sòng Huá."
+      },
+      "answer": [
+        "他",
+        "姓",
+        "宋",
+        "叫",
+        "宋华"
+      ],
+      "distractors": [
+        "你",
+        "我"
+      ],
+      "pinyin": {
+        "他": "tā",
+        "姓": "xìng",
+        "宋": "Sòng",
+        "叫": "jiào",
+        "宋华": "Sòng Huá",
+        "你": "nǐ",
+        "我": "wǒ"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Build the sentence from the pinyin",
+      "prompt": {
+        "kind": "text",
+        "text": "Lín Nà zuìjìn zěnmeyàng?"
+      },
+      "answer": [
+        "林娜",
+        "最近",
+        "怎么样"
+      ],
+      "distractors": [
+        "什么",
+        "吗"
+      ],
+      "pinyin": {
+        "林娜": "Lín Nà",
+        "最近": "zuìjìn",
+        "怎么样": "zěnmeyàng",
+        "什么": "shénme",
+        "吗": "ma"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Tap what you hear",
+      "prompt": {
+        "kind": "audio",
+        "speak": "认识你我也很高兴",
+        "slow": true
+      },
+      "answer": [
+        "认识",
+        "你",
+        "我",
+        "也",
+        "很",
+        "高兴"
+      ],
+      "distractors": [
+        "不",
+        "他"
+      ],
+      "pinyin": {
+        "认识": "rènshi",
+        "你": "nǐ",
+        "我": "wǒ",
+        "也": "yě",
+        "很": "hěn",
+        "高兴": "gāoxìng",
+        "不": "bù",
+        "他": "tā"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write what you hear in English",
+      "prompt": {
+        "kind": "audio",
+        "speak": "他们都很累",
+        "slow": true
+      },
+      "answer": [
+        "They",
+        "are",
+        "all",
+        "very",
+        "tired"
+      ],
+      "distractors": [
+        "hungry",
+        "We",
+        "not"
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write the pinyin you hear",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我最近很忙",
+        "slow": true
+      },
+      "answer": [
+        "Wǒ",
+        "zuìjìn",
+        "hěn",
+        "máng"
+      ],
+      "distractors": [
+        "lèi",
+        "bú",
+        "tài"
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen and choose the best answer",
+      "prompt": {
+        "kind": "audio",
+        "speak": "你最近怎么样？",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好。",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "林。",
+                "pinyin": "Lín",
+                "hint": "(surname Lin)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "请",
+                "pinyin": "qǐng",
+                "hint": "please"
+              },
+              {
+                "hanzi": "坐。",
+                "pinyin": "zuò",
+                "hint": "to sit"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen and choose the best answer",
+      "prompt": {
+        "kind": "audio",
+        "speak": "他叫什么名字？",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "宋华。",
+                "pinyin": "Sòng Huá",
+                "hint": "(name) Song Hua"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "忙。",
+                "pinyin": "máng",
+                "hint": "busy"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "在。",
+                "pinyin": "zài",
+                "hint": "to be in, to be here"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen and choose the best answer",
+      "prompt": {
+        "kind": "audio",
+        "speak": "林娜在吗？",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "在。",
+                "pinyin": "zài",
+                "hint": "to be in, to be here"
+              },
+              {
+                "hanzi": "请",
+                "pinyin": "qǐng",
+                "hint": "please"
+              },
+              {
+                "hanzi": "进！",
+                "pinyin": "jìn",
+                "hint": "to come in, to enter"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "太",
+                "pinyin": "tài",
+                "hint": "too, very"
+              },
+              {
+                "hanzi": "累。",
+                "pinyin": "lèi",
+                "hint": "tired"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "认识",
+                "pinyin": "rènshi",
+                "hint": "to know, to meet (someone)"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "高兴。",
+                "pinyin": "gāoxìng",
+                "hint": "happy, glad"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "to meet, to know"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "认识",
+            "pinyin": "rènshi"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "recently"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "最近",
+            "pinyin": "zuìjìn"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "how is it going?"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "怎么样",
+            "pinyin": "zěnmeyàng"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "may I ask"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "请问",
+            "pinyin": "qǐngwèn"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "thank you"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "谢谢",
+            "pinyin": "xièxie"
+          }
+        }
+      ]
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Write the character",
+      "character": "也",
+      "pinyin": "yě",
+      "meaning": "also, too",
+      "guide": "faint"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Write the character",
+      "character": "在",
+      "pinyin": "zài",
+      "meaning": "to be in, to be here",
+      "guide": "faint"
+    },
+    {
+      "type": "story",
+      "instruction": "Read and listen",
+      "title": "A new classmate",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              },
+              {
+                "hanzi": "请问",
+                "pinyin": "qǐngwèn",
+                "hint": "excuse me, may I ask"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "什么",
+                "pinyin": "shénme",
+                "hint": "what"
+              },
+              {
+                "hanzi": "名字？",
+                "pinyin": "míngzi",
+                "hint": "name"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "王，",
+                "pinyin": "Wáng",
+                "hint": "(surname Wang)"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "王小云。",
+                "pinyin": "Wáng Xiǎoyún",
+                "hint": "(name) Wang Xiaoyun"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "呢？",
+                "pinyin": "ne",
+                "hint": "(and …? follow-up question)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "马大为。",
+                "pinyin": "Mǎ Dàwéi",
+                "hint": "(name) Ma Dawei"
+              },
+              {
+                "hanzi": "认识",
+                "pinyin": "rènshi",
+                "hint": "to know, to meet (someone)"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "高兴。",
+                "pinyin": "gāoxìng",
+                "hint": "happy, glad"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "认识",
+                "pinyin": "rènshi",
+                "hint": "to know, to meet (someone)"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "高兴。",
+                "pinyin": "gāoxìng",
+                "hint": "happy, glad"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "What is the woman’s surname?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Ma"
+            },
+            {
+              "id": "o1",
+              "text": "Wang"
+            },
+            {
+              "id": "o3",
+              "text": "Lin"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "最近",
+                "pinyin": "zuìjìn",
+                "hint": "recently, lately"
+              },
+              {
+                "hanzi": "怎么样？",
+                "pinyin": "zěnmeyàng",
+                "hint": "how (is it going)?"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好，",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "太",
+                "pinyin": "tài",
+                "hint": "too, very"
+              },
+              {
+                "hanzi": "忙。",
+                "pinyin": "máng",
+                "hint": "busy"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "呢？",
+                "pinyin": "ne",
+                "hint": "(and …? follow-up question)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "忙，",
+                "pinyin": "máng",
+                "hint": "busy"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "累。",
+                "pinyin": "lèi",
+                "hint": "tired"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Who has been busy?",
+          "options": [
+            {
+              "id": "o3",
+              "text": "Both of them"
+            },
+            {
+              "id": "o1",
+              "text": "Dawei"
+            },
+            {
+              "id": "o2",
+              "text": "Xiaoyun"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "渴",
+                "pinyin": "kě",
+                "hint": "thirsty"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              },
+              {
+                "hanzi": "请",
+                "pinyin": "qǐng",
+                "hint": "please"
+              },
+              {
+                "hanzi": "坐！",
+                "pinyin": "zuò",
+                "hint": "to sit"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "渴。",
+                "pinyin": "kě",
+                "hint": "thirsty"
+              },
+              {
+                "hanzi": "谢谢！",
+                "pinyin": "xièxie",
+                "hint": "thank you"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "How does Dawei feel at the end?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Hungry"
+            },
+            {
+              "id": "o1",
+              "text": "Thirsty"
+            },
+            {
+              "id": "o3",
+              "text": "Happy to leave"
+            }
+          ],
+          "answer": "o1"
+        }
+      ]
+    }
+  ]
+}

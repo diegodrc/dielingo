@@ -83,11 +83,13 @@ describe('slugify', () => {
 describe('lessons folder', () => {
   it('loads every file in /lessons without problems', () => {
     expect(folderProblems).toEqual([]);
-    expect(folderLessons.map((l) => l.id)).toEqual([
+    // Listed in file-name order, starting with the starter lessons.
+    expect(folderLessons.map((l) => l.id).slice(0, 4)).toEqual([
       '01-first-words',
       '02-sounds-and-tones',
       '03-first-sentences',
       '04-fruit-with-pictures',
     ]);
+    expect(new Set(folderLessons.map((l) => l.id)).size).toBe(folderLessons.length);
   });
 });
