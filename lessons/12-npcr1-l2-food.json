@@ -1,0 +1,1924 @@
+{
+  "title": "NPCR 1.2 · Food I like",
+  "description": "Dumplings, buns, noodles and more: say what something is and what you like to eat. Based on New Practical Chinese Reader 1, Lesson 2.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "饺子",
+        "pinyin": "jiǎozi",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "🥟",
+            "label": "dumplings"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🍜",
+            "label": "noodles"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🍚",
+            "label": "rice"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "🍞",
+            "label": "bread"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "面条",
+        "pinyin": "miàntiáo",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "🍜",
+            "label": "noodles"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🥟",
+            "label": "dumplings"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🍕",
+            "label": "pizza"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "🍚",
+            "label": "rice"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "包子",
+        "pinyin": "bāozi",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "src": "images/food/baozi.svg",
+            "label": "steamed bun"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🥟",
+            "label": "dumplings"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🍞",
+            "label": "bread"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "🍚",
+            "label": "rice"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "点心",
+        "pinyin": "diǎnxin",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "src": "images/food/dianxin.svg",
+            "label": "dim sum"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🍕",
+            "label": "pizza"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "emoji": "🍜",
+            "label": "noodles"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "src": "images/food/baozi.svg",
+            "label": "steamed bun"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Select the correct image",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "比萨饼",
+        "pinyin": "bǐsàbǐng",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "image",
+            "emoji": "🍕",
+            "label": "pizza"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "image",
+            "emoji": "🍞",
+            "label": "bread"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "image",
+            "src": "images/food/dianxin.svg",
+            "label": "dim sum"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "image",
+            "emoji": "🥟",
+            "label": "dumplings"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What is this?",
+      "prompt": {
+        "kind": "image",
+        "emoji": "🍚",
+        "label": "rice"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "米饭",
+            "pinyin": "mǐfàn"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "面条",
+            "pinyin": "miàntiáo"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "面包",
+            "pinyin": "miànbāo"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What is this?",
+      "prompt": {
+        "kind": "image",
+        "emoji": "🍞",
+        "label": "bread"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "面包",
+            "pinyin": "miànbāo"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "包子",
+            "pinyin": "bāozi"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "面条",
+            "pinyin": "miàntiáo"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each picture to its word",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "image",
+            "emoji": "🥟",
+            "label": "dumplings"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "饺子",
+            "pinyin": "jiǎozi"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "image",
+            "emoji": "🍜",
+            "label": "noodles"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "面条",
+            "pinyin": "miàntiáo"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "image",
+            "src": "images/food/baozi.svg",
+            "label": "steamed bun"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "包子",
+            "pinyin": "bāozi"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "image",
+            "emoji": "🍕",
+            "label": "pizza"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "比萨饼",
+            "pinyin": "bǐsàbǐng"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "image",
+            "src": "images/food/dianxin.svg",
+            "label": "dim sum"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "点心",
+            "pinyin": "diǎnxin"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "to like"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "喜欢",
+            "pinyin": "xǐhuan"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "to eat"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "吃",
+            "pinyin": "chī"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "tasty"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "好吃",
+            "pinyin": "hǎochī"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "and"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "和",
+            "pinyin": "hé"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "big"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "大",
+            "pinyin": "dà"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "small"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "小",
+            "pinyin": "xiǎo"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "rice"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "米饭",
+            "pinyin": "mǐfàn"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "bread"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "面包",
+            "pinyin": "miànbāo"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "all, both"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "都",
+            "pinyin": "dōu"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "what"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "什么",
+            "pinyin": "shénme"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "面条",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "miàntiáo"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "miántiào"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "miǎntiāo"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "miāntiǎo"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "好吃",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "hǎochī"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "hàochí"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "hāochǐ"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "háochì"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "喜欢",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "xǐhuan"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "xíhuàn"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "xìhuān"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "xīhuǎn"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "like to eat"
+      },
+      "answer": [
+        "喜欢",
+        "吃"
+      ],
+      "distractors": [
+        "好吃",
+        "和"
+      ],
+      "pinyin": {
+        "喜欢": "xǐhuan",
+        "吃": "chī",
+        "好吃": "hǎochī",
+        "和": "hé"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "He likes to eat noodles."
+      },
+      "answer": [
+        "他",
+        "喜欢",
+        "吃",
+        "面条"
+      ],
+      "distractors": [
+        "米饭",
+        "好吃"
+      ],
+      "pinyin": {
+        "他": "tā",
+        "喜欢": "xǐhuan",
+        "吃": "chī",
+        "面条": "miàntiáo",
+        "米饭": "mǐfàn",
+        "好吃": "hǎochī"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "He likes to eat noodles and dumplings."
+      },
+      "answer": [
+        "他",
+        "喜欢",
+        "吃",
+        "面条",
+        "和",
+        "饺子"
+      ],
+      "distractors": [
+        "都",
+        "包子"
+      ],
+      "acceptedAnswers": [
+        [
+          "他",
+          "喜欢",
+          "吃",
+          "饺子",
+          "和",
+          "面条"
+        ]
+      ],
+      "pinyin": {
+        "他": "tā",
+        "喜欢": "xǐhuan",
+        "吃": "chī",
+        "面条": "miàntiáo",
+        "和": "hé",
+        "饺子": "jiǎozi",
+        "都": "dōu",
+        "包子": "bāozi"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "What is this?"
+      },
+      "answer": [
+        "这",
+        "是",
+        "什么"
+      ],
+      "distractors": [
+        "那",
+        "吗",
+        "哪"
+      ],
+      "pinyin": {
+        "这": "zhè",
+        "是": "shì",
+        "什么": "shénme",
+        "那": "nà",
+        "吗": "ma",
+        "哪": "nǎ"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Are the noodles tasty?"
+      },
+      "answer": [
+        "面条",
+        "好吃",
+        "吗"
+      ],
+      "distractors": [
+        "很",
+        "呢",
+        "喜欢"
+      ],
+      "pinyin": {
+        "面条": "miàntiáo",
+        "好吃": "hǎochī",
+        "吗": "ma",
+        "很": "hěn",
+        "呢": "ne",
+        "喜欢": "xǐhuan"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Dim sum and dumplings are both very tasty."
+      },
+      "answer": [
+        "点心",
+        "和",
+        "饺子",
+        "都",
+        "很",
+        "好吃"
+      ],
+      "distractors": [
+        "不",
+        "也"
+      ],
+      "acceptedAnswers": [
+        [
+          "饺子",
+          "和",
+          "点心",
+          "都",
+          "很",
+          "好吃"
+        ]
+      ],
+      "pinyin": {
+        "点心": "diǎnxin",
+        "和": "hé",
+        "饺子": "jiǎozi",
+        "都": "dōu",
+        "很": "hěn",
+        "好吃": "hǎochī",
+        "不": "bù",
+        "也": "yě"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Dumplings are small, buns are big."
+      },
+      "answer": [
+        "饺子",
+        "小",
+        "包子",
+        "大"
+      ],
+      "distractors": [
+        "很",
+        "不"
+      ],
+      "pinyin": {
+        "饺子": "jiǎozi",
+        "小": "xiǎo",
+        "包子": "bāozi",
+        "大": "dà",
+        "很": "hěn",
+        "不": "bù"
+      }
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "喜欢",
+            "pinyin": "xǐhuan",
+            "hint": "to like"
+          },
+          {
+            "hanzi": "吃",
+            "pinyin": "chī",
+            "hint": "to eat"
+          },
+          {
+            "hanzi": "饺子",
+            "pinyin": "jiǎozi",
+            "hint": "dumplings"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "面条。",
+            "pinyin": "miàntiáo",
+            "hint": "noodles"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "和",
+            "pinyin": "hé"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "都",
+            "pinyin": "dōu"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "也",
+            "pinyin": "yě"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "包子",
+            "pinyin": "bāozi",
+            "hint": "steamed stuffed bun"
+          },
+          {
+            "hanzi": "和",
+            "pinyin": "hé",
+            "hint": "and"
+          },
+          {
+            "hanzi": "面条",
+            "pinyin": "miàntiáo",
+            "hint": "noodles"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "很",
+            "pinyin": "hěn",
+            "hint": "very"
+          },
+          {
+            "hanzi": "好吃。",
+            "pinyin": "hǎochī",
+            "hint": "tasty"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "都",
+            "pinyin": "dōu"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "和",
+            "pinyin": "hé"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "吗",
+            "pinyin": "ma"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which question does this answer?",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "喜欢",
+            "pinyin": "xǐhuan",
+            "hint": "to like"
+          },
+          {
+            "hanzi": "吃",
+            "pinyin": "chī",
+            "hint": "to eat"
+          },
+          {
+            "hanzi": "面包。",
+            "pinyin": "miànbāo",
+            "hint": "bread"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "哪",
+                "pinyin": "nǎ",
+                "hint": "which"
+              },
+              {
+                "hanzi": "国",
+                "pinyin": "guó",
+                "hint": "country"
+              },
+              {
+                "hanzi": "人？",
+                "pinyin": "rén",
+                "hint": "person"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each question to its answer",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "那",
+                "pinyin": "nà",
+                "hint": "that"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "包子",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              }
+            ]
+          },
+          "right": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "那",
+                "pinyin": "nà",
+                "hint": "that"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "包子，",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "饺子。",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              }
+            ]
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          },
+          "right": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "点心。",
+                "pinyin": "diǎnxin",
+                "hint": "snacks, dim sum"
+              }
+            ]
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "面条",
+                "pinyin": "miàntiáo",
+                "hint": "noodles"
+              },
+              {
+                "hanzi": "好吃",
+                "pinyin": "hǎochī",
+                "hint": "tasty"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              }
+            ]
+          },
+          "right": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好吃。",
+                "pinyin": "hǎochī",
+                "hint": "tasty"
+              }
+            ]
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          },
+          "right": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "米饭。",
+                "pinyin": "mǐfàn",
+                "hint": "rice"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Libo",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "这",
+                  "pinyin": "zhè",
+                  "hint": "this"
+                },
+                {
+                  "hanzi": "是",
+                  "pinyin": "shì",
+                  "hint": "to be"
+                },
+                {
+                  "hanzi": "什么？",
+                  "pinyin": "shénme",
+                  "hint": "what"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Xiaoyun",
+            "avatar": "👩",
+            "side": "right",
+            "blank": true
+          },
+          {
+            "speaker": "Libo",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "比萨饼",
+                  "pinyin": "bǐsàbǐng",
+                  "hint": "pizza"
+                },
+                {
+                  "hanzi": "好吃",
+                  "pinyin": "hǎochī",
+                  "hint": "tasty"
+                },
+                {
+                  "hanzi": "吗？",
+                  "pinyin": "ma",
+                  "hint": "(yes/no question)"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Xiaoyun",
+            "avatar": "👩",
+            "side": "right",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "很",
+                  "pinyin": "hěn",
+                  "hint": "very"
+                },
+                {
+                  "hanzi": "好吃！",
+                  "pinyin": "hǎochī",
+                  "hint": "tasty"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "比萨饼。",
+                "pinyin": "bǐsàbǐng",
+                "hint": "pizza"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "朋友。",
+                "pinyin": "péngyou",
+                "hint": "friend"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "比萨饼。",
+                "pinyin": "bǐsàbǐng",
+                "hint": "pizza"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "妈妈",
+            "pinyin": "māma",
+            "hint": "mum"
+          },
+          {
+            "hanzi": "喜欢",
+            "pinyin": "xǐhuan",
+            "hint": "to like"
+          },
+          {
+            "hanzi": "吃",
+            "pinyin": "chī",
+            "hint": "to eat"
+          },
+          {
+            "hanzi": "什么？",
+            "pinyin": "shénme",
+            "hint": "what"
+          }
+        ]
+      },
+      "answer": [
+        "What",
+        "does",
+        "your",
+        "mum",
+        "like",
+        "to",
+        "eat"
+      ],
+      "distractors": [
+        "dad",
+        "is",
+        "tasty"
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “These are dumplings.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "这是饺子，不是包子。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "true",
+      "shuffle": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “The speaker likes noodles.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我不喜欢吃面条。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "false",
+      "shuffle": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen and choose the best answer",
+      "prompt": {
+        "kind": "audio",
+        "speak": "你喜欢吃什么？",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "面条",
+                "pinyin": "miàntiáo",
+                "hint": "noodles"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "hint": "and"
+              },
+              {
+                "hanzi": "包子。",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "点心",
+                "pinyin": "diǎnxin",
+                "hint": "snacks, dim sum"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "小。",
+                "pinyin": "xiǎo",
+                "hint": "small"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "饺子。",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write what you hear in English",
+      "prompt": {
+        "kind": "audio",
+        "speak": "点心很好吃",
+        "slow": true
+      },
+      "answer": [
+        "The",
+        "snacks",
+        "are",
+        "very",
+        "tasty"
+      ],
+      "distractors": [
+        "small",
+        "not",
+        "noodles"
+      ]
+    },
+    {
+      "type": "story",
+      "instruction": "Read and listen",
+      "title": "Lunch",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "看，",
+                "pinyin": "kàn",
+                "hint": "to look"
+              },
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "饺子，",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              },
+              {
+                "hanzi": "那",
+                "pinyin": "nà",
+                "hint": "that"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "包子。",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              }
+            ]
+          },
+          "translation": "Look, these are dumplings and those are buns."
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "饺子",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              },
+              {
+                "hanzi": "小，",
+                "pinyin": "xiǎo",
+                "hint": "small"
+              },
+              {
+                "hanzi": "包子",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              },
+              {
+                "hanzi": "大！",
+                "pinyin": "dà",
+                "hint": "big"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Which one is big?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "The dumplings"
+            },
+            {
+              "id": "o1",
+              "text": "The buns"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "饺子",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "hint": "and"
+              },
+              {
+                "hanzi": "面条。",
+                "pinyin": "miàntiáo",
+                "hint": "noodles"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "呢？",
+                "pinyin": "ne",
+                "hint": "(and …? follow-up question)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "包子。",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              },
+              {
+                "hanzi": "包子",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好吃！",
+                "pinyin": "hǎochī",
+                "hint": "tasty"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "What does Dawei like to eat?",
+          "options": [
+            {
+              "id": "o3",
+              "text": "Only bread"
+            },
+            {
+              "id": "o1",
+              "text": "Dumplings and noodles"
+            },
+            {
+              "id": "o2",
+              "text": "Buns and rice"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "question",
+          "prompt": "What does Xiaoyun say about buns?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "They are very small"
+            },
+            {
+              "id": "o1",
+              "text": "They are very tasty"
+            }
+          ],
+          "answer": "o1"
+        }
+      ]
+    }
+  ]
+}

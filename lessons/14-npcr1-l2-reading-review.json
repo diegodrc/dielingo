@@ -1,0 +1,2491 @@
+{
+  "title": "NPCR 1.2 · Reading and review",
+  "description": "Short texts, translation both ways, listening and a final story. Based on New Practical Chinese Reader 1, Lesson 2.",
+  "exercises": [
+    {
+      "type": "story",
+      "instruction": "Read and listen",
+      "title": "My friend Dawei",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "王小云。",
+                "pinyin": "Wáng Xiǎoyún",
+                "hint": "(name) Wang Xiaoyun"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "中国人。",
+                "pinyin": "Zhōngguórén",
+                "hint": "Chinese (person)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "大为，",
+                "pinyin": "Dàwéi",
+                "hint": "(name) Dawei"
+              },
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "朋友。",
+                "pinyin": "péngyou",
+                "hint": "friend"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "英国人，",
+                "pinyin": "Yīngguórén",
+                "hint": "British"
+              },
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "美国人。",
+                "pinyin": "Měiguórén",
+                "hint": "American"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Which country is Dawei from?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "The UK"
+            },
+            {
+              "id": "o1",
+              "text": "The USA"
+            },
+            {
+              "id": "o3",
+              "text": "China"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Xiaoyun",
+          "avatar": "👩",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "学习",
+                "pinyin": "xuéxí",
+                "hint": "to study"
+              },
+              {
+                "hanzi": "汉语。",
+                "pinyin": "Hànyǔ",
+                "hint": "Chinese (language)"
+              },
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "饺子！",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Does Dawei study English?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Yes, he studies English"
+            },
+            {
+              "id": "o1",
+              "text": "No, he studies Chinese"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "question",
+          "prompt": "What does Dawei like to eat?",
+          "options": [
+            {
+              "id": "o3",
+              "text": "Bread"
+            },
+            {
+              "id": "o2",
+              "text": "Noodles"
+            },
+            {
+              "id": "o1",
+              "text": "Dumplings"
+            }
+          ],
+          "answer": "o1"
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "instruction": "Read and listen",
+      "title": "Dad and mum",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "看，",
+                "pinyin": "kàn",
+                "hint": "to look"
+              },
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "爸爸，",
+                "pinyin": "bàba",
+                "hint": "dad"
+              },
+              {
+                "hanzi": "那",
+                "pinyin": "nà",
+                "hint": "that"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "妈妈。",
+                "pinyin": "māma",
+                "hint": "mum"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "爸爸",
+                "pinyin": "bàba",
+                "hint": "dad"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "上海人，",
+                "pinyin": "Shànghǎirén",
+                "hint": "person from Shanghai"
+              },
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "米饭。",
+                "pinyin": "mǐfàn",
+                "hint": "rice"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Is Libo’s dad from Beijing?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Yes, from Beijing"
+            },
+            {
+              "id": "o1",
+              "text": "No, from Shanghai"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "妈妈",
+                "pinyin": "māma",
+                "hint": "mum"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "北京人，",
+                "pinyin": "Běijīngrén",
+                "hint": "person from Beijing"
+              },
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "hint": "she, her"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "饺子",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "hint": "and"
+              },
+              {
+                "hanzi": "面条。",
+                "pinyin": "miàntiáo",
+                "hint": "noodles"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Libo",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "hint": "we, us"
+              },
+              {
+                "hanzi": "都",
+                "pinyin": "dōu",
+                "hint": "all, both"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "点心。",
+                "pinyin": "diǎnxin",
+                "hint": "snacks, dim sum"
+              },
+              {
+                "hanzi": "点心",
+                "pinyin": "diǎnxin",
+                "hint": "snacks, dim sum"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好吃！",
+                "pinyin": "hǎochī",
+                "hint": "tasty"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "What does Libo’s mum like to eat?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Rice"
+            },
+            {
+              "id": "o3",
+              "text": "Bread and pizza"
+            },
+            {
+              "id": "o1",
+              "text": "Dumplings and noodles"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "question",
+          "prompt": "What do they all like?",
+          "options": [
+            {
+              "id": "o3",
+              "text": "Rice"
+            },
+            {
+              "id": "o1",
+              "text": "Dim sum"
+            },
+            {
+              "id": "o2",
+              "text": "Pizza"
+            }
+          ],
+          "answer": "o1"
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Read the card. Which sentence is true?",
+      "prompt": {
+        "kind": "text",
+        "text": "姓名 Name: 李明 · 中国 China · 北京 Beijing"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "北京人。",
+                "pinyin": "Běijīngrén",
+                "hint": "person from Beijing"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "上海人。",
+                "pinyin": "Shànghǎirén",
+                "hint": "person from Shanghai"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "美国人。",
+                "pinyin": "Měiguórén",
+                "hint": "American"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "哪",
+            "pinyin": "nǎ",
+            "hint": "which"
+          },
+          {
+            "hanzi": "国",
+            "pinyin": "guó",
+            "hint": "country"
+          },
+          {
+            "hanzi": "人？",
+            "pinyin": "rén",
+            "hint": "person"
+          }
+        ]
+      },
+      "answer": [
+        "Which",
+        "country",
+        "are",
+        "you",
+        "from"
+      ],
+      "distractors": [
+        "Where",
+        "is",
+        "name"
+      ],
+      "acceptedAnswers": [
+        [
+          "Where",
+          "are",
+          "you",
+          "from"
+        ]
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "哥哥",
+            "pinyin": "gēge",
+            "hint": "older brother"
+          },
+          {
+            "hanzi": "喜欢",
+            "pinyin": "xǐhuan",
+            "hint": "to like"
+          },
+          {
+            "hanzi": "吃",
+            "pinyin": "chī",
+            "hint": "to eat"
+          },
+          {
+            "hanzi": "面条。",
+            "pinyin": "miàntiáo",
+            "hint": "noodles"
+          }
+        ]
+      },
+      "answer": [
+        "My",
+        "brother",
+        "likes",
+        "to",
+        "eat",
+        "noodles"
+      ],
+      "distractors": [
+        "dumplings",
+        "friend",
+        "is"
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in English",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "他",
+            "pinyin": "tā",
+            "hint": "he, him"
+          },
+          {
+            "hanzi": "不",
+            "pinyin": "bú",
+            "hint": "not"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "老师。",
+            "pinyin": "lǎoshī",
+            "hint": "teacher"
+          }
+        ]
+      },
+      "answer": [
+        "He",
+        "is",
+        "not",
+        "a",
+        "teacher"
+      ],
+      "distractors": [
+        "isn't",
+        "student",
+        "my"
+      ],
+      "acceptedAnswers": [
+        [
+          "He",
+          "isn't",
+          "a",
+          "teacher"
+        ]
+      ]
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Is she from Shanghai?"
+      },
+      "answer": [
+        "她",
+        "是",
+        "上海人",
+        "吗"
+      ],
+      "distractors": [
+        "北京人",
+        "呢",
+        "不"
+      ],
+      "pinyin": {
+        "她": "tā",
+        "是": "shì",
+        "上海人": "Shànghǎirén",
+        "吗": "ma",
+        "北京人": "Běijīngrén",
+        "呢": "ne",
+        "不": "bù"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "He is not American. He is German."
+      },
+      "answer": [
+        "他",
+        "不",
+        "是",
+        "美国人",
+        "他",
+        "是",
+        "德国人"
+      ],
+      "distractors": [
+        "英国人",
+        "也"
+      ],
+      "pinyin": {
+        "他": "tā",
+        "不": "bù",
+        "是": "shì",
+        "美国人": "Měiguórén",
+        "德国人": "Déguórén",
+        "英国人": "Yīngguórén",
+        "也": "yě"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "My brother likes to eat dumplings and noodles."
+      },
+      "answer": [
+        "我",
+        "哥哥",
+        "喜欢",
+        "吃",
+        "饺子",
+        "和",
+        "面条"
+      ],
+      "distractors": [
+        "都",
+        "朋友"
+      ],
+      "acceptedAnswers": [
+        [
+          "我",
+          "哥哥",
+          "喜欢",
+          "吃",
+          "面条",
+          "和",
+          "饺子"
+        ]
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "哥哥": "gēge",
+        "喜欢": "xǐhuan",
+        "吃": "chī",
+        "饺子": "jiǎozi",
+        "和": "hé",
+        "面条": "miàntiáo",
+        "都": "dōu",
+        "朋友": "péngyou"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Build the sentence from the pinyin",
+      "prompt": {
+        "kind": "text",
+        "text": "Tā yě xuéxí Hànyǔ."
+      },
+      "answer": [
+        "他",
+        "也",
+        "学习",
+        "汉语"
+      ],
+      "distractors": [
+        "都",
+        "英语"
+      ],
+      "pinyin": {
+        "他": "tā",
+        "也": "yě",
+        "学习": "xuéxí",
+        "汉语": "Hànyǔ",
+        "都": "dōu",
+        "英语": "Yīngyǔ"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Build the sentence from the pinyin",
+      "prompt": {
+        "kind": "text",
+        "text": "Wǒ xǐhuan chī jiǎozi hé bāozi."
+      },
+      "answer": [
+        "我",
+        "喜欢",
+        "吃",
+        "饺子",
+        "和",
+        "包子"
+      ],
+      "distractors": [
+        "面条"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "喜欢": "xǐhuan",
+        "吃": "chī",
+        "饺子": "jiǎozi",
+        "和": "hé",
+        "包子": "bāozi",
+        "面条": "miàntiáo"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Build the sentence from the pinyin",
+      "prompt": {
+        "kind": "text",
+        "text": "Miàntiáo hé diǎnxin dōu hěn hǎochī."
+      },
+      "answer": [
+        "面条",
+        "和",
+        "点心",
+        "都",
+        "很",
+        "好吃"
+      ],
+      "distractors": [
+        "不"
+      ],
+      "pinyin": {
+        "面条": "miàntiáo",
+        "和": "hé",
+        "点心": "diǎnxin",
+        "都": "dōu",
+        "很": "hěn",
+        "好吃": "hǎochī",
+        "不": "bù"
+      }
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Dawei",
+            "avatar": "🧑",
+            "blank": true
+          },
+          {
+            "speaker": "Teacher Wang",
+            "avatar": "👨‍🏫",
+            "side": "right",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "我",
+                  "pinyin": "wǒ",
+                  "hint": "I, me, my"
+                },
+                {
+                  "hanzi": "姓",
+                  "pinyin": "xìng",
+                  "hint": "to have the surname"
+                },
+                {
+                  "hanzi": "王。",
+                  "pinyin": "Wáng",
+                  "hint": "(surname Wang)"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Dawei",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "王",
+                  "pinyin": "Wáng",
+                  "hint": "(surname Wang)"
+                },
+                {
+                  "hanzi": "老师，",
+                  "pinyin": "lǎoshī",
+                  "hint": "teacher"
+                },
+                {
+                  "hanzi": "认识",
+                  "pinyin": "rènshi",
+                  "hint": "to know, to meet (someone)"
+                },
+                {
+                  "hanzi": "您",
+                  "pinyin": "nín",
+                  "hint": "you (polite)"
+                },
+                {
+                  "hanzi": "很",
+                  "pinyin": "hěn",
+                  "hint": "very"
+                },
+                {
+                  "hanzi": "高兴！",
+                  "pinyin": "gāoxìng",
+                  "hint": "happy, glad"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "您",
+                "pinyin": "nín",
+                "hint": "you (polite)"
+              },
+              {
+                "hanzi": "贵姓？",
+                "pinyin": "guìxìng",
+                "hint": "(your honourable) surname"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "您",
+                "pinyin": "nín",
+                "hint": "you (polite)"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "哪",
+                "pinyin": "nǎ",
+                "hint": "which"
+              },
+              {
+                "hanzi": "国",
+                "pinyin": "guó",
+                "hint": "country"
+              },
+              {
+                "hanzi": "人？",
+                "pinyin": "rén",
+                "hint": "person"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Xiaoyun",
+            "avatar": "👩",
+            "blank": true
+          },
+          {
+            "speaker": "Lin Na",
+            "avatar": "👱‍♀️",
+            "side": "right",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "我",
+                  "pinyin": "wǒ",
+                  "hint": "I, me, my"
+                },
+                {
+                  "hanzi": "是",
+                  "pinyin": "shì",
+                  "hint": "to be"
+                },
+                {
+                  "hanzi": "英国人。",
+                  "pinyin": "Yīngguórén",
+                  "hint": "British"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "哪",
+                "pinyin": "nǎ",
+                "hint": "which"
+              },
+              {
+                "hanzi": "国",
+                "pinyin": "guó",
+                "hint": "country"
+              },
+              {
+                "hanzi": "人？",
+                "pinyin": "rén",
+                "hint": "person"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "您",
+                "pinyin": "nín",
+                "hint": "you (polite)"
+              },
+              {
+                "hanzi": "贵姓？",
+                "pinyin": "guìxìng",
+                "hint": "(your honourable) surname"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Libo",
+            "avatar": "🧑",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "你",
+                  "pinyin": "nǐ",
+                  "hint": "you"
+                },
+                {
+                  "hanzi": "妈妈",
+                  "pinyin": "māma",
+                  "hint": "mum"
+                },
+                {
+                  "hanzi": "是",
+                  "pinyin": "shì",
+                  "hint": "to be"
+                },
+                {
+                  "hanzi": "上海人",
+                  "pinyin": "Shànghǎirén",
+                  "hint": "person from Shanghai"
+                },
+                {
+                  "hanzi": "吗？",
+                  "pinyin": "ma",
+                  "hint": "(yes/no question)"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Xiaoyun",
+            "avatar": "👩",
+            "side": "right",
+            "blank": true
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "hint": "she, her"
+              },
+              {
+                "hanzi": "不",
+                "pinyin": "bú",
+                "hint": "not"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "上海人，",
+                "pinyin": "Shànghǎirén",
+                "hint": "person from Shanghai"
+              },
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "hint": "she, her"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "北京人。",
+                "pinyin": "Běijīngrén",
+                "hint": "person from Beijing"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "她",
+                "pinyin": "tā",
+                "hint": "she, her"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "面包。",
+                "pinyin": "miànbāo",
+                "hint": "bread"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "上海人。",
+                "pinyin": "Shànghǎirén",
+                "hint": "person from Shanghai"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which question does this answer?",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "林娜",
+            "pinyin": "Lín Nà",
+            "hint": "(name) Lin Na"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "英国人。",
+            "pinyin": "Yīngguórén",
+            "hint": "British"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "林娜",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "哪",
+                "pinyin": "nǎ",
+                "hint": "which"
+              },
+              {
+                "hanzi": "国",
+                "pinyin": "guó",
+                "hint": "country"
+              },
+              {
+                "hanzi": "人？",
+                "pinyin": "rén",
+                "hint": "person"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "林娜",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which question does this answer?",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "那",
+            "pinyin": "nà",
+            "hint": "that"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "面条。",
+            "pinyin": "miàntiáo",
+            "hint": "noodles"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "那",
+                "pinyin": "nà",
+                "hint": "that"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "什么？",
+                "pinyin": "shénme",
+                "hint": "what"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "哪",
+                "pinyin": "nǎ",
+                "hint": "which"
+              },
+              {
+                "hanzi": "国",
+                "pinyin": "guó",
+                "hint": "country"
+              },
+              {
+                "hanzi": "人？",
+                "pinyin": "rén",
+                "hint": "person"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "面条",
+                "pinyin": "miàntiáo",
+                "hint": "noodles"
+              },
+              {
+                "hanzi": "好吃",
+                "pinyin": "hǎochī",
+                "hint": "tasty"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen and choose the best answer",
+      "prompt": {
+        "kind": "audio",
+        "speak": "这是什么？",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "包子。",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "中国人。",
+                "pinyin": "Zhōngguórén",
+                "hint": "Chinese (person)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "陈。",
+                "pinyin": "Chén",
+                "hint": "(surname Chen)"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen and choose the best answer",
+      "prompt": {
+        "kind": "audio",
+        "speak": "您贵姓？",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "陈。",
+                "pinyin": "Chén",
+                "hint": "(surname Chen)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "德国人。",
+                "pinyin": "Déguórén",
+                "hint": "German"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好吃。",
+                "pinyin": "hǎochī",
+                "hint": "tasty"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen and choose the best answer",
+      "prompt": {
+        "kind": "audio",
+        "speak": "他是哪国人？",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "德国人。",
+                "pinyin": "Déguórén",
+                "hint": "German"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "朋友。",
+                "pinyin": "péngyou",
+                "hint": "friend"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "他",
+                "pinyin": "tā",
+                "hint": "he, him"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "米饭。",
+                "pinyin": "mǐfàn",
+                "hint": "rice"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “Both parents are teachers.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我爸爸是老师，我妈妈也是老师。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "true",
+      "shuffle": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “The speaker thinks the buns are tasty.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "包子很大，不好吃。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "false",
+      "shuffle": false
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Tap what you hear",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我喜欢吃面条和包子",
+        "slow": true
+      },
+      "answer": [
+        "我",
+        "喜欢",
+        "吃",
+        "面条",
+        "和",
+        "包子"
+      ],
+      "distractors": [
+        "饺子",
+        "都"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "喜欢": "xǐhuan",
+        "吃": "chī",
+        "面条": "miàntiáo",
+        "和": "hé",
+        "包子": "bāozi",
+        "饺子": "jiǎozi",
+        "都": "dōu"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write the pinyin you hear",
+      "prompt": {
+        "kind": "audio",
+        "speak": "她学习汉语",
+        "slow": true
+      },
+      "answer": [
+        "Tā",
+        "xuéxí",
+        "Hànyǔ"
+      ],
+      "distractors": [
+        "Yīngyǔ",
+        "xǐhuan",
+        "shì"
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "good morning"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "早上好",
+            "pinyin": "zǎoshang hǎo"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "goodbye"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "再见",
+            "pinyin": "zàijiàn"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "friend"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "朋友",
+            "pinyin": "péngyou"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "teacher"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "老师",
+            "pinyin": "lǎoshī"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "tasty"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "好吃",
+            "pinyin": "hǎochī"
+          }
+        }
+      ]
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Write the character",
+      "character": "老",
+      "pinyin": "lǎo",
+      "meaning": "old (as in 老师)",
+      "guide": "faint"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Write the character",
+      "character": "小",
+      "pinyin": "xiǎo",
+      "meaning": "small",
+      "guide": "faint"
+    },
+    {
+      "type": "story",
+      "instruction": "Read and listen",
+      "title": "New friends at lunch",
+      "steps": [
+        {
+          "kind": "line",
+          "speaker": "Teacher Chen",
+          "avatar": "👩‍🏫",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "早上",
+                "pinyin": "zǎoshang",
+                "hint": "morning"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              },
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "朋友",
+                "pinyin": "péngyou",
+                "hint": "friend"
+              },
+              {
+                "hanzi": "林娜。",
+                "pinyin": "Lín Nà",
+                "hint": "(name) Lin Na"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "马大为。",
+                "pinyin": "Mǎ Dàwéi",
+                "hint": "(name) Ma Dawei"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "哪",
+                "pinyin": "nǎ",
+                "hint": "which"
+              },
+              {
+                "hanzi": "国",
+                "pinyin": "guó",
+                "hint": "country"
+              },
+              {
+                "hanzi": "人？",
+                "pinyin": "rén",
+                "hint": "person"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Lin Na",
+          "avatar": "👱‍♀️",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "英国人。",
+                "pinyin": "Yīngguórén",
+                "hint": "British"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "呢？",
+                "pinyin": "ne",
+                "hint": "(and …? follow-up question)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "美国人。",
+                "pinyin": "Měiguórén",
+                "hint": "American"
+              },
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "学习",
+                "pinyin": "xuéxí",
+                "hint": "to study"
+              },
+              {
+                "hanzi": "汉语。",
+                "pinyin": "Hànyǔ",
+                "hint": "Chinese (language)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Where is Lin Na from?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "The USA"
+            },
+            {
+              "id": "o1",
+              "text": "The UK"
+            },
+            {
+              "id": "o3",
+              "text": "Canada"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Lin Na",
+          "avatar": "👱‍♀️",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "学习",
+                "pinyin": "xuéxí",
+                "hint": "to study"
+              },
+              {
+                "hanzi": "汉语！",
+                "pinyin": "Hànyǔ",
+                "hint": "Chinese (language)"
+              },
+              {
+                "hanzi": "陈",
+                "pinyin": "Chén",
+                "hint": "(surname Chen)"
+              },
+              {
+                "hanzi": "老师",
+                "pinyin": "lǎoshī",
+                "hint": "teacher"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "我们",
+                "pinyin": "wǒmen",
+                "hint": "we, us"
+              },
+              {
+                "hanzi": "老师。",
+                "pinyin": "lǎoshī",
+                "hint": "teacher"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "看，",
+                "pinyin": "kàn",
+                "hint": "to look"
+              },
+              {
+                "hanzi": "这",
+                "pinyin": "zhè",
+                "hint": "this"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "饺子。",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              },
+              {
+                "hanzi": "你",
+                "pinyin": "nǐ",
+                "hint": "you"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "饺子",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              },
+              {
+                "hanzi": "吗？",
+                "pinyin": "ma",
+                "hint": "(yes/no question)"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Lin Na",
+          "avatar": "👱‍♀️",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "喜欢。",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "饺子",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              },
+              {
+                "hanzi": "和",
+                "pinyin": "hé",
+                "hint": "and"
+              },
+              {
+                "hanzi": "包子",
+                "pinyin": "bāozi",
+                "hint": "steamed stuffed bun"
+              },
+              {
+                "hanzi": "都",
+                "pinyin": "dōu",
+                "hint": "all, both"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "好吃！",
+                "pinyin": "hǎochī",
+                "hint": "tasty"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "Who teaches both of them?",
+          "options": [
+            {
+              "id": "o3",
+              "text": "Dawei’s dad"
+            },
+            {
+              "id": "o1",
+              "text": "Teacher Chen"
+            },
+            {
+              "id": "o2",
+              "text": "Lin Na"
+            }
+          ],
+          "answer": "o1"
+        },
+        {
+          "kind": "line",
+          "speaker": "Teacher Chen",
+          "avatar": "👩‍🏫",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "也",
+                "pinyin": "yě",
+                "hint": "also, too"
+              },
+              {
+                "hanzi": "喜欢",
+                "pinyin": "xǐhuan",
+                "hint": "to like"
+              },
+              {
+                "hanzi": "吃",
+                "pinyin": "chī",
+                "hint": "to eat"
+              },
+              {
+                "hanzi": "饺子。",
+                "pinyin": "jiǎozi",
+                "hint": "dumplings"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "line",
+          "speaker": "Dawei",
+          "avatar": "🧑",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "陈",
+                "pinyin": "Chén",
+                "hint": "(surname Chen)"
+              },
+              {
+                "hanzi": "老师，",
+                "pinyin": "lǎoshī",
+                "hint": "teacher"
+              },
+              {
+                "hanzi": "再见！",
+                "pinyin": "zàijiàn",
+                "hint": "goodbye"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "question",
+          "prompt": "How does the story end?",
+          "options": [
+            {
+              "id": "o2",
+              "text": "Dawei orders pizza"
+            },
+            {
+              "id": "o1",
+              "text": "Dawei says goodbye"
+            },
+            {
+              "id": "o3",
+              "text": "Lin Na goes to Shanghai"
+            }
+          ],
+          "answer": "o1"
+        }
+      ]
+    }
+  ]
+}

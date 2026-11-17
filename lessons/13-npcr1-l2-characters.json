@@ -1,0 +1,935 @@
+{
+  "title": "NPCR 1.2 · Characters up close",
+  "description": "Stroke order, the parts characters are built from, look-alikes and tone marks. Based on New Practical Chinese Reader 1, Lesson 2.",
+  "exercises": [
+    {
+      "type": "strokeDraw",
+      "instruction": "Trace the character",
+      "character": "老",
+      "pinyin": "lǎo",
+      "meaning": "old (as in 老师)",
+      "guide": "full"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Write the character",
+      "character": "上",
+      "pinyin": "shàng",
+      "meaning": "up, on (as in 早上)",
+      "guide": "faint"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which two parts make up this character?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "朋",
+        "pinyin": "péng",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "月 + 月"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "日 + 月"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "月 + 目"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which two parts make up this character?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "您",
+        "pinyin": "nín",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "你 + 心"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "他 + 心"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "你 + 小"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which two parts make up this character?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "饺",
+        "pinyin": "jiǎo",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "饣 + 交"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "讠 + 交"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "饣 + 文"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which two parts make up this character?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "妈",
+        "pinyin": "mā",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "女 + 马"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "女 + 子"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "口 + 马"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which two parts make up this character?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "口 + 乞"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "口 + 气"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "日 + 乞"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each pair of characters to the part they share",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "什 · 们"
+          },
+          "right": {
+            "kind": "text",
+            "text": "亻 person"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "语 · 识"
+          },
+          "right": {
+            "kind": "text",
+            "text": "讠 speech"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "她 · 妈"
+          },
+          "right": {
+            "kind": "text",
+            "text": "女 woman"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "饺 · 饭"
+          },
+          "right": {
+            "kind": "text",
+            "text": "饣 food"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "汉 · 海"
+          },
+          "right": {
+            "kind": "text",
+            "text": "氵 water"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which part do these two characters share?",
+      "prompt": {
+        "kind": "text",
+        "text": "饺 · 饭"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "饣"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "讠"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "氵"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "亻"
+          }
+        }
+      ],
+      "answer": "o1",
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which character has the “water” part 氵?",
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "汉"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "语"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "她"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "们"
+          }
+        }
+      ],
+      "answer": "o1",
+      "layout": "grid",
+      "tapToSpeak": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Which character has the “food” part 饣?",
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "饭"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "好"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "吃"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "识"
+          }
+        }
+      ],
+      "answer": "o1",
+      "layout": "grid",
+      "tapToSpeak": false
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each character to its pinyin",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "们"
+          },
+          "right": {
+            "kind": "text",
+            "text": "men"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "语"
+          },
+          "right": {
+            "kind": "text",
+            "text": "yǔ"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "饭"
+          },
+          "right": {
+            "kind": "text",
+            "text": "fàn"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "海"
+          },
+          "right": {
+            "kind": "text",
+            "text": "hǎi"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "汉"
+          },
+          "right": {
+            "kind": "text",
+            "text": "hàn"
+          }
+        }
+      ],
+      "tapToSpeak": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the correct character",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "您",
+            "pinyin": "nín",
+            "hint": "you (polite)"
+          },
+          {
+            "hanzi": "好！",
+            "pinyin": "hǎo",
+            "hint": "good, well"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "师。",
+            "pinyin": "shī",
+            "hint": "(second half of 老师)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "老"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "考"
+          }
+        }
+      ],
+      "answer": "o1",
+      "tapToSpeak": false,
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the correct character",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "国",
+            "pinyin": "guó",
+            "hint": "country"
+          },
+          {
+            "hanzi": "人？",
+            "pinyin": "rén",
+            "hint": "person"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "哪"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "那"
+          }
+        }
+      ],
+      "answer": "o1",
+      "tapToSpeak": false,
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the correct character",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "我",
+            "pinyin": "wǒ",
+            "hint": "I, me, my"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "国人。",
+            "pinyin": "guórén",
+            "hint": "person from (that) country"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "美"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "姜"
+          }
+        }
+      ],
+      "answer": "o1",
+      "tapToSpeak": false,
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the correct character",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "马大为",
+            "pinyin": "Mǎ Dàwéi",
+            "hint": "(name) Ma Dawei"
+          },
+          {
+            "hanzi": "学",
+            "pinyin": "xué",
+            "hint": "(first half of 学习)"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "汉语。",
+            "pinyin": "Hànyǔ",
+            "hint": "Chinese (language)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "习"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "刁"
+          }
+        }
+      ],
+      "answer": "o1",
+      "tapToSpeak": false,
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the correct character",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "，"
+          },
+          {
+            "hanzi": "那",
+            "pinyin": "nà",
+            "hint": "that"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "饺子。",
+            "pinyin": "jiǎozi",
+            "hint": "dumplings"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "看"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "着"
+          }
+        }
+      ],
+      "answer": "o1",
+      "tapToSpeak": false,
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "哪",
+        "pinyin": "nǎ",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "which"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "that"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "this"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "老师",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "lǎoshī"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "láoshì"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "làoshǐ"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "lāoshí"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "汉语",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "Hànyǔ"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "Hányū"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "Hǎnyù"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "Hānyú"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "点心",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "diǎnxin"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "diánxìn"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "diànxīn"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "diānxǐn"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "饺子",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "jiǎozi"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "jiàozi"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "jiáozi"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "jiāozi"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "米饭",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "mǐfàn"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "mífān"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "mìfǎn"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "mīfán"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Write the character",
+      "character": "人",
+      "pinyin": "rén",
+      "meaning": "person",
+      "guide": "faint"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Write the character",
+      "character": "大",
+      "pinyin": "dà",
+      "meaning": "big",
+      "guide": "faint"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Write the character",
+      "character": "小",
+      "pinyin": "xiǎo",
+      "meaning": "small",
+      "guide": "none"
+    }
+  ]
+}

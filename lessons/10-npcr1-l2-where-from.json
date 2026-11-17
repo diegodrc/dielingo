@@ -1,0 +1,1320 @@
+{
+  "title": "NPCR 1.2 · Where are you from?",
+  "description": "Countries and nationalities, polite greetings and asking someone’s surname. Based on New Practical Chinese Reader 1, Lesson 2.",
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "早上好",
+        "pinyin": "zǎoshang hǎo",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "Good morning"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "Goodbye"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "Thank you"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "再见",
+        "pinyin": "zàijiàn",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "Goodbye"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "Good morning"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "Please sit down"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "China"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "中国",
+            "pinyin": "Zhōngguó"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "the USA"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "美国",
+            "pinyin": "Měiguó"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "the UK"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "英国",
+            "pinyin": "Yīngguó"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "Germany"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "德国",
+            "pinyin": "Déguó"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "Canada"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "加拿大",
+            "pinyin": "Jiānádà"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "Russia"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "俄罗斯",
+            "pinyin": "Éluósī"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "Brazil"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "巴西",
+            "pinyin": "Bāxī"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "Beijing"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "北京",
+            "pinyin": "Běijīng"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "Shanghai"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "上海",
+            "pinyin": "Shànghǎi"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "country"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "国",
+            "pinyin": "guó"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Tap the matching pairs",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "text",
+            "text": "teacher"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "老师",
+            "pinyin": "lǎoshī"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "text",
+            "text": "you (polite)"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "您",
+            "pinyin": "nín"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "text",
+            "text": "to be"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "是",
+            "pinyin": "shì"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "text",
+            "text": "which"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "哪",
+            "pinyin": "nǎ"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "text",
+            "text": "person"
+          },
+          "right": {
+            "kind": "hanzi",
+            "hanzi": "人",
+            "pinyin": "rén"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matchPairs",
+      "instruction": "Match each word to its pinyin",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "是"
+          },
+          "right": {
+            "kind": "text",
+            "text": "shì"
+          }
+        },
+        {
+          "id": "p2",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "哪"
+          },
+          "right": {
+            "kind": "text",
+            "text": "nǎ"
+          }
+        },
+        {
+          "id": "p3",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "国"
+          },
+          "right": {
+            "kind": "text",
+            "text": "guó"
+          }
+        },
+        {
+          "id": "p4",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "人"
+          },
+          "right": {
+            "kind": "text",
+            "text": "rén"
+          }
+        },
+        {
+          "id": "p5",
+          "left": {
+            "kind": "hanzi",
+            "hanzi": "您"
+          },
+          "right": {
+            "kind": "text",
+            "text": "nín"
+          }
+        }
+      ],
+      "tapToSpeak": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "早上",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "zǎoshang"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "záoshàng"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "zàoshāng"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "zāoshǎng"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. Which pinyin has the right tones?",
+      "prompt": {
+        "kind": "hanzi",
+        "hanzi": "再见",
+        "speak": true
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "zàijiàn"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "zǎijiān"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "zāijiǎn"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "text",
+            "text": "záijián"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What do you hear?",
+      "prompt": {
+        "kind": "audio",
+        "speak": "美国"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "美国"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "英国"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "中国"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "德国"
+          }
+        }
+      ],
+      "answer": "o1",
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What do you hear?",
+      "prompt": {
+        "kind": "audio",
+        "speak": "老师"
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "老师"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "早上"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "再见"
+          }
+        },
+        {
+          "id": "o4",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "北京"
+          }
+        }
+      ],
+      "answer": "o1",
+      "layout": "grid"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "What does this mean?",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "您",
+            "pinyin": "nín",
+            "hint": "you (polite)"
+          },
+          {
+            "hanzi": "贵姓？",
+            "pinyin": "guìxìng",
+            "hint": "(your honourable) surname"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "text",
+            "text": "What is your surname? (polite)"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "text",
+            "text": "Which country are you from?"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "text",
+            "text": "How have you been?"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Which country are you from?"
+      },
+      "answer": [
+        "你",
+        "是",
+        "哪",
+        "国",
+        "人"
+      ],
+      "distractors": [
+        "那",
+        "吗",
+        "什么"
+      ],
+      "pinyin": {
+        "你": "nǐ",
+        "是": "shì",
+        "哪": "nǎ",
+        "国": "guó",
+        "人": "rén",
+        "那": "nà",
+        "吗": "ma",
+        "什么": "shénme"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "I am Chinese."
+      },
+      "answer": [
+        "我",
+        "是",
+        "中国人"
+      ],
+      "distractors": [
+        "美国人",
+        "不",
+        "他"
+      ],
+      "pinyin": {
+        "我": "wǒ",
+        "是": "shì",
+        "中国人": "Zhōngguórén",
+        "美国人": "Měiguórén",
+        "不": "bù",
+        "他": "tā"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "He is not American."
+      },
+      "answer": [
+        "他",
+        "不",
+        "是",
+        "美国人"
+      ],
+      "distractors": [
+        "也",
+        "吗",
+        "英国人"
+      ],
+      "pinyin": {
+        "他": "tā",
+        "不": "bù",
+        "是": "shì",
+        "美国人": "Měiguórén",
+        "也": "yě",
+        "吗": "ma",
+        "英国人": "Yīngguórén"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Are you from Beijing?"
+      },
+      "answer": [
+        "你",
+        "是",
+        "北京人",
+        "吗"
+      ],
+      "distractors": [
+        "上海人",
+        "呢",
+        "不"
+      ],
+      "pinyin": {
+        "你": "nǐ",
+        "是": "shì",
+        "北京人": "Běijīngrén",
+        "吗": "ma",
+        "上海人": "Shànghǎirén",
+        "呢": "ne",
+        "不": "bù"
+      }
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write this in Chinese",
+      "prompt": {
+        "kind": "text",
+        "text": "Good morning, Teacher Chen!"
+      },
+      "answer": [
+        "早上",
+        "好",
+        "陈",
+        "老师"
+      ],
+      "distractors": [
+        "再见",
+        "您"
+      ],
+      "pinyin": {
+        "早上": "zǎoshang",
+        "好": "hǎo",
+        "陈": "Chén",
+        "老师": "lǎoshī",
+        "再见": "zàijiàn",
+        "您": "nín"
+      }
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "她",
+            "pinyin": "tā",
+            "hint": "she, her"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "英国人。",
+            "pinyin": "Yīngguórén",
+            "hint": "British"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "是",
+            "pinyin": "shì"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "姓",
+            "pinyin": "xìng"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "叫",
+            "pinyin": "jiào"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the sentence",
+      "prompt": {
+        "kind": "sentence",
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "",
+            "blank": true
+          },
+          {
+            "hanzi": "国",
+            "pinyin": "guó",
+            "hint": "country"
+          },
+          {
+            "hanzi": "人？",
+            "pinyin": "rén",
+            "hint": "person"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "哪",
+            "pinyin": "nǎ"
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "什么",
+            "pinyin": "shénme"
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "hanzi",
+            "hanzi": "吗",
+            "pinyin": "ma"
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the best reply",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "您",
+            "pinyin": "nín",
+            "hint": "you (polite)"
+          },
+          {
+            "hanzi": "贵姓？",
+            "pinyin": "guìxìng",
+            "hint": "(your honourable) surname"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "林。",
+                "pinyin": "Lín",
+                "hint": "(surname Lin)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "加拿大人。",
+                "pinyin": "Jiānádàrén",
+                "hint": "Canadian"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "再见！",
+                "pinyin": "zàijiàn",
+                "hint": "goodbye"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Choose the best reply",
+      "prompt": {
+        "kind": "sentence",
+        "speak": true,
+        "tokens": [
+          {
+            "hanzi": "你",
+            "pinyin": "nǐ",
+            "hint": "you"
+          },
+          {
+            "hanzi": "是",
+            "pinyin": "shì",
+            "hint": "to be"
+          },
+          {
+            "hanzi": "哪",
+            "pinyin": "nǎ",
+            "hint": "which"
+          },
+          {
+            "hanzi": "国",
+            "pinyin": "guó",
+            "hint": "country"
+          },
+          {
+            "hanzi": "人？",
+            "pinyin": "rén",
+            "hint": "person"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "加拿大人。",
+                "pinyin": "Jiānádàrén",
+                "hint": "Canadian"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "姓",
+                "pinyin": "xìng",
+                "hint": "to have the surname"
+              },
+              {
+                "hanzi": "丁。",
+                "pinyin": "Dīng",
+                "hint": "(surname Ding)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "早上",
+                "pinyin": "zǎoshang",
+                "hint": "morning"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Teacher Chen",
+            "avatar": "👩‍🏫",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "早上",
+                  "pinyin": "zǎoshang",
+                  "hint": "morning"
+                },
+                {
+                  "hanzi": "好！",
+                  "pinyin": "hǎo",
+                  "hint": "good, well"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Dawei",
+            "avatar": "🧑",
+            "side": "right",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "早上",
+                  "pinyin": "zǎoshang",
+                  "hint": "morning"
+                },
+                {
+                  "hanzi": "好，",
+                  "pinyin": "hǎo",
+                  "hint": "good, well"
+                },
+                {
+                  "hanzi": "陈",
+                  "pinyin": "Chén",
+                  "hint": "(surname Chen)"
+                },
+                {
+                  "hanzi": "老师！",
+                  "pinyin": "lǎoshī",
+                  "hint": "teacher"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Teacher Chen",
+            "avatar": "👩‍🏫",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "你",
+                  "pinyin": "nǐ",
+                  "hint": "you"
+                },
+                {
+                  "hanzi": "是",
+                  "pinyin": "shì",
+                  "hint": "to be"
+                },
+                {
+                  "hanzi": "哪",
+                  "pinyin": "nǎ",
+                  "hint": "which"
+                },
+                {
+                  "hanzi": "国",
+                  "pinyin": "guó",
+                  "hint": "country"
+                },
+                {
+                  "hanzi": "人？",
+                  "pinyin": "rén",
+                  "hint": "person"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Dawei",
+            "avatar": "🧑",
+            "side": "right",
+            "blank": true
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "是",
+                "pinyin": "shì",
+                "hint": "to be"
+              },
+              {
+                "hanzi": "美国人。",
+                "pinyin": "Měiguórén",
+                "hint": "American"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "叫",
+                "pinyin": "jiào",
+                "hint": "to be called"
+              },
+              {
+                "hanzi": "美国。",
+                "pinyin": "Měiguó",
+                "hint": "the USA"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "我",
+                "pinyin": "wǒ",
+                "hint": "I, me, my"
+              },
+              {
+                "hanzi": "很",
+                "pinyin": "hěn",
+                "hint": "very"
+              },
+              {
+                "hanzi": "高兴。",
+                "pinyin": "gāoxìng",
+                "hint": "happy, glad"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Complete the chat",
+      "prompt": {
+        "kind": "chat",
+        "lines": [
+          {
+            "speaker": "Lin Na",
+            "avatar": "👩",
+            "content": {
+              "kind": "sentence",
+              "tokens": [
+                {
+                  "hanzi": "王",
+                  "pinyin": "Wáng",
+                  "hint": "(surname Wang)"
+                },
+                {
+                  "hanzi": "老师，",
+                  "pinyin": "lǎoshī",
+                  "hint": "teacher"
+                },
+                {
+                  "hanzi": "再见！",
+                  "pinyin": "zàijiàn",
+                  "hint": "goodbye"
+                }
+              ]
+            }
+          },
+          {
+            "speaker": "Teacher Wang",
+            "avatar": "👨‍🏫",
+            "side": "right",
+            "blank": true
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "o1",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "再见！",
+                "pinyin": "zàijiàn",
+                "hint": "goodbye"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o2",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "早上",
+                "pinyin": "zǎoshang",
+                "hint": "morning"
+              },
+              {
+                "hanzi": "好！",
+                "pinyin": "hǎo",
+                "hint": "good, well"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "content": {
+            "kind": "sentence",
+            "tokens": [
+              {
+                "hanzi": "您",
+                "pinyin": "nín",
+                "hint": "you (polite)"
+              },
+              {
+                "hanzi": "贵姓？",
+                "pinyin": "guìxìng",
+                "hint": "(your honourable) surname"
+              }
+            ]
+          }
+        }
+      ],
+      "answer": "o1"
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “The speaker is American.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我是英国人，不是美国人。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "false",
+      "shuffle": false
+    },
+    {
+      "type": "multipleChoice",
+      "instruction": "Listen. True or false: “She is from Beijing.”",
+      "prompt": {
+        "kind": "audio",
+        "speak": "她是北京人。",
+        "slow": true
+      },
+      "options": [
+        {
+          "id": "true",
+          "content": {
+            "kind": "text",
+            "text": "True"
+          }
+        },
+        {
+          "id": "false",
+          "content": {
+            "kind": "text",
+            "text": "False"
+          }
+        }
+      ],
+      "answer": "true",
+      "shuffle": false
+    },
+    {
+      "type": "wordBank",
+      "instruction": "Write the pinyin you hear",
+      "prompt": {
+        "kind": "audio",
+        "speak": "我是中国人",
+        "slow": true
+      },
+      "answer": [
+        "Wǒ",
+        "shì",
+        "Zhōngguórén"
+      ],
+      "distractors": [
+        "Měiguórén",
+        "bú",
+        "Tā"
+      ]
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Trace the character",
+      "character": "人",
+      "pinyin": "rén",
+      "meaning": "person",
+      "guide": "full"
+    },
+    {
+      "type": "strokeDraw",
+      "instruction": "Trace the character",
+      "character": "上",
+      "pinyin": "shàng",
+      "meaning": "up, on (as in 早上)",
+      "guide": "full"
+    }
+  ]
+}
