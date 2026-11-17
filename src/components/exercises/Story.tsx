@@ -95,6 +95,7 @@ export function Story({ config, onResult, onContinue }: ExerciseProps<StoryConfi
               <div className={styles.storyText}>
                 {step.speaker && <span className={styles.speaker}>{step.speaker}</span>}
                 <ContentView
+                  audioSize="sm"
                   content={step.content.kind === 'text' ? step.content : { ...step.content, speak: true }}
                 />
                 {step.translation && <span className={styles.muted}>{step.translation}</span>}

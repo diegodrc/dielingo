@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cx } from '../lib/cx';
 import { Exercise } from '../components/shell/Exercise';
 import { allExamples, sections } from '../examples';
@@ -9,6 +9,12 @@ export function Gallery({ selectedCode }: { selectedCode?: string }) {
   const example = allExamples.find((e) => e.code === selectedCode) ?? allExamples[0];
   // Bumped on Continue so the same example starts over.
   const [attempt, setAttempt] = useState(0);
+
+  // A new example starts at the top of the page.
+  // (Braces matter: newer browsers return a promise from scrollTo.)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [example.code]);
 
   return (
     <div className={styles.gallery}>
@@ -37,7 +43,8 @@ export function Gallery({ selectedCode }: { selectedCode?: string }) {
       <div className={styles.detail}>
         <div className={styles.detailHeader}>
           <h1>
-            {example.code} · {example.title}
+            <span className={styles.detailCode}>{example.code}</span>
+            {example.title}
           </h1>
           <p>{example.goal}</p>
         </div>

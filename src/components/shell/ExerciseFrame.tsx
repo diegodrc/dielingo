@@ -52,25 +52,29 @@ export function ExerciseFrame({
 
       <footer className={cx(styles.footer, styles[`footer-${status}`])}>
         {status === 'idle' ? (
-          !hideCheck && (
-            <button
-              type="button"
-              className={cx(styles.button, styles.primary)}
-              disabled={!canCheck}
-              onClick={onCheck}
-            >
-              {checkLabel}
-            </button>
-          )
+          // Self-grading exercises show a locked Continue until they are done.
+          <button
+            type="button"
+            className={cx(styles.button, styles.primary)}
+            disabled={hideCheck || !canCheck}
+            onClick={onCheck}
+          >
+            {hideCheck ? 'Continue' : checkLabel}
+          </button>
         ) : (
           <>
             <div className={styles.feedback} role="status">
-              <strong>{status === 'correct' ? successMessage : 'Not quite'}</strong>
-              {status === 'incorrect' && correctAnswer && (
-                <span>
-                  Correct answer: <span lang="zh-CN">{correctAnswer}</span>
-                </span>
-              )}
+              <span className={styles.feedbackIcon} aria-hidden="true">
+                {status === 'correct' ? '✓' : '✕'}
+              </span>
+              <span className={styles.feedbackText}>
+                <strong>{status === 'correct' ? successMessage : 'Not quite'}</strong>
+                {status === 'incorrect' && correctAnswer && (
+                  <span>
+                    Correct answer: <span lang="zh-CN">{correctAnswer}</span>
+                  </span>
+                )}
+              </span>
             </div>
             <button
               type="button"

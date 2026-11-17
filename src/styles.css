@@ -1,31 +1,36 @@
 :root {
-  --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-ui: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  /* Pinyin needs every tone-marked vowel, so it uses the system font. */
+  --font-pinyin: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-zh: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
 
-  --bg: #f6f7f9;
+  --bg: #f3f6fa;
   --surface: #ffffff;
-  --surface-2: #f1f4f7;
-  --text: #2b3440;
-  --muted: #6b7785;
-  --border: #dfe4ea;
-  --border-strong: #b6c0cc;
+  --surface-2: #f2f5f9;
+  --text: #25303d;
+  --muted: #6a7686;
+  --border: #dde3ea;
+  --border-strong: #b3bdc9;
 
-  --primary: #2f9e6b;
-  --primary-dark: #237a52;
+  --primary: #2fa66f;
+  --primary-dark: #238055;
+  --primary-bg: #e3f6ec;
 
-  --blue: #1c8fd6;
+  --blue: #1f93dc;
   --blue-dark: #146ea6;
-  --blue-bg: #e3f3fc;
-  --blue-border: #86c8ee;
+  --blue-bg: #e2f2fd;
+  --blue-border: #8ccbf0;
 
-  --ok-bg: #dcf5e6;
-  --ok-border: #8fd3ad;
-  --ok-dark: #1f6d48;
+  --ok-bg: #dcf6e7;
+  --ok-border: #93d6b1;
+  --ok-dark: #1c6a45;
 
   --bad: #e5484d;
-  --bad-bg: #ffe6e7;
-  --bad-border: #f2a3a6;
+  --bad-bg: #ffe7e8;
+  --bad-border: #f3a6a9;
   --bad-dark: #b3282d;
+
+  --shadow-card: 0 1px 2px rgb(30 45 70 / 0.04), 0 8px 28px rgb(30 45 70 / 0.07);
 }
 
 *,
@@ -36,11 +41,17 @@
 
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    radial-gradient(900px 420px at 12% -10%, #e4f5ec 0%, transparent 70%),
+    radial-gradient(800px 420px at 100% 0%, #e3f0fc 0%, transparent 65%),
+    var(--bg);
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-ui);
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 button:focus-visible,

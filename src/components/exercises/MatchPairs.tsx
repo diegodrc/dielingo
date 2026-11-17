@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { speakableText } from '../../lib/content';
 import { useSettings, useShuffled } from '../../lib/settings';
 import { speak } from '../../lib/speech';
@@ -12,7 +12,7 @@ type Side = 'left' | 'right';
 
 /**
  * Two shuffled columns. Tap one item on each side to pair them: right pairs
- * disappear, wrong pairs flash red. Each side can be any `Content` (English,
+ * stay in place but lock, wrong pairs flash red. Each side can be any `Content` (English,
  * characters, pinyin, audio-only buttons…).
  */
 export function MatchPairs({ config, onResult, onContinue }: ExerciseProps<MatchPairsConfig>) {
@@ -63,20 +63,15 @@ export function MatchPairs({ config, onResult, onContinue }: ExerciseProps<Match
     return 'default';
   };
 
-  const column = (side: Side, items: typeof left) => (
-    <div className={styles.matchColumn}>
-      {items.map((pair) => (
-        <OptionCard
-          key={pair.id}
-          state={stateOf(side, pair.id)}
-          aria-pressed={picked[side] === pair.id}
-          disabled={matched.includes(pair.id)}
-          onClick={() => pick(side, pair.id, pair[side])}
-        >
-          <ContentView content={pair[side]} mode="option" />
-        </OptionCard>
-      ))}
-    </div>
+  const card = (side: Side, pair: (typeof left)[number]) => (
+    <OptionCard
+      state={stateOf(side, pair.id)}
+      aria-pressed={picked[side] === pair.id}
+      disabled={matched.includes(pair.id)}
+      onClick={() => pick(side, pair.id, pair[side])}
+    >
+      <ContentView content={pair[side]} mode="option" />
+    </OptionCard>
   );
 
   return (
@@ -87,9 +82,14 @@ export function MatchPairs({ config, onResult, onContinue }: ExerciseProps<Match
       onContinue={onContinue}
       successMessage="All matched!"
     >
+      {/* One grid, filled row by row, so both cards of a row share the same height. */}
       <div className={styles.match}>
-        {column('left', left)}
-        {column('right', right)}
+        {left.map((pair, row) => (
+          <Fragment key={pair.id}>
+            {card('left', pair)}
+            {card('right', right[row])}
+          </Fragment>
+        ))}
       </div>
     </ExerciseFrame>
   );

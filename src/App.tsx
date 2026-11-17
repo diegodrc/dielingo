@@ -25,7 +25,9 @@ export function App() {
   const exampleCode = hash.startsWith('#/ex/') ? hash.slice('#/ex/'.length) : undefined;
 
   // In a lesson the prompt audio plays by itself; in the catalogue it waits for a tap.
-  useEffect(() => update({ autoPlay: onLesson }), [onLesson, update]);
+  useEffect(() => {
+    update({ autoPlay: onLesson });
+  }, [onLesson, update]);
 
   return (
     <div className={styles.app}>

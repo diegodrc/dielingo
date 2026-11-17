@@ -15,10 +15,12 @@ interface ContentViewProps {
   mode?: 'prompt' | 'option';
   /** Text to show inside a blank (the learner's current pick). */
   fill?: string;
+  /** Size of the audio button next to Chinese text. Default: md. */
+  audioSize?: 'sm' | 'md';
 }
 
 /** Renders any `Content`. The one place that knows how each kind looks. */
-export function ContentView({ content, mode = 'prompt', fill }: ContentViewProps) {
+export function ContentView({ content, mode = 'prompt', fill, audioSize = 'md' }: ContentViewProps) {
   const interactive = mode === 'prompt';
 
   switch (content.kind) {
@@ -28,7 +30,9 @@ export function ContentView({ content, mode = 'prompt', fill }: ContentViewProps
     case 'hanzi':
       return (
         <span className={cx(styles.row, interactive && styles.promptHanzi)}>
-          {interactive && content.speak && <AudioButton text={content.hanzi} autoPlay />}
+          {interactive && content.speak && (
+            <AudioButton text={content.hanzi} size={audioSize} autoPlay />
+          )}
           <HanziText hanzi={content.hanzi} pinyin={content.pinyin} />
         </span>
       );
@@ -64,7 +68,9 @@ export function ContentView({ content, mode = 'prompt', fill }: ContentViewProps
       );
 
     case 'sentence':
-      return <SentenceView content={content} interactive={interactive} fill={fill} />;
+      return (
+        <SentenceView content={content} interactive={interactive} fill={fill} audioSize={audioSize} />
+      );
 
     case 'chat':
       return <ChatView content={content} fill={fill} />;
@@ -75,16 +81,20 @@ function SentenceView({
   content,
   interactive,
   fill,
+  audioSize,
 }: {
   content: SentenceContent;
   interactive: boolean;
   fill?: string;
+  audioSize: 'sm' | 'md';
 }) {
   const [openHint, setOpenHint] = useState<number | null>(null);
 
   return (
     <span className={styles.row}>
-      {interactive && content.speak && <AudioButton text={sentenceText(content)} autoPlay />}
+      {interactive && content.speak && (
+        <AudioButton text={sentenceText(content)} size={audioSize} autoPlay />
+      )}
       <span className={styles.sentence}>
         {content.tokens.map((token, i) => {
           if (token.blank) {

@@ -65,15 +65,20 @@ export function Lesson({ exercises, onComplete }: LessonProps) {
 
   return (
     <div className={styles.lesson}>
-      <div
-        className={styles.progress}
-        role="progressbar"
-        aria-label="Lesson progress"
-        aria-valuemin={0}
-        aria-valuemax={total}
-        aria-valuenow={completed}
-      >
-        <div className={styles.progressBar} style={{ width: `${(completed / total) * 100}%` }} />
+      <div className={styles.progressRow}>
+        <div
+          className={styles.progress}
+          role="progressbar"
+          aria-label="Lesson progress"
+          aria-valuemin={0}
+          aria-valuemax={total}
+          aria-valuenow={completed}
+        >
+          <div className={styles.progressBar} style={{ width: `${(completed / total) * 100}%` }} />
+        </div>
+        <span className={styles.progressCount}>
+          {completed} / {total}
+        </span>
       </div>
 
       {finished ? (
