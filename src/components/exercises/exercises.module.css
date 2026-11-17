@@ -53,6 +53,16 @@
   min-height: 72px;
 }
 
+/* Pictures in match cards are smaller than in the picture grid. */
+.match img {
+  width: 56px;
+  height: 56px;
+}
+
+.match [role='img'] {
+  font-size: 44px;
+}
+
 /* ---- WordBank ---- */
 
 .answerArea {

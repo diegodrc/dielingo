@@ -89,7 +89,7 @@ Prompts, options and match items are all "content" objects. There are six kinds:
 | `text` | `text` | Plain English text. |
 | `hanzi` | `hanzi`, optional `pinyin`, optional `speak` | A Chinese word or character. `"speak": true` adds an audio button when it is a prompt. |
 | `audio` | `speak`, optional `slow` | A sound button with **no text**. `speak` is the Chinese text to read, in characters. `"slow": true` adds a slow-playback button. |
-| `image` | `label`, and `emoji` **or** `src` | A picture card. Use a single emoji. `label` is the English name (used for accessibility, not shown). |
+| `image` | `label`, and `emoji` **or** `src` | A picture card: a single emoji, or an image file given by its link in `src`. `label` is the English name (used for accessibility, not shown). |
 | `sentence` | `tokens`, optional `speak` | A Chinese sentence split into words. See below. |
 | `chat` | `lines` | A short chat with one missing line. See below. |
 
@@ -108,6 +108,15 @@ Prompts, options and match items are all "content" objects. There are six kinds:
 ```json
 { "kind": "image", "emoji": "💧", "label": "water" }
 ```
+
+```json
+{ "kind": "image", "src": "https://example.com/pictures/water.png", "label": "water" }
+```
+
+**Pictures: emoji by default.** Use `emoji` unless I give you image links. Never invent an
+image URL or guess one from memory: a link that does not exist shows a broken picture. If I
+ask for real pictures, ask me for one full `https://` link per picture (a direct link to a
+`.png`, `.jpg`, `.svg` or `.webp` file) and use exactly the links I give you.
 
 **Sentence.** One token per word. Each token has `hanzi`, and optionally `pinyin` and `hint`
 (the English meaning, shown when the learner taps the word). Attach punctuation to the word

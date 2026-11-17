@@ -87,6 +87,7 @@ describe('lessons folder', () => {
       '01-first-words',
       '02-sounds-and-tones',
       '03-first-sentences',
+      '04-fruit-with-pictures',
     ]);
   });
 });

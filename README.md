@@ -128,6 +128,11 @@ The examples in `src/examples/` show a config for every exercise type; copy the 
   characters (`speak: '麻'`), because the voice reads characters, not pinyin. If the system
   has no Chinese voice the site shows a warning (on Windows: Settings → Time & language →
   Speech → add Chinese (Simplified)).
+- **Pictures** are `image` content with either an `emoji` or a `src`. `src` can be a full
+  `https://` link to an image file, or a path to a file in `public/` (for example
+  `images/fruits/apple.svg`, which is `public/images/fruits/apple.svg`). Lessons uploaded in
+  the browser should use full links. `lessons/04-fruit-with-pictures.json` is a worked example
+  with pictures as options, as a prompt and in a match.
 - **Tap to hear**: tapping Chinese text (a prompt character, a word in a sentence, a match
   card, an option, a word tile) reads it aloud. This is switched off automatically in
   exercises with audio-only content, where the sound is the answer. Set `tapToSpeak: false`
