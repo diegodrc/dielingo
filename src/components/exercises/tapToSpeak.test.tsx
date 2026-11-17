@@ -66,6 +66,28 @@ const buildInChinese: WordBankConfig = {
   answer: ['我', '喝', '茶'],
 };
 
+const pinyinToCharacters: WordBankConfig = {
+  type: 'wordBank',
+  prompt: { kind: 'text', text: 'Wǒ hē chá.' },
+  answer: ['我', '喝', '茶'],
+  pinyin: { 我: 'wǒ', 喝: 'hē', 茶: 'chá' },
+};
+
+describe('pinyin → characters', () => {
+  it('hides the tiles’ pinyin and keeps them silent, even with a pinyin map', () => {
+    expect(tapToSpeakEnabled(pinyinToCharacters)).toBe(false);
+    render(<WordBank config={pinyinToCharacters} />);
+    expect(screen.queryByText('hē')).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: '喝' }));
+    expect(spoken()).toEqual([]);
+  });
+
+  it('still shows tile pinyin when the prompt is English', () => {
+    render(<WordBank config={{ ...pinyinToCharacters, prompt: { kind: 'text', text: 'I drink tea' } }} />);
+    expect(screen.getAllByText('hē').length).toBeGreaterThan(0);
+  });
+});
+
 describe('tapToSpeakEnabled', () => {
   it('is on unless the exercise has audio-only content', () => {
     expect(tapToSpeakEnabled(meaning)).toBe(true);

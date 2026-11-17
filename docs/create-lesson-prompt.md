@@ -19,14 +19,14 @@ use the default.
 2. **Level** — Absolute beginner, HSK 1, HSK 2, …? *Default: absolute beginner.*
 3. **Number of questions** — How many exercises? *Default: 10.*
 4. **Exercise types** — Do I want specific types (for example only listening, or only
-   matching and drawing), or a mix that explores all of them? Show me the list of 17 types
+   matching and drawing), or a mix that explores all of them? Show me the list of 18 types
    from "Exercise catalogue" below, by name only, so I can choose. *Default: a varied mix.*
 5. **Words I already know** — Any vocabulary you can rely on without teaching it?
    *Default: none; only use words the lesson itself introduces.*
 6. **Title** — A name for the lesson. *Default: you propose one.*
 
 If one of my answers is unclear or contradicts another (for example "5 questions exploring
-all 17 types"), ask a follow-up question before going on.
+all 18 types"), ask a follow-up question before going on.
 
 ### Step 2 — Show me a plan and wait for my OK
 
@@ -216,7 +216,9 @@ Options are shuffled by the app, so the position of the correct one does not mat
 - `distractors` (optional): 2 to 4 extra wrong tiles.
 - `acceptedAnswers` (optional): other tile sequences that are also correct. Every tile they
   use must exist in `answer` + `distractors`.
-- `pinyin` (optional): for Chinese tiles, a map from tile text to its pinyin.
+- `pinyin` (optional): for Chinese tiles, a map from tile text to its pinyin. **Leave it
+  out when the prompt is pinyin** ("Pinyin → characters" below): pinyin on the tiles would
+  be the answer. The app hides it there anyway, and also turns off the tiles' sound.
 
 Grading is an exact match, so list every correct answer. English tiles are case-sensitive:
 capitalise only the first word and proper nouns, and leave out the final full stop.
@@ -330,7 +332,7 @@ Use 6 to 12 lines and 2 or 3 questions. Put each question right after the lines 
 
 ## Exercise catalogue
 
-These are the 17 exercise types learners know. Each one is one of the five `type`s above
+These are the 18 exercise types learners know. Each one is one of the five `type`s above
 with a particular combination of content.
 
 **Vocabulary and characters**
@@ -360,20 +362,21 @@ with a particular combination of content.
 | 11 | English → Chinese | `wordBank` | `text` | Chinese tiles + distractors, with a `pinyin` map |
 | 12 | Chinese → English | `wordBank` | `sentence` with hints and `speak` | English tiles + distractors |
 | 13 | Choose the right translation | `multipleChoice` | `text` (or `sentence`) | 2–3 full sentences differing in one detail |
+| 14 | Pinyin → characters | `wordBank` | `text` holding the pinyin, e.g. `"Wǒ hē chá."` | Chinese tiles + distractors, **no** `pinyin` map |
 
 **Sentences and dialogue**
 
 | # | Name | `type` | Prompt | Options / sides |
 |---|---|---|---|---|
-| 14 | Fill in the blank | `multipleChoice` | `sentence` with one blank token | 3 × `hanzi` |
-| 15 | Choose the reply | `multipleChoice` | `sentence` (a question or remark) | 2 × `sentence` replies |
-| 16 | Complete the dialogue | `multipleChoice` | `chat` with one blank line | 2–3 × `sentence` |
+| 15 | Fill in the blank | `multipleChoice` | `sentence` with one blank token | 3 × `hanzi` |
+| 16 | Choose the reply | `multipleChoice` | `sentence` (a question or remark) | 2 × `sentence` replies |
+| 17 | Complete the dialogue | `multipleChoice` | `chat` with one blank line | 2–3 × `sentence` |
 
 **Extra**
 
 | # | Name | `type` | Prompt | Options / sides |
 |---|---|---|---|---|
-| 17 | Story | `story` | — | — |
+| 18 | Story | `story` | — | — |
 
 Notes for the listening types:
 
@@ -471,5 +474,6 @@ Check every point before you send the file. The app rejects files that break the
 6. Every `strokeDraw` has a single character.
 7. Exactly one option is correct, and no distractor is also a valid answer.
 8. Pinyin has tone marks and matches the characters; characters are simplified.
-9. Listening exercises do not reveal the answer in text.
+9. Listening exercises do not reveal the answer in text, and "Pinyin → characters"
+   exercises have no `pinyin` map.
 10. The number of exercises and the types match what I asked for.

@@ -130,7 +130,10 @@ export interface WordBankConfig extends BaseConfig {
   distractors?: string[];
   /** Other tile orders/combinations that are also correct. */
   acceptedAnswers?: string[][];
-  /** Pinyin for Chinese tiles, keyed by tile text. */
+  /**
+   * Pinyin for Chinese tiles, keyed by tile text. Leave it out when the prompt
+   * is pinyin: the app hides it there anyway, since it would show the answer.
+   */
   pinyin?: Record<string, string>;
 }
 

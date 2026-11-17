@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { cx } from '../../lib/cx';
-import { isChinese, tapToSpeakEnabled } from '../../lib/content';
+import { isChinese, isPinyinPrompt, tapToSpeakEnabled } from '../../lib/content';
 import { gradeWordBank, joinTiles } from '../../lib/grading';
 import { TapToSpeakContext, useSettings, useShuffled } from '../../lib/settings';
 import { speak } from '../../lib/speech';
@@ -31,6 +31,8 @@ export function WordBank({ config, onResult, onContinue }: ExerciseProps<WordBan
   const [status, setStatus] = useState<ExerciseStatus>('idle');
   const open = status === 'idle';
   const tapToSpeak = tapToSpeakEnabled(config);
+  // When the prompt is the pinyin, pinyin on the tiles would be the answer.
+  const tilePinyin = isPinyinPrompt(config.prompt) ? undefined : config.pinyin;
 
   const place = (tile: Tile) => {
     if (!open) return;
@@ -54,7 +56,7 @@ export function WordBank({ config, onResult, onContinue }: ExerciseProps<WordBan
 
   const face = (tile: Tile) =>
     isChinese(tile.text) ? (
-      <HanziText hanzi={tile.text} pinyin={config.pinyin?.[tile.text]} />
+      <HanziText hanzi={tile.text} pinyin={tilePinyin?.[tile.text]} />
     ) : (
       tile.text
     );

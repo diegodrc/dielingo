@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { isPinyinPrompt } from './content';
 import {
   folderLessons,
   folderProblems,
@@ -91,5 +92,15 @@ describe('lessons folder', () => {
       '04-fruit-with-pictures',
     ]);
     expect(new Set(folderLessons.map((l) => l.id)).size).toBe(folderLessons.length);
+  });
+
+  it('has no tile pinyin in pinyin → characters exercises', () => {
+    const offenders = folderLessons.flatMap((lesson) =>
+      lesson.exercises
+        .map((exercise, i) => ({ exercise, at: `${lesson.id} #${i + 1}` }))
+        .filter(({ exercise }) => exercise.type === 'wordBank' && isPinyinPrompt(exercise.prompt) && exercise.pinyin)
+        .map(({ at }) => at),
+    );
+    expect(offenders).toEqual([]);
   });
 });

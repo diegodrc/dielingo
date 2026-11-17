@@ -44,4 +44,17 @@ export const translation: Example[] = [
       answer: 'a',
     },
   },
+  {
+    code: '3.4',
+    title: 'Pinyin → characters',
+    goal: 'Read pinyin and recognise the characters it stands for.',
+    config: {
+      type: 'wordBank',
+      instruction: 'Build the sentence from the pinyin',
+      // A pinyin prompt hides the tiles' pinyin and sound, so no `pinyin` map here.
+      prompt: { kind: 'text', text: 'Wǒ hē chá.' },
+      answer: ['我', '喝', '茶'],
+      distractors: ['你', '水', '吃'],
+    },
+  },
 ];

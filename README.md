@@ -1,7 +1,7 @@
 # Dielingo
 
 Generic, configurable React components for Chinese practice exercises (English → Chinese),
-with one beginner example for each of the 17 exercise types.
+with one beginner example for each of the 18 exercise types.
 
 ```bash
 npm install
@@ -11,7 +11,7 @@ npm run build
 ```
 
 - **Lessons** (`#/`): every lesson, with upload, download, and your completion history.
-- **Exercise types** (`#/types`): catalogue of the 17 examples, each with its config object.
+- **Exercise types** (`#/types`): catalogue of the 18 examples, each with its config object.
 
 ## Lessons
 
@@ -67,13 +67,13 @@ and can be reopened with the **?** button in the header.
 
 ## How it works
 
-Every question is a plain object. Five components cover all 17 exercise types:
+Every question is a plain object. Five components cover all 18 exercise types:
 
 | `type` | Component | Exercises |
 |---|---|---|
 | `multipleChoice` | `MultipleChoice` | 1.1, 1.4, 2.1, 2.2, 3.3, 4.1, 4.2, 4.3 |
 | `matchPairs` | `MatchPairs` | 1.2, 1.3, 2.3 |
-| `wordBank` | `WordBank` | 2.4, 2.5, 3.1, 3.2 |
+| `wordBank` | `WordBank` | 2.4, 2.5, 3.1, 3.2, 3.4 |
 | `strokeDraw` | `StrokeDraw` | 1.5 |
 | `story` | `Story` | 6.1 |
 

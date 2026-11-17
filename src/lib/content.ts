@@ -54,20 +54,36 @@ export function tapText(content: Content): string | undefined {
 
 const isAudio = (content: Content | undefined) => content?.kind === 'audio';
 
+const TONE_MARK = /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/;
+
+/**
+ * True for a text prompt written in pinyin (tone marks, no characters), as in
+ * "build the sentence from the pinyin". Showing the pinyin or the sound of the
+ * Chinese answers would give them away.
+ */
+export function isPinyinPrompt(content: Content | undefined): boolean {
+  return content?.kind === 'text' && TONE_MARK.test(content.text) && !isChinese(content.text);
+}
+
 /**
  * Whether tapping Chinese text should play its sound in this exercise.
  * Listening exercises (anything with audio-only content) keep the text silent,
- * because the sound is the answer. `tapToSpeak` on the config overrides this.
+ * because the sound is the answer, and so do exercises whose prompt is pinyin,
+ * because the sound matches the pinyin. `tapToSpeak` on the config overrides this.
  */
 export function tapToSpeakEnabled(config: ExerciseConfig): boolean {
   if (config.tapToSpeak !== undefined) return config.tapToSpeak;
   switch (config.type) {
     case 'multipleChoice':
-      return !isAudio(config.prompt) && !config.options.some((o) => isAudio(o.content));
+      return (
+        !isAudio(config.prompt) &&
+        !isPinyinPrompt(config.prompt) &&
+        !config.options.some((o) => isAudio(o.content))
+      );
     case 'matchPairs':
       return !config.pairs.some((p) => isAudio(p.left) || isAudio(p.right));
     case 'wordBank':
-      return !isAudio(config.prompt);
+      return !isAudio(config.prompt) && !isPinyinPrompt(config.prompt);
     default:
       return true;
   }

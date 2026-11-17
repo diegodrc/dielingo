@@ -872,15 +872,7 @@
       "distractors": [
         "都",
         "英语"
-      ],
-      "pinyin": {
-        "他": "tā",
-        "也": "yě",
-        "学习": "xuéxí",
-        "汉语": "Hànyǔ",
-        "都": "dōu",
-        "英语": "Yīngyǔ"
-      }
+      ]
     },
     {
       "type": "wordBank",
@@ -899,16 +891,7 @@
       ],
       "distractors": [
         "面条"
-      ],
-      "pinyin": {
-        "我": "wǒ",
-        "喜欢": "xǐhuan",
-        "吃": "chī",
-        "饺子": "jiǎozi",
-        "和": "hé",
-        "包子": "bāozi",
-        "面条": "miàntiáo"
-      }
+      ]
     },
     {
       "type": "wordBank",
@@ -927,16 +910,7 @@
       ],
       "distractors": [
         "不"
-      ],
-      "pinyin": {
-        "面条": "miàntiáo",
-        "和": "hé",
-        "点心": "diǎnxin",
-        "都": "dōu",
-        "很": "hěn",
-        "好吃": "hǎochī",
-        "不": "bù"
-      }
+      ]
     },
     {
       "type": "multipleChoice",

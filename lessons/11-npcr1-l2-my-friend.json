@@ -695,15 +695,7 @@
       "distractors": [
         "不",
         "老师"
-      ],
-      "pinyin": {
-        "马大为": "Mǎ Dàwéi",
-        "是": "shì",
-        "我": "wǒ",
-        "朋友": "péngyou",
-        "不": "bù",
-        "老师": "lǎoshī"
-      }
+      ]
     },
     {
       "type": "wordBank",
@@ -721,15 +713,7 @@
       "distractors": [
         "妈妈",
         "上海人"
-      ],
-      "pinyin": {
-        "我": "wǒ",
-        "爸爸": "bàba",
-        "是": "shì",
-        "北京人": "Běijīngrén",
-        "妈妈": "māma",
-        "上海人": "Shànghǎirén"
-      }
+      ]
     },
     {
       "type": "multipleChoice",

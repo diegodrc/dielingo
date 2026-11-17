@@ -690,16 +690,7 @@
       "distractors": [
         "你",
         "我"
-      ],
-      "pinyin": {
-        "他": "tā",
-        "姓": "xìng",
-        "宋": "Sòng",
-        "叫": "jiào",
-        "宋华": "Sòng Huá",
-        "你": "nǐ",
-        "我": "wǒ"
-      }
+      ]
     },
     {
       "type": "wordBank",
@@ -716,14 +707,7 @@
       "distractors": [
         "什么",
         "吗"
-      ],
-      "pinyin": {
-        "林娜": "Lín Nà",
-        "最近": "zuìjìn",
-        "怎么样": "zěnmeyàng",
-        "什么": "shénme",
-        "吗": "ma"
-      }
+      ]
     },
     {
       "type": "wordBank",
