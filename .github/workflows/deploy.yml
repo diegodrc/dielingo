@@ -22,7 +22,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          # Same major version used to create package-lock.json; older npm
+          # versions reject the lock file.
+          node-version: 24
           cache: npm
       - run: npm ci
       - run: npm test
